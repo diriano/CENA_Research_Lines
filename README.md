@@ -57,3 +57,35 @@ Os nós foram coloridos baseados nas áreas de concentracao:
 ![Coauthorship network supervisors PPG-Ciencias CENA/USP](Figs/coauthorship.png)
 **Figura. Rede de coautoria dos orientadores do PPG-Ciências (2021–2026).**
 Cada nó representa um orientador incluído em [candidates.json](data/candidates.json). Uma aresta liga dois orientadores quando ambos são autores de pelo menos um artigo registrado no OpenAlex (identificado pelo DOI); sua espessura representa o número de artigos distintos em coautoria. As cores indicam as áreas de concentração informadas em [supervisors.json](data/supervisors.json): B = Biologia na Agricultura e no Ambiente; N = Energia Nuclear na Agricultura e no Ambiente; Q = Química na Agricultura e no Ambiente. Orientadores vinculados a mais de uma área aparecem nas categorias combinadas B+N, B+Q ou B+N+Q.
+
+Aqui tem um resumo do número de publicacoes por orientador no periodo pesquisado:
+
+| Orientador | Áreas | Número de artigos |
+| --- | --- | ---: |
+| Adibe Luiz Abdalla | B+N+Q | 83 |
+| Antonio Vargas de Oliveira Figueira | B | 27 |
+| Cassio Hamilton Abreu Junior | B+N+Q | 35 |
+| Diego Mauricio Riaño Pachón | B | 27 |
+| Elisabete Aparecida De Nadai Fernandes | B+N+Q | 20 |
+| Ernani Pinto Junior | B+Q | 58 |
+| Flavia Vischi Winck | B | 17 |
+| Francisco Scaglia Linhares | B | 13 |
+| Helder Louvandini | B+N | 62 |
+| Hudson Wallace Pereira de Carvalho | B+N+Q | 80 |
+| José Lavres Junior | B+N+Q | 90 |
+| Kassio Ferreira Mendes | B+N+Q | 75 |
+| Lucas William Mendes | B | 155 |
+| Luiz Carlos Ruiz Pessenda | B+N+Q | 37 |
+| Marisa de Cassia Piccolo | B | 36 |
+| Marli de Fatima Fiore | B+N+Q | 32 |
+| Tsai Siu Mui | B+N+Q | 73 |
+| Luiz Antonio Martinelli | N | 48 |
+| Quirijn de Jong van Lier | N | 46 |
+| Thiago de Araújo Mastrangelo | N | 14 |
+| Valter Arthur | N | 42 |
+| Alex Virgilio | Q | 14 |
+| Celia Regina Montes | Q | 20 |
+| Fabio Rodrigo Piovezani Rocha | Q | 45 |
+| Marcos Yassuo Kamogawa | Q | 5 |
+| Severino Matias de Alencar | Q | 104 |
+| Wanessa Melchert Mattos | Q | 35 |

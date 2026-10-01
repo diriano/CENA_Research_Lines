@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Retrieve 2021–2025 OpenAlex works for manually curated author candidates.
+"""Retrieve 2021–2026 OpenAlex works for manually curated author candidates.
 
 Usage:
     python scripts/works.py PROJECT_ROOT
 
 The script looks for candidates.json in PROJECT_ROOT or PROJECT_ROOT/data.
+It retains abstract_inverted_index and adds a reconstructed plaintext abstract
+when the OpenAlex record provides one. Existing works caches are enriched too.
 """
 
 import concurrent.futures
@@ -22,6 +24,8 @@ if len(sys.argv) != 2:
 
 ROOT = pathlib.Path(sys.argv[1])
 RAW = ROOT / "data" / "raw"
+START_DATE = "2021-01-01"
+END_DATE = "2026-12-31"
 
 
 def get(url):
@@ -61,11 +65,25 @@ def candidates_path():
     return matches[0]
 
 
+def abstract_text(inverted_index):
+    """Reconstruct an OpenAlex abstract from word -> positions."""
+    if not inverted_index:
+        return None
+    positioned_words = [
+        (position, word)
+        for word, positions in inverted_index.items()
+        for position in positions
+    ]
+    positioned_words.sort(key=lambda item: item[0])
+    return " ".join(word for _, word in positioned_words)
+
+
 def retrieve(spec):
     index, name, aid = spec
     dest = RAW / f"works_{aid}.json"
 
-    if dest.exists():
+    cached = dest.exists()
+    if cached:
         data = json.loads(dest.read_text(encoding="utf-8"))
     else:
         data = []
@@ -74,10 +92,10 @@ def retrieve(spec):
             params = {
                 "filter": (
                     f"author.id:{aid},"
-                    "from_publication_date:2021-01-01,"
-                    "to_publication_date:2025-12-31"
+                    f"from_publication_date:{START_DATE},"
+                    f"to_publication_date:{END_DATE}"
                 ),
-                "per-page": 200,
+                "per_page": 200,
                 "cursor": cursor,
             }
             url = "https://api.openalex.org/works?" + urllib.parse.urlencode(params)
@@ -86,16 +104,29 @@ def retrieve(spec):
             data.extend(works)
             cursor = page["meta"].get("next_cursor") if works else None
 
+    changed = not cached
+    for work in data:
+        if "abstract" not in work or (
+            work["abstract"] is None and work.get("abstract_inverted_index")
+        ):
+            work["abstract"] = abstract_text(work.get("abstract_inverted_index"))
+            changed = True
+
+    if changed:
         # Avoid leaving an incomplete cache file if writing is interrupted.
         temporary = dest.with_suffix(".json.tmp")
         temporary.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
         temporary.replace(dest)
 
+    abstracts = sum(bool(work.get("abstract")) for work in data)
     print(
-        json.dumps({"author": name, "id": aid, "count": len(data)}, ensure_ascii=False),
+        json.dumps(
+            {"author": name, "id": aid, "count": len(data), "abstracts": abstracts},
+            ensure_ascii=False,
+        ),
         flush=True,
     )
-    return {"index": index, "id": aid, "works": len(data)}
+    return {"index": index, "id": aid, "works": len(data), "abstracts": abstracts}
 
 
 def main():
@@ -152,4 +183,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
