@@ -1,5 +1,7 @@
 #DMRP
 data/raw/
+retrieval_log.json
+selected_authors.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
