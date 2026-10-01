@@ -47,8 +47,9 @@ python3 ./scripts/coauthorship.py ../PPG_Ciencias_Research_Lines/
 
 Os nós foram coloridos baseados nas áreas de concentracao:
 
-| Biologia (B) | Laranja | #FD8D3C |
+| Área | Cor | Hex code |
 | --- | --- | ---: |
+| Biologia (B) | Laranja | #FD8D3C |
 | Nuclear (N) | Rosa | #FDE0DD | 
 | Química (Q) | Vermelho | #EF3B2C | 
 | B + N | Verde | #41AB5D | 
