@@ -1,0 +1,722 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key id="label" for="node" attr.name="label" attr.type="string" />
+  <key id="area_group" for="node" attr.name="area_group" attr.type="string" />
+  <key id="area_names" for="node" attr.name="area_names" attr.type="string" />
+  <key id="in_B" for="node" attr.name="in_B" attr.type="int" />
+  <key id="in_N" for="node" attr.name="in_N" attr.type="int" />
+  <key id="in_Q" for="node" attr.name="in_Q" attr.type="int" />
+  <key id="article_count" for="node" attr.name="article_count" attr.type="int" />
+  <key id="text_article_count" for="node" attr.name="text_article_count" attr.type="int" />
+  <key id="abstract_count" for="node" attr.name="abstract_count" attr.type="int" />
+  <key id="keyword_count" for="node" attr.name="keyword_count" attr.type="int" />
+  <key id="weight" for="edge" attr.name="weight" attr.type="double" />
+  <key id="similarity" for="edge" attr.name="similarity" attr.type="double" />
+  <key id="shared_article_count" for="edge" attr.name="shared_article_count" attr.type="int" />
+  <key id="source_articles_compared" for="edge" attr.name="source_articles_compared" attr.type="int" />
+  <key id="target_articles_compared" for="edge" attr.name="target_articles_compared" attr.type="int" />
+  <graph id="semantic_similarity" edgedefault="undirected">
+    <node id="n0">
+      <data key="label">Adibe Luiz Abdalla</data>
+      <data key="area_group">B+N+Q</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente; Energia Nuclear na Agricultura e no Ambiente; Química na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">1</data>
+      <data key="in_Q">1</data>
+      <data key="article_count">83</data>
+      <data key="text_article_count">83</data>
+      <data key="abstract_count">59</data>
+      <data key="keyword_count">83</data>
+    </node>
+    <node id="n1">
+      <data key="label">Antonio Vargas de Oliveira Figueira</data>
+      <data key="area_group">B</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">0</data>
+      <data key="in_Q">0</data>
+      <data key="article_count">27</data>
+      <data key="text_article_count">27</data>
+      <data key="abstract_count">22</data>
+      <data key="keyword_count">27</data>
+    </node>
+    <node id="n2">
+      <data key="label">Cassio Hamilton Abreu Junior</data>
+      <data key="area_group">B+N+Q</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente; Energia Nuclear na Agricultura e no Ambiente; Química na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">1</data>
+      <data key="in_Q">1</data>
+      <data key="article_count">35</data>
+      <data key="text_article_count">35</data>
+      <data key="abstract_count">26</data>
+      <data key="keyword_count">35</data>
+    </node>
+    <node id="n3">
+      <data key="label">Diego Mauricio Riaño Pachón</data>
+      <data key="area_group">B</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">0</data>
+      <data key="in_Q">0</data>
+      <data key="article_count">27</data>
+      <data key="text_article_count">27</data>
+      <data key="abstract_count">25</data>
+      <data key="keyword_count">27</data>
+    </node>
+    <node id="n4">
+      <data key="label">Elisabete Aparecida De Nadai Fernandes</data>
+      <data key="area_group">B+N+Q</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente; Energia Nuclear na Agricultura e no Ambiente; Química na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">1</data>
+      <data key="in_Q">1</data>
+      <data key="article_count">20</data>
+      <data key="text_article_count">20</data>
+      <data key="abstract_count">10</data>
+      <data key="keyword_count">20</data>
+    </node>
+    <node id="n5">
+      <data key="label">Ernani Pinto Junior</data>
+      <data key="area_group">B+Q</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente; Química na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">0</data>
+      <data key="in_Q">1</data>
+      <data key="article_count">58</data>
+      <data key="text_article_count">58</data>
+      <data key="abstract_count">40</data>
+      <data key="keyword_count">58</data>
+    </node>
+    <node id="n6">
+      <data key="label">Flavia Vischi Winck</data>
+      <data key="area_group">B</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">0</data>
+      <data key="in_Q">0</data>
+      <data key="article_count">17</data>
+      <data key="text_article_count">17</data>
+      <data key="abstract_count">15</data>
+      <data key="keyword_count">17</data>
+    </node>
+    <node id="n7">
+      <data key="label">Francisco Scaglia Linhares</data>
+      <data key="area_group">B</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">0</data>
+      <data key="in_Q">0</data>
+      <data key="article_count">13</data>
+      <data key="text_article_count">13</data>
+      <data key="abstract_count">10</data>
+      <data key="keyword_count">13</data>
+    </node>
+    <node id="n8">
+      <data key="label">Helder Louvandini</data>
+      <data key="area_group">B+N</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente; Energia Nuclear na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">1</data>
+      <data key="in_Q">0</data>
+      <data key="article_count">62</data>
+      <data key="text_article_count">62</data>
+      <data key="abstract_count">36</data>
+      <data key="keyword_count">62</data>
+    </node>
+    <node id="n9">
+      <data key="label">Hudson Wallace Pereira de Carvalho</data>
+      <data key="area_group">B+N+Q</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente; Energia Nuclear na Agricultura e no Ambiente; Química na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">1</data>
+      <data key="in_Q">1</data>
+      <data key="article_count">80</data>
+      <data key="text_article_count">80</data>
+      <data key="abstract_count">50</data>
+      <data key="keyword_count">80</data>
+    </node>
+    <node id="n10">
+      <data key="label">José Lavres Junior</data>
+      <data key="area_group">B+N+Q</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente; Energia Nuclear na Agricultura e no Ambiente; Química na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">1</data>
+      <data key="in_Q">1</data>
+      <data key="article_count">90</data>
+      <data key="text_article_count">90</data>
+      <data key="abstract_count">57</data>
+      <data key="keyword_count">90</data>
+    </node>
+    <node id="n11">
+      <data key="label">Kassio Ferreira Mendes</data>
+      <data key="area_group">B+N+Q</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente; Energia Nuclear na Agricultura e no Ambiente; Química na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">1</data>
+      <data key="in_Q">1</data>
+      <data key="article_count">75</data>
+      <data key="text_article_count">75</data>
+      <data key="abstract_count">63</data>
+      <data key="keyword_count">75</data>
+    </node>
+    <node id="n12">
+      <data key="label">Lucas William Mendes</data>
+      <data key="area_group">B</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">0</data>
+      <data key="in_Q">0</data>
+      <data key="article_count">155</data>
+      <data key="text_article_count">155</data>
+      <data key="abstract_count">77</data>
+      <data key="keyword_count">154</data>
+    </node>
+    <node id="n13">
+      <data key="label">Luiz Carlos Ruiz Pessenda</data>
+      <data key="area_group">B+N+Q</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente; Energia Nuclear na Agricultura e no Ambiente; Química na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">1</data>
+      <data key="in_Q">1</data>
+      <data key="article_count">37</data>
+      <data key="text_article_count">37</data>
+      <data key="abstract_count">19</data>
+      <data key="keyword_count">37</data>
+    </node>
+    <node id="n14">
+      <data key="label">Marisa de Cassia Piccolo</data>
+      <data key="area_group">B</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">0</data>
+      <data key="in_Q">0</data>
+      <data key="article_count">36</data>
+      <data key="text_article_count">36</data>
+      <data key="abstract_count">25</data>
+      <data key="keyword_count">36</data>
+    </node>
+    <node id="n15">
+      <data key="label">Marli de Fatima Fiore</data>
+      <data key="area_group">B+N+Q</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente; Energia Nuclear na Agricultura e no Ambiente; Química na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">1</data>
+      <data key="in_Q">1</data>
+      <data key="article_count">32</data>
+      <data key="text_article_count">32</data>
+      <data key="abstract_count">24</data>
+      <data key="keyword_count">31</data>
+    </node>
+    <node id="n16">
+      <data key="label">Tsai Siu Mui</data>
+      <data key="area_group">B+N+Q</data>
+      <data key="area_names">Biologia na Agricultura e no Ambiente; Energia Nuclear na Agricultura e no Ambiente; Química na Agricultura e no Ambiente</data>
+      <data key="in_B">1</data>
+      <data key="in_N">1</data>
+      <data key="in_Q">1</data>
+      <data key="article_count">73</data>
+      <data key="text_article_count">73</data>
+      <data key="abstract_count">50</data>
+      <data key="keyword_count">73</data>
+    </node>
+    <node id="n17">
+      <data key="label">Luiz Antonio Martinelli</data>
+      <data key="area_group">N</data>
+      <data key="area_names">Energia Nuclear na Agricultura e no Ambiente</data>
+      <data key="in_B">0</data>
+      <data key="in_N">1</data>
+      <data key="in_Q">0</data>
+      <data key="article_count">48</data>
+      <data key="text_article_count">48</data>
+      <data key="abstract_count">29</data>
+      <data key="keyword_count">48</data>
+    </node>
+    <node id="n18">
+      <data key="label">Quirijn de Jong van Lier</data>
+      <data key="area_group">N</data>
+      <data key="area_names">Energia Nuclear na Agricultura e no Ambiente</data>
+      <data key="in_B">0</data>
+      <data key="in_N">1</data>
+      <data key="in_Q">0</data>
+      <data key="article_count">46</data>
+      <data key="text_article_count">46</data>
+      <data key="abstract_count">32</data>
+      <data key="keyword_count">46</data>
+    </node>
+    <node id="n19">
+      <data key="label">Thiago de Araújo Mastrangelo</data>
+      <data key="area_group">N</data>
+      <data key="area_names">Energia Nuclear na Agricultura e no Ambiente</data>
+      <data key="in_B">0</data>
+      <data key="in_N">1</data>
+      <data key="in_Q">0</data>
+      <data key="article_count">14</data>
+      <data key="text_article_count">14</data>
+      <data key="abstract_count">12</data>
+      <data key="keyword_count">14</data>
+    </node>
+    <node id="n20">
+      <data key="label">Valter Arthur</data>
+      <data key="area_group">N</data>
+      <data key="area_names">Energia Nuclear na Agricultura e no Ambiente</data>
+      <data key="in_B">0</data>
+      <data key="in_N">1</data>
+      <data key="in_Q">0</data>
+      <data key="article_count">42</data>
+      <data key="text_article_count">42</data>
+      <data key="abstract_count">40</data>
+      <data key="keyword_count">42</data>
+    </node>
+    <node id="n21">
+      <data key="label">Alex Virgilio</data>
+      <data key="area_group">Q</data>
+      <data key="area_names">Química na Agricultura e no Ambiente</data>
+      <data key="in_B">0</data>
+      <data key="in_N">0</data>
+      <data key="in_Q">1</data>
+      <data key="article_count">14</data>
+      <data key="text_article_count">14</data>
+      <data key="abstract_count">10</data>
+      <data key="keyword_count">14</data>
+    </node>
+    <node id="n22">
+      <data key="label">Celia Regina Montes</data>
+      <data key="area_group">Q</data>
+      <data key="area_names">Química na Agricultura e no Ambiente</data>
+      <data key="in_B">0</data>
+      <data key="in_N">0</data>
+      <data key="in_Q">1</data>
+      <data key="article_count">20</data>
+      <data key="text_article_count">20</data>
+      <data key="abstract_count">11</data>
+      <data key="keyword_count">20</data>
+    </node>
+    <node id="n23">
+      <data key="label">Fabio Rodrigo Piovezani Rocha</data>
+      <data key="area_group">Q</data>
+      <data key="area_names">Química na Agricultura e no Ambiente</data>
+      <data key="in_B">0</data>
+      <data key="in_N">0</data>
+      <data key="in_Q">1</data>
+      <data key="article_count">45</data>
+      <data key="text_article_count">45</data>
+      <data key="abstract_count">22</data>
+      <data key="keyword_count">45</data>
+    </node>
+    <node id="n24">
+      <data key="label">Marcos Yassuo Kamogawa</data>
+      <data key="area_group">Q</data>
+      <data key="area_names">Química na Agricultura e no Ambiente</data>
+      <data key="in_B">0</data>
+      <data key="in_N">0</data>
+      <data key="in_Q">1</data>
+      <data key="article_count">5</data>
+      <data key="text_article_count">5</data>
+      <data key="abstract_count">4</data>
+      <data key="keyword_count">5</data>
+    </node>
+    <node id="n25">
+      <data key="label">Severino Matias de Alencar</data>
+      <data key="area_group">Q</data>
+      <data key="area_names">Química na Agricultura e no Ambiente</data>
+      <data key="in_B">0</data>
+      <data key="in_N">0</data>
+      <data key="in_Q">1</data>
+      <data key="article_count">104</data>
+      <data key="text_article_count">104</data>
+      <data key="abstract_count">66</data>
+      <data key="keyword_count">104</data>
+    </node>
+    <node id="n26">
+      <data key="label">Wanessa Melchert Mattos</data>
+      <data key="area_group">Q</data>
+      <data key="area_names">Química na Agricultura e no Ambiente</data>
+      <data key="in_B">0</data>
+      <data key="in_N">0</data>
+      <data key="in_Q">1</data>
+      <data key="article_count">35</data>
+      <data key="text_article_count">35</data>
+      <data key="abstract_count">16</data>
+      <data key="keyword_count">35</data>
+    </node>
+    <edge id="e0" source="n2" target="n14">
+      <data key="weight">0.942938</data>
+      <data key="similarity">0.942938</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">36</data>
+    </edge>
+    <edge id="e1" source="n10" target="n14">
+      <data key="weight">0.934570</data>
+      <data key="similarity">0.934570</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">90</data>
+      <data key="target_articles_compared">36</data>
+    </edge>
+    <edge id="e2" source="n9" target="n10">
+      <data key="weight">0.915914</data>
+      <data key="similarity">0.915914</data>
+      <data key="shared_article_count">14</data>
+      <data key="source_articles_compared">66</data>
+      <data key="target_articles_compared">76</data>
+    </edge>
+    <edge id="e3" source="n12" target="n16">
+      <data key="weight">0.903535</data>
+      <data key="similarity">0.903535</data>
+      <data key="shared_article_count">22</data>
+      <data key="source_articles_compared">133</data>
+      <data key="target_articles_compared">51</data>
+    </edge>
+    <edge id="e4" source="n2" target="n10">
+      <data key="weight">0.903173</data>
+      <data key="similarity">0.903173</data>
+      <data key="shared_article_count">5</data>
+      <data key="source_articles_compared">30</data>
+      <data key="target_articles_compared">85</data>
+    </edge>
+    <edge id="e5" source="n2" target="n9">
+      <data key="weight">0.888593</data>
+      <data key="similarity">0.888593</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">34</data>
+      <data key="target_articles_compared">79</data>
+    </edge>
+    <edge id="e6" source="n9" target="n14">
+      <data key="weight">0.877753</data>
+      <data key="similarity">0.877753</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">80</data>
+      <data key="target_articles_compared">36</data>
+    </edge>
+    <edge id="e7" source="n23" target="n26">
+      <data key="weight">0.875404</data>
+      <data key="similarity">0.875404</data>
+      <data key="shared_article_count">4</data>
+      <data key="source_articles_compared">41</data>
+      <data key="target_articles_compared">31</data>
+    </edge>
+    <edge id="e8" source="n1" target="n3">
+      <data key="weight">0.859801</data>
+      <data key="similarity">0.859801</data>
+      <data key="shared_article_count">2</data>
+      <data key="source_articles_compared">25</data>
+      <data key="target_articles_compared">25</data>
+    </edge>
+    <edge id="e9" source="n9" target="n11">
+      <data key="weight">0.859658</data>
+      <data key="similarity">0.859658</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">80</data>
+      <data key="target_articles_compared">75</data>
+    </edge>
+    <edge id="e10" source="n16" target="n17">
+      <data key="weight">0.859442</data>
+      <data key="similarity">0.859442</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">73</data>
+      <data key="target_articles_compared">48</data>
+    </edge>
+    <edge id="e11" source="n2" target="n11">
+      <data key="weight">0.857233</data>
+      <data key="similarity">0.857233</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">75</data>
+    </edge>
+    <edge id="e12" source="n10" target="n11">
+      <data key="weight">0.853176</data>
+      <data key="similarity">0.853176</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">90</data>
+      <data key="target_articles_compared">75</data>
+    </edge>
+    <edge id="e13" source="n7" target="n9">
+      <data key="weight">0.849372</data>
+      <data key="similarity">0.849372</data>
+      <data key="shared_article_count">2</data>
+      <data key="source_articles_compared">11</data>
+      <data key="target_articles_compared">78</data>
+    </edge>
+    <edge id="e14" source="n5" target="n15">
+      <data key="weight">0.849216</data>
+      <data key="similarity">0.849216</data>
+      <data key="shared_article_count">7</data>
+      <data key="source_articles_compared">51</data>
+      <data key="target_articles_compared">25</data>
+    </edge>
+    <edge id="e15" source="n21" target="n23">
+      <data key="weight">0.845116</data>
+      <data key="similarity">0.845116</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">13</data>
+      <data key="target_articles_compared">44</data>
+    </edge>
+    <edge id="e16" source="n14" target="n17">
+      <data key="weight">0.844628</data>
+      <data key="similarity">0.844628</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">36</data>
+      <data key="target_articles_compared">48</data>
+    </edge>
+    <edge id="e17" source="n1" target="n7">
+      <data key="weight">0.838965</data>
+      <data key="similarity">0.838965</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">27</data>
+      <data key="target_articles_compared">13</data>
+    </edge>
+    <edge id="e18" source="n7" target="n14">
+      <data key="weight">0.830378</data>
+      <data key="similarity">0.830378</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">13</data>
+      <data key="target_articles_compared">36</data>
+    </edge>
+    <edge id="e19" source="n3" target="n6">
+      <data key="weight">0.828983</data>
+      <data key="similarity">0.828983</data>
+      <data key="shared_article_count">4</data>
+      <data key="source_articles_compared">23</data>
+      <data key="target_articles_compared">13</data>
+    </edge>
+    <edge id="e20" source="n9" target="n24">
+      <data key="weight">0.828449</data>
+      <data key="similarity">0.828449</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">80</data>
+      <data key="target_articles_compared">5</data>
+    </edge>
+    <edge id="e21" source="n4" target="n21">
+      <data key="weight">0.822666</data>
+      <data key="similarity">0.822666</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">20</data>
+      <data key="target_articles_compared">14</data>
+    </edge>
+    <edge id="e22" source="n2" target="n17">
+      <data key="weight">0.819880</data>
+      <data key="similarity">0.819880</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">48</data>
+    </edge>
+    <edge id="e23" source="n17" target="n22">
+      <data key="weight">0.815775</data>
+      <data key="similarity">0.815775</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">48</data>
+      <data key="target_articles_compared">20</data>
+    </edge>
+    <edge id="e24" source="n2" target="n18">
+      <data key="weight">0.808289</data>
+      <data key="similarity">0.808289</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">46</data>
+    </edge>
+    <edge id="e25" source="n2" target="n24">
+      <data key="weight">0.797263</data>
+      <data key="similarity">0.797263</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">5</data>
+    </edge>
+    <edge id="e26" source="n25" target="n26">
+      <data key="weight">0.796038</data>
+      <data key="similarity">0.796038</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">104</data>
+      <data key="target_articles_compared">35</data>
+    </edge>
+    <edge id="e27" source="n14" target="n18">
+      <data key="weight">0.795720</data>
+      <data key="similarity">0.795720</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">36</data>
+      <data key="target_articles_compared">46</data>
+    </edge>
+    <edge id="e28" source="n13" target="n17">
+      <data key="weight">0.795674</data>
+      <data key="similarity">0.795674</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">37</data>
+      <data key="target_articles_compared">48</data>
+    </edge>
+    <edge id="e29" source="n1" target="n12">
+      <data key="weight">0.794666</data>
+      <data key="similarity">0.794666</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">27</data>
+      <data key="target_articles_compared">155</data>
+    </edge>
+    <edge id="e30" source="n13" target="n22">
+      <data key="weight">0.794453</data>
+      <data key="similarity">0.794453</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">36</data>
+      <data key="target_articles_compared">19</data>
+    </edge>
+    <edge id="e31" source="n3" target="n15">
+      <data key="weight">0.791847</data>
+      <data key="similarity">0.791847</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">26</data>
+      <data key="target_articles_compared">31</data>
+    </edge>
+    <edge id="e32" source="n21" target="n26">
+      <data key="weight">0.791319</data>
+      <data key="similarity">0.791319</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">14</data>
+      <data key="target_articles_compared">35</data>
+    </edge>
+    <edge id="e33" source="n2" target="n16">
+      <data key="weight">0.785468</data>
+      <data key="similarity">0.785468</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">73</data>
+    </edge>
+    <edge id="e34" source="n12" target="n14">
+      <data key="weight">0.782441</data>
+      <data key="similarity">0.782441</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">154</data>
+      <data key="target_articles_compared">35</data>
+    </edge>
+    <edge id="e35" source="n16" target="n22">
+      <data key="weight">0.781440</data>
+      <data key="similarity">0.781440</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">73</data>
+      <data key="target_articles_compared">20</data>
+    </edge>
+    <edge id="e36" source="n9" target="n20">
+      <data key="weight">0.778612</data>
+      <data key="similarity">0.778612</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">79</data>
+      <data key="target_articles_compared">41</data>
+    </edge>
+    <edge id="e37" source="n6" target="n15">
+      <data key="weight">0.776478</data>
+      <data key="similarity">0.776478</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">17</data>
+      <data key="target_articles_compared">32</data>
+    </edge>
+    <edge id="e38" source="n0" target="n8">
+      <data key="weight">0.774684</data>
+      <data key="similarity">0.774684</data>
+      <data key="shared_article_count">32</data>
+      <data key="source_articles_compared">51</data>
+      <data key="target_articles_compared">30</data>
+    </edge>
+    <edge id="e39" source="n5" target="n25">
+      <data key="weight">0.770026</data>
+      <data key="similarity">0.770026</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">58</data>
+      <data key="target_articles_compared">104</data>
+    </edge>
+    <edge id="e40" source="n5" target="n6">
+      <data key="weight">0.769031</data>
+      <data key="similarity">0.769031</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">58</data>
+      <data key="target_articles_compared">17</data>
+    </edge>
+    <edge id="e41" source="n10" target="n24">
+      <data key="weight">0.768871</data>
+      <data key="similarity">0.768871</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">90</data>
+      <data key="target_articles_compared">5</data>
+    </edge>
+    <edge id="e42" source="n0" target="n21">
+      <data key="weight">0.768616</data>
+      <data key="similarity">0.768616</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">83</data>
+      <data key="target_articles_compared">14</data>
+    </edge>
+    <edge id="e43" source="n0" target="n4">
+      <data key="weight">0.764807</data>
+      <data key="similarity">0.764807</data>
+      <data key="shared_article_count">5</data>
+      <data key="source_articles_compared">78</data>
+      <data key="target_articles_compared">15</data>
+    </edge>
+    <edge id="e44" source="n18" target="n22">
+      <data key="weight">0.763753</data>
+      <data key="similarity">0.763753</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">46</data>
+      <data key="target_articles_compared">20</data>
+    </edge>
+    <edge id="e45" source="n11" target="n20">
+      <data key="weight">0.757816</data>
+      <data key="similarity">0.757816</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">75</data>
+      <data key="target_articles_compared">42</data>
+    </edge>
+    <edge id="e46" source="n20" target="n21">
+      <data key="weight">0.745646</data>
+      <data key="similarity">0.745646</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">42</data>
+      <data key="target_articles_compared">14</data>
+    </edge>
+    <edge id="e47" source="n1" target="n19">
+      <data key="weight">0.738119</data>
+      <data key="similarity">0.738119</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">27</data>
+      <data key="target_articles_compared">14</data>
+    </edge>
+    <edge id="e48" source="n23" target="n24">
+      <data key="weight">0.726810</data>
+      <data key="similarity">0.726810</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">45</data>
+      <data key="target_articles_compared">5</data>
+    </edge>
+    <edge id="e49" source="n3" target="n19">
+      <data key="weight">0.719719</data>
+      <data key="similarity">0.719719</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">27</data>
+      <data key="target_articles_compared">14</data>
+    </edge>
+    <edge id="e50" source="n8" target="n25">
+      <data key="weight">0.717505</data>
+      <data key="similarity">0.717505</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">61</data>
+      <data key="target_articles_compared">103</data>
+    </edge>
+    <edge id="e51" source="n19" target="n20">
+      <data key="weight">0.716478</data>
+      <data key="similarity">0.716478</data>
+      <data key="shared_article_count">3</data>
+      <data key="source_articles_compared">11</data>
+      <data key="target_articles_compared">39</data>
+    </edge>
+    <edge id="e52" source="n4" target="n8">
+      <data key="weight">0.711121</data>
+      <data key="similarity">0.711121</data>
+      <data key="shared_article_count">6</data>
+      <data key="source_articles_compared">14</data>
+      <data key="target_articles_compared">56</data>
+    </edge>
+    <edge id="e53" source="n13" target="n16">
+      <data key="weight">0.683020</data>
+      <data key="similarity">0.683020</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">37</data>
+      <data key="target_articles_compared">73</data>
+    </edge>
+  </graph>
+</graphml>

@@ -1,0 +1,55 @@
+source,target,weight,similarity,shared_article_count,source_articles_compared,target_articles_compared
+Cassio Hamilton Abreu Junior,Marisa de Cassia Piccolo,0.942938,0.942938,0,35,36
+José Lavres Junior,Marisa de Cassia Piccolo,0.934570,0.934570,0,90,36
+Hudson Wallace Pereira de Carvalho,José Lavres Junior,0.915914,0.915914,14,66,76
+Lucas William Mendes,Tsai Siu Mui,0.903535,0.903535,22,133,51
+Cassio Hamilton Abreu Junior,José Lavres Junior,0.903173,0.903173,5,30,85
+Cassio Hamilton Abreu Junior,Hudson Wallace Pereira de Carvalho,0.888593,0.888593,1,34,79
+Hudson Wallace Pereira de Carvalho,Marisa de Cassia Piccolo,0.877753,0.877753,0,80,36
+Fabio Rodrigo Piovezani Rocha,Wanessa Melchert Mattos,0.875404,0.875404,4,41,31
+Antonio Vargas de Oliveira Figueira,Diego Mauricio Riaño Pachón,0.859801,0.859801,2,25,25
+Hudson Wallace Pereira de Carvalho,Kassio Ferreira Mendes,0.859658,0.859658,0,80,75
+Tsai Siu Mui,Luiz Antonio Martinelli,0.859442,0.859442,0,73,48
+Cassio Hamilton Abreu Junior,Kassio Ferreira Mendes,0.857233,0.857233,0,35,75
+José Lavres Junior,Kassio Ferreira Mendes,0.853176,0.853176,0,90,75
+Francisco Scaglia Linhares,Hudson Wallace Pereira de Carvalho,0.849372,0.849372,2,11,78
+Ernani Pinto Junior,Marli de Fatima Fiore,0.849216,0.849216,7,51,25
+Alex Virgilio,Fabio Rodrigo Piovezani Rocha,0.845116,0.845116,1,13,44
+Marisa de Cassia Piccolo,Luiz Antonio Martinelli,0.844628,0.844628,0,36,48
+Antonio Vargas de Oliveira Figueira,Francisco Scaglia Linhares,0.838965,0.838965,0,27,13
+Francisco Scaglia Linhares,Marisa de Cassia Piccolo,0.830378,0.830378,0,13,36
+Diego Mauricio Riaño Pachón,Flavia Vischi Winck,0.828983,0.828983,4,23,13
+Hudson Wallace Pereira de Carvalho,Marcos Yassuo Kamogawa,0.828449,0.828449,0,80,5
+Elisabete Aparecida De Nadai Fernandes,Alex Virgilio,0.822666,0.822666,0,20,14
+Cassio Hamilton Abreu Junior,Luiz Antonio Martinelli,0.819880,0.819880,0,35,48
+Luiz Antonio Martinelli,Celia Regina Montes,0.815775,0.815775,0,48,20
+Cassio Hamilton Abreu Junior,Quirijn de Jong van Lier,0.808289,0.808289,0,35,46
+Cassio Hamilton Abreu Junior,Marcos Yassuo Kamogawa,0.797263,0.797263,0,35,5
+Severino Matias de Alencar,Wanessa Melchert Mattos,0.796038,0.796038,0,104,35
+Marisa de Cassia Piccolo,Quirijn de Jong van Lier,0.795720,0.795720,0,36,46
+Luiz Carlos Ruiz Pessenda,Luiz Antonio Martinelli,0.795674,0.795674,0,37,48
+Antonio Vargas de Oliveira Figueira,Lucas William Mendes,0.794666,0.794666,0,27,155
+Luiz Carlos Ruiz Pessenda,Celia Regina Montes,0.794453,0.794453,1,36,19
+Diego Mauricio Riaño Pachón,Marli de Fatima Fiore,0.791847,0.791847,1,26,31
+Alex Virgilio,Wanessa Melchert Mattos,0.791319,0.791319,0,14,35
+Cassio Hamilton Abreu Junior,Tsai Siu Mui,0.785468,0.785468,0,35,73
+Lucas William Mendes,Marisa de Cassia Piccolo,0.782441,0.782441,1,154,35
+Tsai Siu Mui,Celia Regina Montes,0.781440,0.781440,0,73,20
+Hudson Wallace Pereira de Carvalho,Valter Arthur,0.778612,0.778612,1,79,41
+Flavia Vischi Winck,Marli de Fatima Fiore,0.776478,0.776478,0,17,32
+Adibe Luiz Abdalla,Helder Louvandini,0.774684,0.774684,32,51,30
+Ernani Pinto Junior,Severino Matias de Alencar,0.770026,0.770026,0,58,104
+Ernani Pinto Junior,Flavia Vischi Winck,0.769031,0.769031,0,58,17
+José Lavres Junior,Marcos Yassuo Kamogawa,0.768871,0.768871,0,90,5
+Adibe Luiz Abdalla,Alex Virgilio,0.768616,0.768616,0,83,14
+Adibe Luiz Abdalla,Elisabete Aparecida De Nadai Fernandes,0.764807,0.764807,5,78,15
+Quirijn de Jong van Lier,Celia Regina Montes,0.763753,0.763753,0,46,20
+Kassio Ferreira Mendes,Valter Arthur,0.757816,0.757816,0,75,42
+Valter Arthur,Alex Virgilio,0.745646,0.745646,0,42,14
+Antonio Vargas de Oliveira Figueira,Thiago de Araújo Mastrangelo,0.738119,0.738119,0,27,14
+Fabio Rodrigo Piovezani Rocha,Marcos Yassuo Kamogawa,0.726810,0.726810,0,45,5
+Diego Mauricio Riaño Pachón,Thiago de Araújo Mastrangelo,0.719719,0.719719,0,27,14
+Helder Louvandini,Severino Matias de Alencar,0.717505,0.717505,1,61,103
+Thiago de Araújo Mastrangelo,Valter Arthur,0.716478,0.716478,3,11,39
+Elisabete Aparecida De Nadai Fernandes,Helder Louvandini,0.711121,0.711121,6,14,56
+Luiz Carlos Ruiz Pessenda,Tsai Siu Mui,0.683020,0.683020,0,37,73
