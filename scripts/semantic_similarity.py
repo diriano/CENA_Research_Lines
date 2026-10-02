@@ -25,16 +25,12 @@ import datetime
 import itertools
 import json
 import pathlib
-import sys
 import xml.etree.ElementTree as ET
 
 import numpy as np
 
 
-if len(sys.argv) < 2 or sys.argv[1].startswith("-"):
-    raise SystemExit(f"Usage: python {sys.argv[0]} PROJECT_ROOT [options]")
-
-ROOT = pathlib.Path(sys.argv[1])
+ROOT = None  # Set from argparse when run directly, or by an importing script.
 AREA_ORDER = ("B", "N", "Q")
 AREA_LABELS = {
     "B": "Biologia na Agricultura e no Ambiente",
@@ -46,6 +42,8 @@ DEFAULT_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
 def options():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("project_root", type=pathlib.Path, metavar="PROJECT_ROOT",
+                        help="Directory containing candidates.json and the work files")
     parser.add_argument("--model", default=DEFAULT_MODEL,
                         help="Sentence Transformers model name or local model path")
     parser.add_argument("--start-date", default="2021-01-01")
@@ -62,7 +60,7 @@ def options():
     parser.add_argument("--keyword-weight", type=float, default=0.15)
     parser.add_argument("--include-shared", action="store_true",
                         help="Include shared coauthored papers when comparing two supervisors")
-    args = parser.parse_args(sys.argv[2:])
+    args = parser.parse_args()
     if args.top_k < 1 or args.batch_size < 1:
         parser.error("--top-k and --batch-size must be positive")
     try:
@@ -363,7 +361,9 @@ def graphml(path, node_rows, edge_rows):
 
 
 def main():
+    global ROOT
     args = options()
+    ROOT = args.project_root
     names, area_by_name, ids_by_person = load_people()
     articles, texts = load_works(names, ids_by_person, raw_directory(),
                                  args.start_date, args.end_date)
