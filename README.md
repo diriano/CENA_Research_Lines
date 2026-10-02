@@ -106,4 +106,8 @@ De forma sucinta. O script mede proximidade temática entre orientadores, usando
 - Antes de comparar um par de orientadores, o script retira os artigos que ambos assinaram dos dois perfis usados naquele par. Por exemplo, se A e B publicaram juntos um artigo sobre microbioma, esse artigo não cria, por si só, uma ligação temática entre eles. Essa exclusão pode ser desligada com --include-shared.
 - Não todas as arestas são mantidas na rede final. O parametro *--top-k* seleciona, para cada orientador, os *k* colegas com maior similaridade. Estou usando k=4 nessas analises.
 
+```bash
+python3 scripts/semantic_similarity.py ../PPG_Ciencias_Research_Lines/ --device cpu --model sentence-transformers/all-mpnet-base-v2  --top-k 4
+```
+
 ![Semantic similarity network supervisors PPG-Ciencias CENA/USP](Figs/semantic_similarity.png)
