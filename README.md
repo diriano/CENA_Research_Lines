@@ -15,7 +15,7 @@ Está é uma metodologia proposta para agrupar as linhas de pesquisa dos orienta
 Para executar os scripts abaixo precisa das seguintes biobliotecas instaladas:
 
 ```bash
-python -m pip install openpyxl numpy sentence-transformers
+python -m pip install openpyxl numpy sentence-transformers scipy scikit-learn networkx
 ```
 
 ### Orientadores
