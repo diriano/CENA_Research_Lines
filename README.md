@@ -8,51 +8,10 @@
 
 Esta metodologia foi desenvolvida para examinar a produção científica dos orientadores do [PPG-Ciencias CENA/USP](https://www.cena.usp.br/ensino/pos-ciencias). O programa possui atualmente 16 linhas de pesquisa, agrupadas em três áreas de concentração (Biologia na agricultura e no ambiente - B, Energia Nuclear na Agricultura e no Ambiente - N e Quimica na Agricultura e no Ambiente - Q), criadas em diferentes momentos de sua história. A análise busca identificar temas compartilhados entre orientadores e fornecer subsídios para discutir uma possível reorganização em um número menor de linhas mais abrangentes. As redes e os agrupamentos são instrumentos exploratórios: a definição das linhas também depende de avaliação científica e institucional.
 
-## Métodos
-
-## Dependências
-
-Para executar os scripts abaixo precisa das seguintes bibliotecas de python3 instaladas:
-
-```bash
-git clone git@github.com:labbces/PPG_Ciencias_Research_Lines.git
-cd PPG_Ciencias_Research_Lines
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install openpyxl numpy sentence-transformers scipy scikit-learn networkx
-```
-
-### Seleção dos orientadores
-
-A lista de orientadores credenciados no programa em agosto de 2026 e suas áreas de concentração foi registrada em [supervisors.json](data/supervisors.json). Neste documento, **B** corresponde a Biologia na Agricultura e no Ambiente; **N**, a Energia Nuclear na Agricultura e no Ambiente; e **Q**, a Química na Agricultura e no Ambiente. Um orientador pode estar vinculado a mais de uma área.
-
-Os perfis dos orientadores foram procurados no [OpenAlex](https://openalex.org/) por meio de sua [API](https://api.openalex.org), usando [collect.py](scripts/collect.py):
-
-```bash
-python3 ./scripts/collect.py ../PPG_Ciencias_Research_Lines/
-```
-
-Os resultados dessa busca foram conferidos manualmente para eliminar homônimos e manter os perfis validados com ORCID. Os identificadores selecionados estão em [candidates.json](data/candidates.json). Essa revisão é importante porque um perfil atribuído ao orientador errado contaminaria todas as etapas seguintes. Todos os orientadores credenciados estão presentes em [candidates.json](data/candidates.json).
-
-### Recuperação das publicações
-
-A consulta ao OpenAlex ocorreu em **1º de outubro de 2026**. O [works.py](scripts/works.py) disponível neste projeto solicita trabalhos publicados de **1º de janeiro de 2021 a 31 de dezembro de 2026**. O script consulta os perfis selecionados em `candidates.json` e guarda as respostas da API em arquivos JSON separados por identificador de autor.
-
-Os arquivos de trabalhos são gravados em sua subpasta `data/raw/`.
-
-```bash
-python3 ./scripts/works.py ../PPG_Ciencias_Research_Lines/
-```
-
-O script [works_to_excel.py](scripts/works_to_excel.py), gera uma [planilha de publicações](data/candidate_publications.xlsx) com os detalhes das publicações dos orientadores. Foram identificados **1.732 registros** de publicações de diferentes tipos, incluindo artigos, livros, capítulos e preprints. A planilha contém título, DOI, lista de autores, orientador associado, ano, tipo de publicação e ID do trabalho no OpenAlex. Um mesmo trabalho pode aparecer em mais de uma linha se estiver associado a mais de um orientador; portanto, o número de registros não representa necessariamente 1.732 publicações distintas. Os resumos e as palavras-chave permanecem nos arquivos JSON usados na análise semântica, mas não são exportados por esta versão de `works_to_excel.py`.
+## Resultados
 
 ### Rede de coautoria
 
-O script [coauthorship.py](scripts/coauthorship.py) constrói uma rede somente com os orientadores de `candidates.json`, considerando registros do OpenAlex com `type = article`. Cada nó representa um orientador. Dois nós são ligados quando os respectivos orientadores aparecem associados ao **mesmo ID de trabalho do OpenAlex**; o peso da aresta é o número de artigos distintos compartilhados. Um artigo é contado apenas uma vez por orientador, mesmo quando há identificadores de autor duplicados ou registros repetidos nos arquivos de entrada.
-
-```bash
-python3 ./scripts/coauthorship.py ../PPG_Ciencias_Research_Lines/
-```
 O grafo resultante está em [coauthorship.graphml](data/coauthorship.graphml) e pode ser aberto no Cytoscape. A tabela abaixo resume o número de artigos atribuído a cada orientador no conjunto analisado:
 
 | Orientador | Áreas | Número de artigos |
@@ -101,48 +60,7 @@ No Cytoscape, os nós foram coloridos de acordo com a combinação de áreas reg
 **Figura 1. Rede de coautoria dos orientadores do PPG-Ciências (2021–2026).**
 Os nós representam os orientadores selecionados em `candidates.json`. Uma aresta indica ao menos um artigo compartilhado no OpenAlex; sua espessura corresponde ao número de artigos distintos em coautoria. As cores mostram as áreas de concentração dos orientadores, inclusive as combinações entre áreas.
 
-### Similaridade semântica entre orientadores
-
-O script [semantic_similarity.py](scripts/semantic_similarity.py) utiliza títulos, resumos (*abstracts*) e palavras-chave (*keywords*) dos artigos para estimar a proximidade temática entre orientadores. Ele usa um modelo da biblioteca [Sentence Transformers](https://www.sbert.net/) para transformar textos em **embeddings**: vetores numéricos cujas posições procuram representar relações de significado aprendidas durante o treinamento. Neste estudo, a semelhança entre vetores é usada como aproximação da semelhança entre os temas dos textos; não é uma classificação definitiva das linhas de pesquisa.
-
-#### Como o transformer produz um embedding
-
-1. **Divisão em tokens.** O texto é separado em unidades menores, chamadas *tokens*. Elas podem corresponder a palavras inteiras ou a partes de palavras. Os tokens são convertidos em identificadores numéricos de entrada do modelo.
-2. **Representação contextual.** O transformer processa os tokens em conjunto. Pelo mecanismo de *[atenção](https://doi.org/10.48550/arXiv.1706.03762)*, a representação de cada token é ajustada com base nos demais tokens do mesmo trecho. Por isso, uma palavra pode contribuir de formas diferentes conforme o contexto em que aparece. Essa representação é aprendida pelo modelo durante o treinamento; o script não atribui manualmente um valor a cada palavra.
-3. **Agregação dos tokens.** Para obter um único vetor por trecho de texto, o modelo Sentence Transformers combina as representações contextualizadas dos tokens por uma operação chamada *pooling*. Nos dois modelos mencionados abaixo, a operação configurada é a média dos tokens válidos, desconsiderando o preenchimento usado nos lotes. O resultado é um vetor denso: **768 dimensões** com `all-mpnet-base-v2` ou **384 dimensões** com `paraphrase-multilingual-MiniLM-L12-v2`. Cada dimensão participa da representação aprendida; ela não deve ser interpretada isoladamente como um tema específico.
-4. **Normalização.** O script normaliza esses vetores para comprimento unitário antes de combiná-los. Dessa forma, a comparação posterior se concentra na direção dos vetores, e não em sua magnitude.
-
-Essas etapas descrevem a codificação **de um trecho de texto**. O script ainda precisa combinar trechos, campos e artigos:
-
-1. **Trechos de texto:** antes de enviar um campo ao modelo, o script o divide em blocos de até `min(112, comprimento_máximo_do_modelo − 2)` tokens. Isso evita descartar o fim de resumos longos. Se houver vários blocos, calcula a média de seus vetores e normaliza o resultado. A média preserva informação dos blocos, mas não representa as relações de ordem entre blocos distantes.
-2. **Campos de um artigo:** combina separadamente os vetores do título, do resumo e das palavras-chave. Com os valores padrão, seus pesos relativos são, respectivamente, **25%, 60% e 15%**. Se faltar um campo, os pesos dos campos presentes são redistribuídos proporcionalmente. O vetor final do artigo é normalizado. Esses pesos são escolhas metodológicas do script, não parâmetros aprendidos pelo transformer, e podem ser alterados por opções de linha de comando.
-3. **Artigos de um orientador:** combina os vetores dos artigos do orientador, dando o mesmo peso a cada artigo, e normaliza o perfil resultante. O script trabalha apenas com registros `type = article` e usa o intervalo de datas indicado na execução.
-4. **Comparação entre dois orientadores:** por padrão, retira dos **dois perfis daquele par** os artigos que ambos assinaram. Isso evita que um mesmo trabalho compartilhado aumente diretamente a similaridade do par. Os perfis usados nessa comparação, portanto, podem variar conforme o par; se um orientador ficar sem artigos após a exclusão, não há valor de similaridade para esse par. A opção `--include-shared` mantém os artigos compartilhados.
-5. **Similaridade e rede:** calcula o **cosseno** entre os dois perfis normalizados, equivalente ao produto escalar de seus vetores. O valor matemático está entre −1 e 1; valores maiores indicam direções mais próximas, mas **não são porcentagens de temas em comum nem probabilidades**. O parâmetro `--top-k` escolhe os *k* vizinhos comparáveis mais próximos de cada orientador. A rede contém a **união** dessas escolhas: uma ligação entra se for escolhida por pelo menos um dos dois nós, de modo que um nó pode terminar com mais de *k* ligações. A matriz CSV guarda também as comparações que não viraram arestas.
-
-#### Resultados da análise da rede semântica
-
-Nesta análise foi escolhido o modelo [all-mpnet-base-v2](https://huggingface.co/sentence-transformers/all-mpnet-base-v2) para textos majoritariamente em inglês. O **padrão do script** é [paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2), uma alternativa quando os textos incluem vários idiomas. Ambos são modelos de uso geral para embeddings de frases e parágrafos; nesta análise não houve ajuste adicional do modelo para o vocabulário específico do PPG-Ciências. A escolha do modelo afeta os vetores e, portanto, pode alterar as similaridades e as arestas. 
-
-```bash
-python3 ./scripts/semantic_similarity.py ../PPG_Ciencias_Research_Lines/ \
-  --device cpu \
-  --model sentence-transformers/all-mpnet-base-v2 \
-  --end-date 2026-12-31 \
-  --top-k 4
-```
-Com essa execução, o script lê os arquivos em `PROJECT_ROOT/data/`, usa por padrão artigos de 2021 a 2026 **que estejam presentes nos arquivos JSON** e grava a rede em [semantic_similarity.graphml](data/semantic_similarity.graphml) (que pode ser visualizada em Cytoscape), além da [tabela de nós](data/semantic_similarity_nodes.csv), da [lista de arestas](data/semantic_similarity_edges.csv) e da [matriz completa de similaridade](data/semantic_similarity_matrix.csv). Os resultados descrevem proximidade no espaço vetorial do modelo e devem ser interpretados junto com os textos dos artigos e com a avaliação dos orientadores.
-
-A rede gerada por `semantic_similarity.py` reúne todos os orientadores em uma única comparação. Ela ajuda a reconhecer afinidades temáticas que atravessam as áreas de concentração e a localizar pares cuja produção merece leitura mais atenta. Para interpretar seus resultados, convém distinguir os arquivos produzidos:
-
-| Arquivo em `data/` | O que permite examinar |
-| --- | --- |
-| `semantic_similarity_nodes.csv` | Orientadores, áreas de concentração e número de artigos com texto utilizável. |
-| `semantic_similarity_edges.csv` | Pares exibidos na rede, cosseno em `weight` e número de artigos que o par assinou em conjunto. |
-| `semantic_similarity_matrix.csv` | Similaridade de todos os pares comparáveis, inclusive daqueles que ficaram fora da rede após a seleção dos vizinhos. |
-| `semantic_similarity.graphml` | Rede para exploração visual no Cytoscape. |
-
-Uma aresta forte sugere que os artigos **não compartilhados** daquele par tratam de assuntos próximos no espaço vetorial do modelo. A ausência de aresta **não** significa necessariamente baixa similaridade: o par pode simplesmente não ter sido escolhido entre os quatro vizinhos mais próximos de nenhum dos orientadores. Para conferir isso, consulte a matriz completa. Uma célula vazia indica que não foi possível calcular a similaridade do par, por exemplo, quando não restam artigos com texto após a exclusão dos trabalhos em coautoria. Os escores devem ser confrontados com títulos e resumos; sozinhos, não identificam linhas de pesquisa nem explicam a causa da proximidade.
+### Rede de similaridade semântica
 
 ##### Tabela de orientadores e número de artigos com título, abstract e keywords incluidos na rede semântica
 
@@ -180,27 +98,144 @@ Uma aresta forte sugere que os artigos **não compartilhados** daquele par trata
 
 | Orientador 1 | Orientador 2 | Similaridade | Artigos compartilhados |
 | --- | --- | ---: | ---: |
-| Cassio Hamilton Abreu Junior | Marisa de Cassia Piccolo | 0.919300 | 0 |
-| José Lavres Junior | Marisa de Cassia Piccolo | 0.897473 | 0 |
-| Cassio Hamilton Abreu Junior | José Lavres Junior | 0.893929 | 5 |
-| Hudson Wallace Pereira de Carvalho | José Lavres Junior | 0.879584 | 14 |
-| Lucas William Mendes | Tsai Siu Mui | 0.872395 | 22 |
-| Cassio Hamilton Abreu Junior | Hudson Wallace Pereira de Carvalho | 0.868644 | 1 |
-| Fabio Rodrigo Piovezani Rocha | Wanessa Melchert Mattos | 0.860725 | 4 |
-| Hudson Wallace Pereira de Carvalho | Marisa de Cassia Piccolo | 0.822415 | 0 |
-| Francisco Scaglia Linhares | Hudson Wallace Pereira de Carvalho | 0.804165 | 2 |
-| Elisabete Aparecida De Nadai Fernandes | Alex Virgilio | 0.797745 | 0 |
-| Alex Virgilio | Fabio Rodrigo Piovezani Rocha | 0.797534 | 1 |
-| Hudson Wallace Pereira de Carvalho | Marcos Yassuo Kamogawa | 0.796253 | 0 |
-| Antonio Vargas de Oliveira Figueira | Diego Mauricio Riaño Pachón | 0.790779 | 2 |
-| Marisa de Cassia Piccolo | Luiz Antonio Martinelli | 0.784892 | 0 |
-| Ernani Pinto Junior | Marli de Fatima Fiore | 0.775284 | 7 |
-| Luiz Antonio Martinelli | Celia Regina Montes | 0.772893 | 0 |
-| Cassio Hamilton Abreu Junior | Marcos Yassuo Kamogawa | 0.770263 | 0 |
-| Antonio Vargas de Oliveira Figueira | Francisco Scaglia Linhares | 0.768740 | 0 |
-| Cassio Hamilton Abreu Junior | Kassio Ferreira Mendes | 0.768549 | 0 |
-| Luiz Carlos Ruiz Pessenda | Luiz Antonio Martinelli | 0.761391 | 0 |
+| Hudson Wallace Pereira de Carvalho | José Lavres Junior | 0.966935 | 14 |
+| Cassio Hamilton Abreu Junior | Marisa de Cassia Piccolo | 0.965341 | 0 |
+| Cassio Hamilton Abreu Junior | José Lavres Junior | 0.963781 | 5 |
+| Lucas William Mendes | Tsai Siu Mui | 0.962672 | 22 |
+| José Lavres Junior | Marisa de Cassia Piccolo | 0.962579 | 0 |
+| Fabio Rodrigo Piovezani Rocha | Wanessa Melchert Mattos | 0.960453 | 4 |
+| Cassio Hamilton Abreu Junior | Hudson Wallace Pereira de Carvalho | 0.958170 | 1 |
+| Hudson Wallace Pereira de Carvalho | Marcos Yassuo Kamogawa | 0.945731 | 0 |
+| Francisco Scaglia Linhares | Hudson Wallace Pereira de Carvalho | 0.943106 | 2 |
+| Antonio Vargas de Oliveira Figueira | Diego Mauricio Riaño Pachón | 0.942709 | 2 |
+| Hudson Wallace Pereira de Carvalho | Marisa de Cassia Piccolo | 0.942475 | 0 |
+| Alex Virgilio | Fabio Rodrigo Piovezani Rocha | 0.940134 | 1 |
+| Elisabete Aparecida De Nadai Fernandes | Alex Virgilio | 0.938362 | 0 |
+| Ernani Pinto Junior | Marli de Fatima Fiore | 0.935914 | 7 |
+| Diego Mauricio Riaño Pachón | Flavia Vischi Winck | 0.934816 | 4 |
+| Tsai Siu Mui | Luiz Antonio Martinelli | 0.934460 | 0 |
+| Marisa de Cassia Piccolo | Luiz Antonio Martinelli | 0.933516 | 0 |
+| Cassio Hamilton Abreu Junior | Marcos Yassuo Kamogawa | 0.933423 | 0 |
+| Adibe Luiz Abdalla | Helder Louvandini | 0.931205 | 31 |
+| José Lavres Junior | Marcos Yassuo Kamogawa | 0.927685 | 0 |
 
+### Rede de similaridade semântica por área de concentração
+
+As saídas em `data/` incluem [area_semantic.graphml](data/area_semantic.graphml) (que pode ser visualizado em Cytoscape) e os arquivos [area_semantic_B.graphml](data/area_semantic_B.graphml), [area_semantic_N.graphml](data/area_semantic_N.graphml) e [area_semantic_Q.graphml](data/area_semantic_Q.graphml); [area_semantic_nodes.csv](data/area_semantic_nodes.csv) e [area_semantic_edges.csv](data/area_semantic_edges.csv) descrevem seus nós e arestas. [area_semantic_matrix_B.csv](data/area_semantic_matrix_B.csv), [area_semantic_matrix_N.csv](data/area_semantic_matrix_N.csv) e [area_semantic_matrix_Q.csv](data/area_semantic_matrix_Q.csv) preservam os pares comparáveis que não aparecem nas redes. [area_semantic_coverage.csv](data/area_semantic_coverage.csv) mostra quantos artigos de cada orientador foram aproveitados em cada área. Os vetores dos artigos ficam em cache em [area_semantic_embeddings.npz](data/area_semantic_embeddings.npz), de modo que uma nova execução após a curadoria no arquivo ([work_area_curated.csv](data/work_area_curated.csv)) pode reutilizá-los.
+
+Para atribuir os artigos as áreas, o script calcula a similaridade de cada artigo com protótipos de B, N e Q. A classificação provisória é registrada em [work_area_suggestions.csv](data/work_area_suggestions.csv). O arquivo [work_area_curated.csv](data/work_area_curated.csv) permite corrigir manualmente a área de cada artigo. O script lê esse arquivo e gera as redes por área.
+
+| Área | Orientadores de referência | Artigos de referência | Artigos atribuídos |
+| --- | ---: | ---: | ---: |
+| B | 6 | 266 | 967 |
+| N | 4 | 145 | 957 |
+| Q | 6 | 216 | 837 |
+
+Para discutir novas linhas de pesquisa, a rede global pode indicar aproximações amplas; as redes por área mostram **quais dessas aproximações persistem** quando os artigos são filtrados. A interpretação final deve considerar cobertura desigual de publicações, qualidade da atribuição dos artigos às áreas, termos e artigos representativos, além das prioridades do programa.
+
+
+![Rede de similaridade semântica por área PPG-Ciencias CENA/USP](Figs/semantic_similarity.png)
+**Figura 2. Redes semânticas por área de concentração.**
+A imagem apresenta três conjuntos separados: Biologia (B), à esquerda; Química (Q), na região superior direita; e Energia Nuclear (N), abaixo. Cada nó corresponde à atuação de um orientador naquela área, identificada pelo prefixo B::, N:: ou Q::. Por isso, orientadores vinculados a várias áreas podem aparecer mais de uma vez em diferentes conjuntos. As linhas verdes ligam pares de orientadores dentro da mesma área. A separação entre B, N e Q decorre da construção da rede, que não inclui arestas entre áreas. As posições dos nós também dependem do algoritmo de disposição e não devem ser interpretadas como uma escala numérica de similaridade. As cores dos nós correspondem ás comunidades detectadas pelo algoritmo de Louvain. A espessura das arestas indica a similaridade semantica entre os orientadores, calculada com base em títulos, resumos e palavras-chave dos artigos.
+
+## Limitações e possibilidades de aprimoramento
+
+Um orientador pode estar vinculado a B, N e Q, mas sua produção não se distribui necessariamente da mesma forma entre essas áreas. Na rede global, todos os seus artigos elegíveis contribuem para um único perfil temático. Na análise por área, o orientador pode aparecer nas três redes, porém cada artigo é primeiro classificado: ele contribui apenas para as áreas que lhe foram atribuídas, e pode contribuir para mais de uma. Assim, o script não replica automaticamente todos os artigos do orientador em todas as suas áreas. A separação obtida depende, contudo, da qualidade dessa atribuição.
+A classificação automática usa como referências publicações de orientadores vinculados a uma única área, descartando das referências os artigos também associados a orientadores exclusivos de outra área. Esse procedimento oferece um ponto de partida, mas o vínculo institucional exclusivo de um orientador não garante que cada um de seus artigos seja tematicamente exclusivo daquela área. Por isso, work_area_curated.csv permite corrigir as sugestões antes de interpretar as redes e os grupos.
+
+Uma possibilidade de aprimoramento é usar as teses e dissertações dos egressos como referências temáticas. A relação orientador → egresso → tese/dissertação permite reunir trabalhos desenvolvidos no âmbito do programa. Com o registro da área de concentração oficial de cada trabalho, títulos, resumos e palavras-chave de teses e dissertações dessa área são exemplos mais diretamente ligados às definições institucionais de B, N e Q. Para orientadores que atuam em várias áreas, essa informação ajudaria a distinguir os temas de orientação em cada uma delas. 
+
+Essa estratégia ainda exigiria atenção à cobertura desigual de teses entre áreas, a possíveis mudanças de temas ao longo do tempo e à diferença de idioma entre dissertações em português e artigos majoritariamente em inglês. Trata-se de uma proposta metodológica futura: os scripts atuais não incorporam teses ou dissertações.
+
+## Métodos
+
+## Dependências
+
+Para executar os scripts abaixo precisa das seguintes bibliotecas de python3 instaladas:
+
+```bash
+git clone git@github.com:labbces/PPG_Ciencias_Research_Lines.git
+cd PPG_Ciencias_Research_Lines
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install openpyxl numpy sentence-transformers scipy scikit-learn networkx
+```
+
+### Seleção dos orientadores
+
+A lista de orientadores credenciados no programa em agosto de 2026 e suas áreas de concentração foi registrada em [supervisors.json](data/supervisors.json). Neste documento, **B** corresponde a Biologia na Agricultura e no Ambiente; **N**, a Energia Nuclear na Agricultura e no Ambiente; e **Q**, a Química na Agricultura e no Ambiente. Um orientador pode estar vinculado a mais de uma área.
+
+Os perfis dos orientadores foram procurados no [OpenAlex](https://openalex.org/) por meio de sua [API](https://api.openalex.org), usando [collect.py](scripts/collect.py):
+
+```bash
+python3 ./scripts/collect.py ../PPG_Ciencias_Research_Lines/
+```
+
+Os resultados dessa busca foram conferidos manualmente para eliminar homônimos e manter os perfis validados com ORCID. Os identificadores selecionados estão em [candidates.json](data/candidates.json). Essa revisão é importante porque um perfil atribuído ao orientador errado contaminaria todas as etapas seguintes. Todos os orientadores credenciados estão presentes em [candidates.json](data/candidates.json).
+
+### Recuperação das publicações
+
+A consulta ao OpenAlex ocorreu em **1º de outubro de 2026**. O [works.py](scripts/works.py) disponível neste projeto solicita trabalhos publicados de **1º de janeiro de 2021 a 31 de dezembro de 2026**. O script consulta os perfis selecionados em `candidates.json` e guarda as respostas da API em arquivos JSON separados por identificador de autor.
+
+Os arquivos de trabalhos são gravados em sua subpasta `data/raw/`.
+
+```bash
+python3 ./scripts/works.py ../PPG_Ciencias_Research_Lines/
+```
+
+O script [works_to_excel.py](scripts/works_to_excel.py), gera uma [planilha de publicações](data/candidate_publications.xlsx) com os detalhes das publicações dos orientadores. Foram identificados **1.732 registros** de publicações de diferentes tipos, incluindo artigos, livros, capítulos e preprints. A planilha contém título, DOI, lista de autores, orientador associado, ano, tipo de publicação e ID do trabalho no OpenAlex. Um mesmo trabalho pode aparecer em mais de uma linha se estiver associado a mais de um orientador; portanto, o número de registros não representa necessariamente 1.732 publicações distintas. Os resumos e as palavras-chave permanecem nos arquivos JSON usados na análise semântica, mas não são exportados por esta versão de `works_to_excel.py`.
+
+### Rede de coautoria
+
+O script [coauthorship.py](scripts/coauthorship.py) constrói uma rede somente com os orientadores de `candidates.json`, considerando registros do OpenAlex com `type = article`. Cada nó representa um orientador. Dois nós são ligados quando os respectivos orientadores aparecem associados ao **mesmo ID de trabalho do OpenAlex**; o peso da aresta é o número de artigos distintos compartilhados. Um artigo é contado apenas uma vez por orientador, mesmo quando há identificadores de autor duplicados ou registros repetidos nos arquivos de entrada.
+
+```bash
+python3 ./scripts/coauthorship.py ../PPG_Ciencias_Research_Lines/
+```
+
+### Similaridade semântica entre orientadores
+
+O script [semantic_similarity.py](scripts/semantic_similarity.py) utiliza títulos, resumos (*abstracts*) e palavras-chave (*keywords*) dos artigos para estimar a proximidade temática entre orientadores. Ele usa um modelo da biblioteca [Sentence Transformers](https://www.sbert.net/) para transformar textos em **embeddings**: vetores numéricos cujas posições procuram representar relações de significado aprendidas durante o treinamento. Neste estudo, a semelhança entre vetores é usada como aproximação da semelhança entre os temas dos textos; não é uma classificação definitiva das linhas de pesquisa.
+
+#### Como o transformer produz um embedding
+
+1. **Divisão em tokens.** O texto é separado em unidades menores, chamadas *tokens*. Elas podem corresponder a palavras inteiras ou a partes de palavras. Os tokens são convertidos em identificadores numéricos de entrada do modelo.
+2. **Representação contextual.** O transformer processa os tokens em conjunto. Pelo mecanismo de *[atenção](https://doi.org/10.48550/arXiv.1706.03762)*, a representação de cada token é ajustada com base nos demais tokens do mesmo trecho. Por isso, uma palavra pode contribuir de formas diferentes conforme o contexto em que aparece. Essa representação é aprendida pelo modelo durante o treinamento; o script não atribui manualmente um valor a cada palavra.
+3. **Agregação dos tokens.** Para obter um único vetor por trecho de texto, o modelo Sentence Transformers combina as representações contextualizadas dos tokens por uma operação chamada *pooling*. Nos dois modelos mencionados abaixo, a operação configurada é a média dos tokens válidos, desconsiderando o preenchimento usado nos lotes. O resultado é um vetor denso: **768 dimensões** com `all-mpnet-base-v2` ou **384 dimensões** com `paraphrase-multilingual-MiniLM-L12-v2`. Cada dimensão participa da representação aprendida; ela não deve ser interpretada isoladamente como um tema específico.
+4. **Normalização.** O script normaliza esses vetores para comprimento unitário antes de combiná-los. Dessa forma, a comparação posterior se concentra na direção dos vetores, e não em sua magnitude.
+
+Essas etapas descrevem a codificação **de um trecho de texto**. O script ainda precisa combinar trechos, campos e artigos:
+
+1. **Trechos de texto:** antes de enviar um campo ao modelo, o script o divide em blocos de até 112 tokens de texto por padrão, respeitando o limite do modelo e reservando espaço para seus tokens especiais. A opção `--max-tokens N` muda o limite total de cada trecho, **incluindo** os tokens especiais; por exemplo, com `--max-tokens 512`, um modelo que usa dois tokens especiais recebe no máximo 510 tokens do texto. Um valor acima do limite do modelo produz um erro explícito. Isso evita descartar o fim de resumos longos. Se houver vários blocos, calcula a média de seus vetores e normaliza o resultado. A média preserva informação dos blocos, mas não representa as relações de ordem entre blocos distantes.
+2. **Campos de um artigo:** combina separadamente os vetores do título, do resumo e das palavras-chave. Com os valores padrão, seus pesos relativos são, respectivamente, **25%, 60% e 15%**. Se faltar um campo, os pesos dos campos presentes são redistribuídos proporcionalmente. O vetor final do artigo é normalizado. Esses pesos são escolhas metodológicas do script, não parâmetros aprendidos pelo transformer, e podem ser alterados por opções de linha de comando.
+3. **Artigos de um orientador:** combina os vetores dos artigos do orientador, dando o mesmo peso a cada artigo, e normaliza o perfil resultante. O script trabalha apenas com registros `type = article` e usa o intervalo de datas indicado na execução.
+4. **Comparação entre dois orientadores:** por padrão, retira dos **dois perfis daquele par** os artigos que ambos assinaram. Isso evita que um mesmo trabalho compartilhado aumente diretamente a similaridade do par. Os perfis usados nessa comparação, portanto, podem variar conforme o par; se um orientador ficar sem artigos após a exclusão, não há valor de similaridade para esse par. A opção `--include-shared` mantém os artigos compartilhados.
+5. **Similaridade e rede:** calcula o **cosseno** entre os dois perfis normalizados, equivalente ao produto escalar de seus vetores. O valor matemático está entre −1 e 1; valores maiores indicam direções mais próximas, mas **não são porcentagens de temas em comum nem probabilidades**. O parâmetro `--top-k` escolhe os *k* vizinhos comparáveis mais próximos de cada orientador. A rede contém a **união** dessas escolhas: uma ligação entra se for escolhida por pelo menos um dos dois nós, de modo que um nó pode terminar com mais de *k* ligações. A matriz CSV guarda também as comparações que não viraram arestas.
+
+#### Resultados da análise da rede semântica
+
+Nesta análise foi escolhido o modelo [BAAI/bge-large-en-v1.5](https://huggingface.co/BAAI/bge-large-en-v1.5), outras alternativas mais baratas computacionalmente são [all-mpnet-base-v2](https://huggingface.co/sentence-transformers/all-mpnet-base-v2) para textos majoritariamente em inglês, e [paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2), uma alternativa quando os textos incluem vários idiomas (este último é o **padrão do script**). São modelos de uso geral para embeddings de frases e parágrafos; nesta análise não houve ajuste adicional do modelo para o vocabulário específico do PPG-Ciências. A escolha do modelo afeta os vetores e, portanto, pode alterar as similaridades e as arestas. A base para a seleção do modelo foi um [benchmark recente](http://dx.doi.org/10.30970/eli.30.4) que avaliou varios modelos de embeddings em tarefas de similaridade semântica, classificação e recuperação de informação. O modelo BGE Large obteve o melhor na captura de relações semânticas, seguido por all-mpnet-base-v2 e paraphrase-multilingual-MiniLM-L12-v2. (Resultados com all-mpnet-base-v2 estão disponiveis em [data/semantic_similarity_all-mpnet-base-v2](data/semantic_similarity_all-mpnet-base-v2).)
+
+```bash
+python3 scripts/semantic_similarity.py ../PPG_Ciencias_Research_Lines/ \
+  --model BAAI/bge-large-en-v1.5 \
+  --max-tokens 512 \
+  --device cpu \
+  --top-k 4
+```
+
+Com essa execução, o script lê os arquivos em `PROJECT_ROOT/data/`, usa por padrão artigos de 2021 a 2026 **que estejam presentes nos arquivos JSON** e grava a rede em [semantic_similarity.graphml](data/semantic_similarity.graphml) (que pode ser visualizada em Cytoscape), além da [tabela de nós](data/semantic_similarity_nodes.csv), da [lista de arestas](data/semantic_similarity_edges.csv) e da [matriz completa de similaridade](data/semantic_similarity_matrix.csv). Os resultados descrevem proximidade no espaço vetorial do modelo e devem ser interpretados junto com os textos dos artigos e com a avaliação dos orientadores.
+
+A rede gerada por `semantic_similarity.py` reúne todos os orientadores em uma única comparação. Ela ajuda a reconhecer afinidades temáticas que atravessam as áreas de concentração e a localizar pares cuja produção merece leitura mais atenta. Para interpretar seus resultados, convém distinguir os arquivos produzidos:
+
+| Arquivo em `data/` | O que permite examinar |
+| --- | --- |
+| `semantic_similarity_nodes.csv` | Orientadores, áreas de concentração e número de artigos com texto utilizável. |
+| `semantic_similarity_edges.csv` | Pares exibidos na rede, cosseno em `weight` e número de artigos que o par assinou em conjunto. |
+| `semantic_similarity_matrix.csv` | Similaridade de todos os pares comparáveis, inclusive daqueles que ficaram fora da rede após a seleção dos vizinhos. |
+| `semantic_similarity.graphml` | Rede para exploração visual no Cytoscape. |
+
+Uma aresta forte sugere que os artigos **não compartilhados** daquele par tratam de assuntos próximos no espaço vetorial do modelo. A ausência de aresta **não** significa necessariamente baixa similaridade: o par pode simplesmente não ter sido escolhido entre os quatro vizinhos mais próximos de nenhum dos orientadores. Para conferir isso, consulte a matriz completa. Uma célula vazia indica que não foi possível calcular a similaridade do par, por exemplo, quando não restam artigos com texto após a exclusão dos trabalhos em coautoria. Os escores devem ser confrontados com títulos e resumos; sozinhos, não identificam linhas de pesquisa nem explicam a causa da proximidade.
 
 ### Da rede global às análises por área de concentração
 
@@ -216,19 +251,10 @@ O processamento por área ocorre em etapas:
 Um orientador vinculado a mais de uma área pode aparecer uma vez em **cada rede na qual tenha artigos classificados suficientes** (`--min-area-papers`, cujo padrão é 1): por exemplo, `B::Nome` e `N::Nome` são nós diferentes no GraphML combinado. As ligações conectam apenas orientadores da mesma área. Assim, é possível examinar se a atuação temática do mesmo orientador difere entre B e N, sem misturar seus artigos das duas áreas no perfil local.
 
 ```bash
-python3 ./scripts/area_semantic.py ../PPG_Ciencias_Research_Lines/ \
+python3 scripts/area_semantic.py ../PPG_Ciencias_Research_Lines/ \
+  --model BAAI/bge-large-en-v1.5 \
+  --max-tokens 512 \
   --device cpu \
-  --model sentence-transformers/all-mpnet-base-v2 \
-  --end-date 2026-12-31 \
-  --top-k 4 \
+  --top-k 4  \
   --groups 3
 ```
-
-As saídas em `data/` incluem [area_semantic.graphml](data/area_semantic.graphml) (que pode ser visualizado em Cytoscape) e os arquivos [area_semantic_B.graphml](data/area_semantic_B.graphml), [area_semantic_N.graphml](data/area_semantic_N.graphml) e [area_semantic_Q.graphml](data/area_semantic_Q.graphml); [area_semantic_nodes.csv](data/area_semantic_nodes.csv) e [area_semantic_edges.csv](data/area_semantic_edges.csv) descrevem seus nós e arestas. [area_semantic_matrix_B.csv](data/area_semantic_matrix_B.csv), [area_semantic_matrix_N.csv](data/area_semantic_matrix_N.csv) e [area_semantic_matrix_Q.csv](data/area_semantic_matrix_Q.csv) preservam os pares comparáveis que não aparecem nas redes. [area_semantic_coverage.csv](data/area_semantic_coverage.csv) mostra quantos artigos de cada orientador foram aproveitados em cada área. Os vetores dos artigos ficam em cache em [area_semantic_embeddings.npz](data/area_semantic_embeddings.npz), de modo que uma nova execução após a curadoria no arquivo ([work_area_curated.csv](data/work_area_curated.csv)) pode reutilizá-los.
-
-Para discutir novas linhas de pesquisa, a rede global pode indicar aproximações amplas; as redes por área mostram **quais dessas aproximações persistem** quando os artigos são filtrados. A interpretação final deve considerar cobertura desigual de publicações, qualidade da atribuição dos artigos às áreas, termos e artigos representativos, além das prioridades do programa.
-
-
-![Rede de similaridade semântica por área PPG-Ciencias CENA/USP](Figs/semantic_similarity.png)
-**Figura 2. Redes semânticas por área de concentração.**
-A imagem apresenta três conjuntos separados: Biologia (B), à esquerda; Química (Q), na região superior direita; e Energia Nuclear (N), abaixo. Cada nó corresponde à atuação de um orientador naquela área, identificada pelo prefixo B::, N:: ou Q::. Por isso, orientadores vinculados a várias áreas podem aparecer mais de uma vez em diferentes conjuntos. As linhas verdes ligam pares de orientadores dentro da mesma área. A separação entre B, N e Q decorre da construção da rede, que não inclui arestas entre áreas. As posições dos nós também dependem do algoritmo de disposição e não devem ser interpretadas como uma escala numérica de similaridade. As cores dos nós correspondem ás comunidades detectadas pelo algoritmo de Louvain. A espessura das arestas indica a similaridade semantica entre os orientadores, calculada com base em títulos, resumos e palavras-chave dos artigos.
