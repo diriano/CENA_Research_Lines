@@ -139,6 +139,32 @@ Para discutir novas linhas de pesquisa, a rede global pode indicar aproximaçõe
 **Figura 3. Redes semânticas por área de concentração.**
 A imagem apresenta três conjuntos separados: Biologia (B), à esquerda; Química (Q), na região superior direita; e Energia Nuclear (N), abaixo. Cada nó corresponde à atuação de um orientador naquela área, identificada pelo prefixo B::, N:: ou Q::. Por isso, orientadores vinculados a várias áreas podem aparecer mais de uma vez em diferentes conjuntos. As linhas verdes ligam pares de orientadores dentro da mesma área. A separação entre B, N e Q decorre da construção da rede, que não inclui arestas entre áreas. As posições dos nós também dependem do algoritmo de disposição e não devem ser interpretadas como uma escala numérica de similaridade. As cores dos nós correspondem ás comunidades detectadas pelo algoritmo de Louvain. A espessura das arestas indica a similaridade semantica entre os orientadores, calculada com base em títulos, resumos e palavras-chave dos artigos.
 
+### Proposta de linhas de pesquisa por área
+
+#### Biologia na agricultura e no ambiente (B)
+
+| Grupo | Título representativo |
+| --- | --- |
+| B1 | Nutrição vegetal, fertilidade do solo e contaminantes |
+| B2 | Biologia integrativa, genômica e biotecnologia |
+| B3 | Ecologia de ecossistemas, microbiomas e mudanças ambientais |
+| B4 | Nutrição animal, saúde e emissões de gases de efeito estufa |
+
+#### Energia Nuclear na agricultura e no ambiente (N)
+
+| Grupo | Título representativo |
+| --- | --- | 
+| N1 | Aplicações da radiação na produção animal |
+| N2 | Ciclos biogeoquímicos e dinâmica ambiental |
+| N3 | Fertilidade do solo, nutrição vegetal e comportamento de herbicidas |
+
+#### Química na agricultura e no ambiente (Q)
+
+| Grupo | Título representativo |
+| --- | --- |
+| Q1 | Química ambiental e biogeoquímica de solos e ecossistemas |
+| Q2 | Química analítica e compostos bioativos |
+
 ## Limitações e possibilidades de aprimoramento
 
 Um orientador pode estar vinculado a B, N e Q, mas sua produção não se distribui necessariamente da mesma forma entre essas áreas. Na rede global, todos os seus artigos elegíveis contribuem para um único perfil temático. Na análise por área, o orientador pode aparecer nas três redes, porém cada artigo é primeiro classificado: ele contribui apenas para as áreas que lhe foram atribuídas, e pode contribuir para mais de uma. Assim, o script não replica automaticamente todos os artigos do orientador em todas as suas áreas. A separação obtida depende, contudo, da qualidade dessa atribuição.
