@@ -4,7 +4,7 @@
 Usage:
     python scripts/semantic_similarity.py PROJECT_ROOT [--top-k 3]
 
-Inputs (at PROJECT_ROOT or PROJECT_ROOT/data):
+Inputs (at PROJECT_ROOT/data):
     candidates.json, supervisors.json
     data/raw/works_A....json (or raw/works_A....json)
 
@@ -17,6 +17,9 @@ Requires: pip install numpy sentence-transformers
 The first run downloads the selected Sentence Transformers model. Computation
 uses the CPU by default; choose --device cuda only when your PyTorch build
 supports your GPU architecture.
+
+--max-tokens counts the complete input sequence, including model special
+tokens. Without it, text is split into the previous 112-token chunks.
 """
 
 import argparse
@@ -31,6 +34,7 @@ import numpy as np
 
 
 ROOT = None  # Set from argparse when run directly, or by an importing script.
+DATA = None  # All input and output files live inside ROOT/data.
 AREA_ORDER = ("B", "N", "Q")
 AREA_LABELS = {
     "B": "Biologia na Agricultura e no Ambiente",
@@ -43,7 +47,7 @@ DEFAULT_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 def options():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("project_root", type=pathlib.Path, metavar="PROJECT_ROOT",
-                        help="Directory containing candidates.json and the work files")
+                        help="Project directory containing the data folder")
     parser.add_argument("--model", default=DEFAULT_MODEL,
                         help="Sentence Transformers model name or local model path")
     parser.add_argument("--start-date", default="2021-01-01")
@@ -53,6 +57,9 @@ def options():
     parser.add_argument("--min-similarity", type=float, default=0.0,
                         help="Minimum cosine similarity for an edge (default: 0)")
     parser.add_argument("--batch-size", type=int, default=32)
+    parser.add_argument("--max-tokens", type=int, default=None,
+                        help="Maximum model input length per segment, including special tokens "
+                             "(default: 112 text tokens plus special tokens)")
     parser.add_argument("--device", default="cpu",
                         help="Embedding device (default: cpu; use cuda only with a compatible GPU)")
     parser.add_argument("--title-weight", type=float, default=0.25)
@@ -61,8 +68,8 @@ def options():
     parser.add_argument("--include-shared", action="store_true",
                         help="Include shared coauthored papers when comparing two supervisors")
     args = parser.parse_args()
-    if args.top_k < 1 or args.batch_size < 1:
-        parser.error("--top-k and --batch-size must be positive")
+    if args.top_k < 1 or args.batch_size < 1 or (args.max_tokens is not None and args.max_tokens < 1):
+        parser.error("--top-k, --batch-size and --max-tokens must be positive")
     try:
         start = datetime.date.fromisoformat(args.start_date)
         end = datetime.date.fromisoformat(args.end_date)
@@ -79,19 +86,17 @@ def options():
 
 
 def unique_file(filename):
-    matches = [p for p in (ROOT / filename, ROOT / "data" / filename) if p.is_file()]
-    if len(matches) != 1:
-        raise FileNotFoundError(
-            f"Expected exactly one {filename} in {ROOT} or {ROOT / 'data'}; found {matches}"
-        )
-    return matches[0]
+    path = DATA / filename
+    if not path.is_file():
+        raise FileNotFoundError(f"Missing input file: {path}")
+    return path
 
 
 def raw_directory():
-    matches = [p for p in (ROOT / "data" / "raw", ROOT / "raw") if p.is_dir()]
-    if len(matches) != 1:
-        raise FileNotFoundError(f"Expected exactly one raw works directory; found {matches}")
-    return matches[0]
+    path = DATA / "raw"
+    if not path.is_dir():
+        raise FileNotFoundError(f"Missing raw works directory: {path}")
+    return path
 
 
 def short_id(value):
@@ -207,14 +212,20 @@ def unit(vector):
     return vector / norm if norm > 1e-12 else None
 
 
-def embed_works(fields_by_work, model_name, batch_size, weights, device="cpu"):
+def embed_works(fields_by_work, model_name, batch_size, weights, device="cpu", max_tokens=None):
     from sentence_transformers import SentenceTransformer
 
     model = SentenceTransformer(model_name, device=device)
-    max_tokens = min(112, int(model.max_seq_length) - 2)
-    if max_tokens < 1:
-        raise ValueError("Model maximum sequence length is too short to encode text")
     tokenizer = model.tokenizer
+    model_limit = int(model.max_seq_length)
+    special_tokens = tokenizer.num_special_tokens_to_add(pair=False)
+    if max_tokens is not None and max_tokens > model_limit:
+        raise ValueError(f"--max-tokens {max_tokens} exceeds this model's {model_limit}-token limit")
+    chunk_tokens = (min(112, model_limit - special_tokens) if max_tokens is None
+                    else max_tokens - special_tokens)
+    if chunk_tokens < 1:
+        raise ValueError(f"The token limit must leave room for {special_tokens} special tokens "
+                         "and at least one text token")
     texts = []
     locations = {}  # (work ID, field name) -> indices into texts
     for wid in sorted(fields_by_work):
@@ -227,8 +238,23 @@ def embed_works(fields_by_work, model_name, batch_size, weights, device="cpu"):
             # emitted while tokenizing the full text, which is never sent to
             # the model in that form.
             tokens = tokenizer.encode(value, add_special_tokens=False, verbose=False)
-            parts = [tokenizer.decode(tokens[i:i + max_tokens], skip_special_tokens=True)
-                     for i in range(0, len(tokens), max_tokens)]
+            parts = []
+            start = 0
+            while start < len(tokens):
+                end = min(start + chunk_tokens, len(tokens))
+                # Decoding and re-encoding can change the token count. Ensure
+                # the text that model.encode actually sees still fits.
+                while True:
+                    part = tokenizer.decode(tokens[start:end], skip_special_tokens=True)
+                    encoded_length = len(tokenizer.encode(
+                        part, add_special_tokens=False, verbose=False))
+                    if encoded_length <= chunk_tokens:
+                        break
+                    if end == start + 1:
+                        raise ValueError("A single decoded token exceeds the selected token limit")
+                    end = max(start + 1, end - (encoded_length - chunk_tokens))
+                parts.append(part)
+                start = end
             if not parts:
                 continue
             locations[(wid, field_name)] = list(range(len(texts), len(texts) + len(parts)))
@@ -237,7 +263,8 @@ def embed_works(fields_by_work, model_name, batch_size, weights, device="cpu"):
     if not texts:
         raise ValueError("No title, abstract or keyword text with positive weight found in the selected articles")
     print(f"Encoding {len(texts)} text segments from {len(fields_by_work)} unique articles "
-          f"on {device}...", flush=True)
+          f"on {device} (up to {chunk_tokens} text tokens + {special_tokens} special tokens)...",
+          flush=True)
     vectors = np.asarray(model.encode(texts, batch_size=batch_size,
                                       device=device,
                                       normalize_embeddings=True,
@@ -361,20 +388,24 @@ def graphml(path, node_rows, edge_rows):
 
 
 def main():
-    global ROOT
+    global ROOT, DATA
     args = options()
     ROOT = args.project_root
+    DATA = ROOT / "data"
+    if not DATA.is_dir():
+        raise FileNotFoundError(f"Missing data directory: {DATA}")
     names, area_by_name, ids_by_person = load_people()
     articles, texts = load_works(names, ids_by_person, raw_directory(),
                                  args.start_date, args.end_date)
     weights = {"title": args.title_weight, "abstract": args.abstract_weight,
                "keywords": args.keyword_weight}
-    work_vectors = embed_works(texts, args.model, args.batch_size, weights, args.device)
+    work_vectors = embed_works(texts, args.model, args.batch_size, weights,
+                               args.device, args.max_tokens)
     used, pairs = compare_people(names, articles, work_vectors, args.include_shared)
     chosen = select_edges(names, pairs, args.top_k, args.min_similarity)
     node_rows = list(nodes(names, area_by_name, articles, used, texts))
     node_columns = list(node_rows[0]) if node_rows else []
-    write_csv(ROOT / "data" / "semantic_similarity_nodes.csv", node_rows, node_columns)
+    write_csv(DATA / "semantic_similarity_nodes.csv", node_rows, node_columns)
 
     edge_rows = []
     for i, j in chosen:
@@ -387,9 +418,9 @@ def main():
     edge_columns = ("source", "target", "weight", "similarity",
                     "shared_article_count", "source_articles_compared",
                     "target_articles_compared")
-    write_csv(ROOT / "data" / "semantic_similarity_edges.csv", edge_rows, edge_columns)
+    write_csv(DATA / "semantic_similarity_edges.csv", edge_rows, edge_columns)
 
-    with (ROOT / "data" / "semantic_similarity_matrix.csv").open("w", encoding="utf-8", newline="") as out:
+    with (DATA / "semantic_similarity_matrix.csv").open("w", encoding="utf-8", newline="") as out:
         writer = csv.writer(out)
         writer.writerow(["supervisor", *names])
         for i, name in enumerate(names):
@@ -401,13 +432,16 @@ def main():
                     score = pairs[(min(i, j), max(i, j))][0]
                     row.append(f"{score:.6f}" if score is not None else "")
             writer.writerow(row)
-    graphml(ROOT / "data" / "semantic_similarity.graphml", node_rows, edge_rows)
+    graphml(DATA / "semantic_similarity.graphml", node_rows, edge_rows)
 
     lines = ["# Rede de similaridade temática", "",
              f"Período: {args.start_date} a {args.end_date}; apenas trabalhos OpenAlex com `type = article`.",
              f"Modelo: `{args.model}`. Um vetor por artigo a partir de título ({args.title_weight:g}), "
              f"abstract ({args.abstract_weight:g}) e keywords ({args.keyword_weight:g}); "
              "pesos dos campos presentes são renormalizados. Abstracts longos são processados em partes.",
+             (f"Limite de {args.max_tokens} tokens por segmento, incluindo tokens especiais."
+              if args.max_tokens is not None else
+              "Limite padrão de 112 tokens de texto por segmento, mais tokens especiais."),
              "Cada orientador é representado pela direção média dos vetores de seus artigos. "
              "O peso da aresta é a similaridade de cosseno entre os perfis de dois orientadores.",
              ("Artigos em coautoria entre o par de orientadores foram incluídos na comparação."
@@ -431,13 +465,13 @@ def main():
         target = row["target"].replace("|", r"\|")
         lines.append(f"| {source} | {target} | {row['weight']} | "
                      f"{row['shared_article_count']} |")
-    (ROOT / "data" / "semantic_similarity.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (DATA / "semantic_similarity.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"{len(names)} supervisors; {len(work_vectors)} articles with text; "
           f"{len(edge_rows)} edges; {sum(not ids for ids in used)} nodes without text")
     for filename in ("semantic_similarity_edges.csv", "semantic_similarity_nodes.csv",
                      "semantic_similarity_matrix.csv", "semantic_similarity.graphml",
                      "semantic_similarity.md"):
-        print(ROOT / "data" / filename)
+        print(DATA / filename)
 
 
 if __name__ == "__main__":

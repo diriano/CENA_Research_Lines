@@ -17,6 +17,7 @@ Legacy work_area_curated.csv rows with work_id,areas are kept as manual edits.
 Paper vectors are cached with a content/model fingerprint so rerunning after
 manual curation does not normally require repeating inference on the CPU.
 All inputs and generated files live in PROJECT_ROOT/data.
+--max-tokens counts the complete model input, including special tokens.
 """
 
 import argparse
@@ -160,6 +161,9 @@ def options():
     p.add_argument("--model", default=sem.DEFAULT_MODEL)
     p.add_argument("--device", default="cpu")
     p.add_argument("--batch-size", type=int, default=32)
+    p.add_argument("--max-tokens", type=int, default=None,
+                   help="Maximum model input length per segment, including special tokens "
+                        "(default: 112 text tokens plus special tokens)")
     p.add_argument("--start-date", default="2021-01-01")
     p.add_argument("--end-date", default="2026-12-31")
     p.add_argument("--title-weight", type=float, default=0.25)
@@ -187,7 +191,8 @@ def options():
                       for value in (args.start_date, args.end_date))
     except ValueError:
         p.error("Dates must use YYYY-MM-DD")
-    if start > end or args.batch_size < 1 or args.top_k < 1 or args.min_area_papers < 1:
+    if (start > end or args.batch_size < 1 or args.top_k < 1 or args.min_area_papers < 1
+            or (args.max_tokens is not None and args.max_tokens < 1)):
         p.error("Invalid date range or a nonpositive count")
     if not -1 <= args.min_area_score <= 1 or not 0 <= args.area_margin <= 2:
         p.error("--min-area-score must be in [-1,1] and --area-margin in [0,2]")
@@ -225,10 +230,14 @@ def metadata_for_works(ids_by_person, raw_dir, work_ids, start, end):
 
 
 def embedding_cache(fields, args, weights):
-    key = hashlib.sha256(json.dumps({
+    settings = {
         "version": "area-semantic-v1", "fields": fields, "model": args.model,
         "weights": weights,
-    }, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
+    }
+    if args.max_tokens is not None:
+        settings["max_tokens"] = args.max_tokens
+    key = hashlib.sha256(json.dumps(settings, ensure_ascii=False, sort_keys=True,
+                                    separators=(",", ":")).encode("utf-8")).hexdigest()
     path = DATA / "area_semantic_embeddings.npz"
     if path.is_file() and not args.refresh_embeddings:
         with np.load(path, allow_pickle=False) as cached:
@@ -238,7 +247,8 @@ def embedding_cache(fields, args, weights):
                 if vectors.ndim == 2 and len(ids) == len(vectors):
                     print(f"Using {len(ids)} cached article vectors", flush=True)
                     return dict(zip(ids, vectors))
-    vectors = sem.embed_works(fields, args.model, args.batch_size, weights, args.device)
+    vectors = sem.embed_works(fields, args.model, args.batch_size, weights,
+                              args.device, args.max_tokens)
     ids = sorted(vectors)
     temp = path.with_name(path.name + ".tmp")
     with temp.open("wb") as out:
@@ -520,6 +530,9 @@ def area_outputs(names, areas, author_ids, fields, vectors, assignments, args):
 def write_report(args, support, classification, coverage, descriptions, override_count):
     lines = ["# Redes semânticas por área de concentração", "",
              f"Período: {args.start_date} a {args.end_date}. Modelo: `{args.model}`; dispositivo: `{args.device}`.",
+             (f"Limite de {args.max_tokens} tokens por segmento, incluindo tokens especiais."
+              if args.max_tokens is not None else
+              "Limite padrão de 112 tokens de texto por segmento, mais tokens especiais."),
              "Classificação provisória: comparação dos vetores de título, abstract e keywords "
              "com protótipos de artigos de orientadores vinculados a uma única área. "
              "Os protótipos dão o mesmo peso a cada orientador de referência.",
