@@ -9,9 +9,10 @@ Requires numpy, scipy, scikit-learn, networkx, sentence-transformers.
 
 The classifier uses papers by supervisors listed in exactly one concentration
 area as provisional reference examples. An article may receive several areas
-or no area. work_area_curated.csv lists all papers and their supervisors.
+or no area. work_area_curated.csv lists current papers and their supervisors.
 Edit its areas column (e.g. B+N, or empty to exclude a work); edited rows
-are preserved, while untouched suggestions are refreshed on the next run.
+are preserved, even when a paper falls outside the current date/author filter;
+outdated automatic suggestions are removed on the next run.
 Legacy work_area_curated.csv rows with work_id,areas are kept as manual edits.
 
 Paper vectors are cached with a content/model fingerprint so rerunning after
@@ -301,30 +302,40 @@ def parse_areas(value):
 def read_overrides(work_ids):
     path = DATA / "work_area_curated.csv"
     if not path.exists():
-        return {}, {}, []
+        return {}, {}, [], set(), 0
     with path.open(encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
         if not reader.fieldnames or not {"work_id", "areas"} <= set(reader.fieldnames):
             raise ValueError(f"{path} must have columns work_id,areas")
         columns = list(reader.fieldnames)
         legacy = not {"source", "suggested_areas"} <= set(columns)
-        overrides, existing = {}, {}
+        overrides, existing, stale_manual = {}, {}, set()
+        stale_automatic = 0
         for line, row in enumerate(reader, start=2):
             wid = sem.short_id(row["work_id"] or "")
-            if wid not in work_ids or wid in existing:
-                raise ValueError(f"Unknown or repeated work ID in {path}, line {line}: {wid}")
+            if not wid:
+                raise ValueError(f"Empty work ID in {path}, line {line}")
+            if wid in existing:
+                raise ValueError(f"Repeated work ID in {path}, line {line}: {wid}")
             areas = parse_areas(row["areas"] or "")
             source = (row.get("source") or "").strip().lower()
             if not legacy and source not in ("automatic", "manual", ""):
                 raise ValueError(f"Unknown source in {path}, line {line}: {source}")
             suggested = parse_areas(row.get("suggested_areas") or "")
-            if legacy or source != "automatic" or areas != suggested:
-                overrides[wid] = areas
+            manual = legacy or source != "automatic" or areas != suggested
+            if wid in work_ids:
+                if manual:
+                    overrides[wid] = areas
+            elif manual:
+                stale_manual.add(wid)
+            else:
+                stale_automatic += 1
             existing[wid] = row
-    return overrides, existing, columns
+    return overrides, existing, columns, stale_manual, stale_automatic
 
 
-def update_curated(names, author_ids, classification, overrides, existing, columns):
+def update_curated(names, author_ids, classification, overrides, existing, columns,
+                   stale_manual):
     """Refresh suggestions and author names without losing manual area edits."""
     path = DATA / "work_area_curated.csv"
     supervisors = {}
@@ -343,9 +354,12 @@ def update_curated(names, author_ids, classification, overrides, existing, colum
                      "areas": "+".join(overrides[wid]) if manual else suggestion["suggested_areas"],
                      "suggested_areas": suggestion["suggested_areas"],
                      "source": "manual" if manual else "automatic"})
-    # Keep manually curated rows in their existing order; append new articles.
+    # Preserve manual edits outside the current filter so they are available
+    # again if the date range or curated candidate list changes.
     by_id = {row["work_id"]: row for row in rows}
-    ordered = [by_id[wid] for wid in existing] + [row for row in rows if row["work_id"] not in existing]
+    ordered = [by_id[wid] if wid in by_id else existing[wid]
+               for wid in existing if wid in by_id or wid in stale_manual]
+    ordered += [row for row in rows if row["work_id"] not in existing]
     temp = path.with_name(path.name + ".tmp")
     write_csv(temp, fieldnames, ordered)
     temp.replace(path)
@@ -600,15 +614,21 @@ def main():
     raw = sem.raw_directory()
     articles, fields = sem.load_works(names, ids_by_person, raw,
                                      args.start_date, args.end_date)
+    overrides, existing, columns, stale_manual, stale_automatic = read_overrides(fields)
+    if stale_manual or stale_automatic:
+        print(f"Outside the current article set: {len(stale_manual)} manual row(s) to retain; "
+              f"{stale_automatic} automatic row(s) to remove from work_area_curated.csv. "
+              "Check candidate authors, publication dates, and work type if unexpected.",
+              flush=True)
     meta = metadata_for_works(ids_by_person, raw, set(fields), args.start_date, args.end_date)
     weights = {"title": args.title_weight, "abstract": args.abstract_weight,
                "keywords": args.keyword_weight}
     vectors = embedding_cache(fields, args, weights)
     prototypes, support, seeds = reference_profiles(names, areas, articles, vectors)
-    overrides, existing, columns = read_overrides(fields)
     assignments, classification = classify(fields, meta, vectors, prototypes,
                                            seeds, args, overrides)
-    update_curated(names, articles, classification, overrides, existing, columns)
+    update_curated(names, articles, classification, overrides, existing, columns,
+                   stale_manual)
     print(f"Works curated manually: {len(overrides)}", flush=True)
     coverage, descriptions = area_outputs(names, areas, articles, fields, vectors,
                                           assignments, args)
