@@ -49,7 +49,7 @@ No Cytoscape, os nós foram coloridos de acordo com a combinação de áreas reg
 | Área ou combinação | Cor usada | Código hexadecimal |
 | --- | --- | ---: |
 | Biologia (B) | Laranja | #FD8D3C |
-| Nuclear (N) | Rosa | #FDE0DD | 
+| Nuclear (N) | Amarelo | #FDFB00 | 
 | Química (Q) | Vermelho | #EF3B2C | 
 | B + N | Verde | #41AB5D | 
 | B + Q | Lilás | #D0D1E6 | 
@@ -119,11 +119,12 @@ Os nós representam os orientadores selecionados em `candidates.json`. Uma arest
 | Adibe Luiz Abdalla | Helder Louvandini | 0.931205 | 31 |
 | José Lavres Junior | Marcos Yassuo Kamogawa | 0.927685 | 0 |
 
+![Rede de similaridade semântica global PPG-Ciencias CENA/USP](Figs/semantic_similarity.png)
+**Figura 2. Rede semântica global.**
+
 ### Rede de similaridade semântica por área de concentração
 
 As saídas em `data/` incluem [area_semantic.graphml](data/area_semantic.graphml) (que pode ser visualizado em Cytoscape) e os arquivos [area_semantic_B.graphml](data/area_semantic_B.graphml), [area_semantic_N.graphml](data/area_semantic_N.graphml) e [area_semantic_Q.graphml](data/area_semantic_Q.graphml); [area_semantic_nodes.csv](data/area_semantic_nodes.csv) e [area_semantic_edges.csv](data/area_semantic_edges.csv) descrevem seus nós e arestas. [area_semantic_matrix_B.csv](data/area_semantic_matrix_B.csv), [area_semantic_matrix_N.csv](data/area_semantic_matrix_N.csv) e [area_semantic_matrix_Q.csv](data/area_semantic_matrix_Q.csv) preservam os pares comparáveis que não aparecem nas redes. [area_semantic_coverage.csv](data/area_semantic_coverage.csv) mostra quantos artigos de cada orientador foram aproveitados em cada área. Os vetores dos artigos ficam em cache em [area_semantic_embeddings.npz](data/area_semantic_embeddings.npz), de modo que uma nova execução após a curadoria no arquivo ([work_area_curated.csv](data/work_area_curated.csv)) pode reutilizá-los.
-
-Para atribuir os artigos as áreas, o script calcula a similaridade de cada artigo com protótipos de B, N e Q. A classificação provisória é registrada em [work_area_suggestions.csv](data/work_area_suggestions.csv). O arquivo [work_area_curated.csv](data/work_area_curated.csv) permite corrigir manualmente a área de cada artigo. O script lê esse arquivo e gera as redes por área.
 
 | Área | Orientadores de referência | Artigos de referência | Artigos atribuídos |
 | --- | ---: | ---: | ---: |
@@ -134,8 +135,8 @@ Para atribuir os artigos as áreas, o script calcula a similaridade de cada arti
 Para discutir novas linhas de pesquisa, a rede global pode indicar aproximações amplas; as redes por área mostram **quais dessas aproximações persistem** quando os artigos são filtrados. A interpretação final deve considerar cobertura desigual de publicações, qualidade da atribuição dos artigos às áreas, termos e artigos representativos, além das prioridades do programa.
 
 
-![Rede de similaridade semântica por área PPG-Ciencias CENA/USP](Figs/semantic_similarity.png)
-**Figura 2. Redes semânticas por área de concentração.**
+![Rede de similaridade semântica por área PPG-Ciencias CENA/USP](Figs/area_semantic.png)
+**Figura 3. Redes semânticas por área de concentração.**
 A imagem apresenta três conjuntos separados: Biologia (B), à esquerda; Química (Q), na região superior direita; e Energia Nuclear (N), abaixo. Cada nó corresponde à atuação de um orientador naquela área, identificada pelo prefixo B::, N:: ou Q::. Por isso, orientadores vinculados a várias áreas podem aparecer mais de uma vez em diferentes conjuntos. As linhas verdes ligam pares de orientadores dentro da mesma área. A separação entre B, N e Q decorre da construção da rede, que não inclui arestas entre áreas. As posições dos nós também dependem do algoritmo de disposição e não devem ser interpretadas como uma escala numérica de similaridade. As cores dos nós correspondem ás comunidades detectadas pelo algoritmo de Louvain. A espessura das arestas indica a similaridade semantica entre os orientadores, calculada com base em títulos, resumos e palavras-chave dos artigos.
 
 ## Limitações e possibilidades de aprimoramento
@@ -249,6 +250,8 @@ O processamento por área ocorre em etapas:
 4. **Comunidades e temas propostos.** Em cada rede, o algoritmo de [Louvain](https://doi.org/10.1088/1742-5468/2008/10/P10008) identifica comunidades sem impor previamente sua quantidade. Separadamente, um agrupamento hierárquico propõe **três grupos por área** com `--groups 3`, quando há orientadores suficientes. Esse agrupamento combina, por padrão, 75% de similaridade semântica e 25% de proximidade lexical calculada por [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) sobre os textos da própria área; se não há escore semântico para um par, usa sua proximidade lexical. Os termos distintivos e títulos representativos ajudam a descrever cada grupo, mas são rótulos exploratórios, não nomes apropriados para linhas de pesquisa.
 
 Um orientador vinculado a mais de uma área pode aparecer uma vez em **cada rede na qual tenha artigos classificados suficientes** (`--min-area-papers`, cujo padrão é 1): por exemplo, `B::Nome` e `N::Nome` são nós diferentes no GraphML combinado. As ligações conectam apenas orientadores da mesma área. Assim, é possível examinar se a atuação temática do mesmo orientador difere entre B e N, sem misturar seus artigos das duas áreas no perfil local.
+
+Para atribuir os artigos as áreas, o script calcula a similaridade de cada artigo com protótipos de B, N e Q. A classificação provisória é registrada em [work_area_suggestions.csv](data/work_area_suggestions.csv). O arquivo [work_area_curated.csv](data/work_area_curated.csv) permite corrigir manualmente a área de cada artigo. O script lê esse arquivo e gera as redes por área.
 
 ```bash
 python3 scripts/area_semantic.py ../PPG_Ciencias_Research_Lines/ \
