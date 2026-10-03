@@ -15,6 +15,10 @@ Esta metodologia foi desenvolvida para examinar a produção científica dos ori
 Para executar os scripts abaixo precisa das seguintes bibliotecas de python3 instaladas:
 
 ```bash
+git clone git@github.com:labbces/PPG_Ciencias_Research_Lines.git
+cd PPG_Ciencias_Research_Lines
+python -m venv .venv
+source .venv/bin/activate
 python -m pip install openpyxl numpy sentence-transformers scipy scikit-learn networkx
 ```
 
