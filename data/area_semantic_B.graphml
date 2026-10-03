@@ -18,41 +18,17 @@
   <key id="d1" for="node" attr.name="supervisor" attr.type="string" />
   <key id="d0" for="node" attr.name="label" attr.type="string" />
   <graph edgedefault="undirected">
-    <node id="B::Lucas William Mendes">
-      <data key="d0">Lucas William Mendes</data>
-      <data key="d1">Lucas William Mendes</data>
+    <node id="B::Luiz Carlos Ruiz Pessenda">
+      <data key="d0">Luiz Carlos Ruiz Pessenda</data>
+      <data key="d1">Luiz Carlos Ruiz Pessenda</data>
       <data key="d2">B</data>
       <data key="d3">Biologia na Agricultura e no Ambiente</data>
-      <data key="d4">B</data>
-      <data key="d5">148</data>
-      <data key="d6">71</data>
+      <data key="d4">B+N+Q</data>
+      <data key="d5">34</data>
+      <data key="d6">16</data>
       <data key="d7">B3</data>
-      <data key="d8">B1</data>
-      <data key="d9">microbial; soil; microbiome; rhizosphere; bacterial; communities; community; plant</data>
-    </node>
-    <node id="B::José Lavres Junior">
-      <data key="d0">José Lavres Junior</data>
-      <data key="d1">José Lavres Junior</data>
-      <data key="d2">B</data>
-      <data key="d3">Biologia na Agricultura e no Ambiente</data>
-      <data key="d4">B+N+Q</data>
-      <data key="d5">82</data>
-      <data key="d6">51</data>
-      <data key="d7">B1</data>
-      <data key="d8">B1</data>
-      <data key="d9">efficiency; nitrogen; fertilization; use efficiency; nutrient; eucalyptus; leaf; soil</data>
-    </node>
-    <node id="B::Marli de Fatima Fiore">
-      <data key="d0">Marli de Fatima Fiore</data>
-      <data key="d1">Marli de Fatima Fiore</data>
-      <data key="d2">B</data>
-      <data key="d3">Biologia na Agricultura e no Ambiente</data>
-      <data key="d4">B+N+Q</data>
-      <data key="d5">29</data>
-      <data key="d6">23</data>
-      <data key="d7">B2</data>
-      <data key="d8">B1</data>
-      <data key="d9">cyanobacteria; cyanobacterial; lakes; strains; soda; genome; soda lakes; pantanal</data>
+      <data key="d8">B3</data>
+      <data key="d9">mangrove; holocene; mangroves; sea-level; relative sea-level; vegetation; coastal; paleoclimate</data>
     </node>
     <node id="B::Helder Louvandini">
       <data key="d0">Helder Louvandini</data>
@@ -60,23 +36,47 @@
       <data key="d2">B</data>
       <data key="d3">Biologia na Agricultura e no Ambiente</data>
       <data key="d4">B+N</data>
-      <data key="d5">29</data>
-      <data key="d6">15</data>
-      <data key="d7">B3</data>
+      <data key="d5">57</data>
+      <data key="d6">32</data>
+      <data key="d7">B4</data>
       <data key="d8">B1</data>
-      <data key="d9">contortus; haemonchus; haemonchus contortus; lambs; sheep; animal; trichostrongylus; colubriformis</data>
+      <data key="d9">sheep; lambs; haemonchus; contortus; haemonchus contortus; gastrointestinal; ines; santa ines</data>
     </node>
-    <node id="B::Marisa de Cassia Piccolo">
-      <data key="d0">Marisa de Cassia Piccolo</data>
-      <data key="d1">Marisa de Cassia Piccolo</data>
+    <node id="B::Antonio Vargas de Oliveira Figueira">
+      <data key="d0">Antonio Vargas de Oliveira Figueira</data>
+      <data key="d1">Antonio Vargas de Oliveira Figueira</data>
       <data key="d2">B</data>
       <data key="d3">Biologia na Agricultura e no Ambiente</data>
       <data key="d4">B</data>
-      <data key="d5">28</data>
-      <data key="d6">20</data>
+      <data key="d5">27</data>
+      <data key="d6">22</data>
+      <data key="d7">B2</data>
+      <data key="d8">B2</data>
+      <data key="d9">cacao; tomato; theobroma; domestication; sugarcane; moniliophthora; perniciosa; sugarcane saccharum</data>
+    </node>
+    <node id="B::Hudson Wallace Pereira de Carvalho">
+      <data key="d0">Hudson Wallace Pereira de Carvalho</data>
+      <data key="d1">Hudson Wallace Pereira de Carvalho</data>
+      <data key="d2">B</data>
+      <data key="d3">Biologia na Agricultura e no Ambiente</data>
+      <data key="d4">B+N+Q</data>
+      <data key="d5">75</data>
+      <data key="d6">48</data>
       <data key="d7">B1</data>
       <data key="d8">B1</data>
-      <data key="d9">silicon; stoichiometry; nutrient; carbon; fertigation; soil; water; sugarcane</data>
+      <data key="d9">x-ray; fluorescence; x-ray fluorescence; zinc; soybean; soil; seed; uptake</data>
+    </node>
+    <node id="B::José Lavres Junior">
+      <data key="d0">José Lavres Junior</data>
+      <data key="d1">José Lavres Junior</data>
+      <data key="d2">B</data>
+      <data key="d3">Biologia na Agricultura e no Ambiente</data>
+      <data key="d4">B+N+Q</data>
+      <data key="d5">91</data>
+      <data key="d6">58</data>
+      <data key="d7">B1</data>
+      <data key="d8">B1</data>
+      <data key="d9">nitrogen; efficiency; fertilization; use efficiency; uptake; soil; leaf; use</data>
     </node>
     <node id="B::Tsai Siu Mui">
       <data key="d0">Tsai Siu Mui</data>
@@ -84,23 +84,47 @@
       <data key="d2">B</data>
       <data key="d3">Biologia na Agricultura e no Ambiente</data>
       <data key="d4">B+N+Q</data>
-      <data key="d5">65</data>
-      <data key="d6">46</data>
+      <data key="d5">73</data>
+      <data key="d6">50</data>
       <data key="d7">B3</data>
       <data key="d8">B1</data>
-      <data key="d9">soil; forest; microbial; amazon; amazonian; communities; methane; microbial communities</data>
+      <data key="d9">soil; microbial; forest; amazon; communities; amazonian; soil microbial; methane</data>
     </node>
-    <node id="B::Diego Mauricio Riaño Pachón">
-      <data key="d0">Diego Mauricio Riaño Pachón</data>
-      <data key="d1">Diego Mauricio Riaño Pachón</data>
+    <node id="B::Adibe Luiz Abdalla">
+      <data key="d0">Adibe Luiz Abdalla</data>
+      <data key="d1">Adibe Luiz Abdalla</data>
+      <data key="d2">B</data>
+      <data key="d3">Biologia na Agricultura e no Ambiente</data>
+      <data key="d4">B+N+Q</data>
+      <data key="d5">79</data>
+      <data key="d6">56</data>
+      <data key="d7">B4</data>
+      <data key="d8">B1</data>
+      <data key="d9">methane; feed; rumen; gas; sheep; fermentation; production; intake</data>
+    </node>
+    <node id="B::Lucas William Mendes">
+      <data key="d0">Lucas William Mendes</data>
+      <data key="d1">Lucas William Mendes</data>
       <data key="d2">B</data>
       <data key="d3">Biologia na Agricultura e no Ambiente</data>
       <data key="d4">B</data>
-      <data key="d5">26</data>
-      <data key="d6">24</data>
-      <data key="d7">B2</data>
+      <data key="d5">155</data>
+      <data key="d6">77</data>
+      <data key="d7">B3</data>
       <data key="d8">B1</data>
-      <data key="d9">gene; expression; genes; genome; gene expression; cell; sugarcane; sequences</data>
+      <data key="d9">microbial; microbiome; soil; bacterial; rhizosphere; communities; community; plant</data>
+    </node>
+    <node id="B::Cassio Hamilton Abreu Junior">
+      <data key="d0">Cassio Hamilton Abreu Junior</data>
+      <data key="d1">Cassio Hamilton Abreu Junior</data>
+      <data key="d2">B</data>
+      <data key="d3">Biologia na Agricultura e no Ambiente</data>
+      <data key="d4">B+N+Q</data>
+      <data key="d5">35</data>
+      <data key="d6">26</data>
+      <data key="d7">B1</data>
+      <data key="d8">B1</data>
+      <data key="d9">soil; sewage; sewage sludge; sludge; css; mineral; fertilizer; compost</data>
     </node>
     <node id="B::Flavia Vischi Winck">
       <data key="d0">Flavia Vischi Winck</data>
@@ -108,23 +132,11 @@
       <data key="d2">B</data>
       <data key="d3">Biologia na Agricultura e no Ambiente</data>
       <data key="d4">B</data>
-      <data key="d5">16</data>
-      <data key="d6">14</data>
+      <data key="d5">17</data>
+      <data key="d6">15</data>
       <data key="d7">B2</data>
-      <data key="d8">B1</data>
-      <data key="d9">microalgae; chlamydomonas; reinhardtii; chlamydomonas reinhardtii; programming; regulation; workshop; applications</data>
-    </node>
-    <node id="B::Kassio Ferreira Mendes">
-      <data key="d0">Kassio Ferreira Mendes</data>
-      <data key="d1">Kassio Ferreira Mendes</data>
-      <data key="d2">B</data>
-      <data key="d3">Biologia na Agricultura e no Ambiente</data>
-      <data key="d4">B+N+Q</data>
-      <data key="d5">25</data>
-      <data key="d6">23</data>
-      <data key="d7">B1</data>
-      <data key="d8">B1</data>
-      <data key="d9">herbicide; weed; weed control; herbicides; glyphosate; weeds; phytoremediation; soil</data>
+      <data key="d8">B2</data>
+      <data key="d9">biology; microalgae; regulation; programming; chlamydomonas; reinhardtii; chlamydomonas reinhardtii; workshop</data>
     </node>
     <node id="B::Francisco Scaglia Linhares">
       <data key="d0">Francisco Scaglia Linhares</data>
@@ -136,67 +148,31 @@
       <data key="d6">10</data>
       <data key="d7">B1</data>
       <data key="d8">B1</data>
-      <data key="d9">leaf; soybean; potassium; accumulation; pollen; seed; calcium; photosynthesis</data>
+      <data key="d9">leaf; potassium; accumulation; soybean; seed; growth; magnesium; stomatal</data>
     </node>
-    <node id="B::Antonio Vargas de Oliveira Figueira">
-      <data key="d0">Antonio Vargas de Oliveira Figueira</data>
-      <data key="d1">Antonio Vargas de Oliveira Figueira</data>
+    <node id="B::Kassio Ferreira Mendes">
+      <data key="d0">Kassio Ferreira Mendes</data>
+      <data key="d1">Kassio Ferreira Mendes</data>
+      <data key="d2">B</data>
+      <data key="d3">Biologia na Agricultura e no Ambiente</data>
+      <data key="d4">B+N+Q</data>
+      <data key="d5">72</data>
+      <data key="d6">61</data>
+      <data key="d7">B1</data>
+      <data key="d8">B1</data>
+      <data key="d9">herbicide; weed; herbicides; weed control; soil; control; glyphosate; desorption</data>
+    </node>
+    <node id="B::Diego Mauricio Riaño Pachón">
+      <data key="d0">Diego Mauricio Riaño Pachón</data>
+      <data key="d1">Diego Mauricio Riaño Pachón</data>
       <data key="d2">B</data>
       <data key="d3">Biologia na Agricultura e no Ambiente</data>
       <data key="d4">B</data>
-      <data key="d5">25</data>
-      <data key="d6">21</data>
+      <data key="d5">28</data>
+      <data key="d6">26</data>
       <data key="d7">B2</data>
-      <data key="d8">B1</data>
-      <data key="d9">tomato; cacao; saccharum; domestication; perniciosa; moniliophthora; theobroma; cytokinin</data>
-    </node>
-    <node id="B::Adibe Luiz Abdalla">
-      <data key="d0">Adibe Luiz Abdalla</data>
-      <data key="d1">Adibe Luiz Abdalla</data>
-      <data key="d2">B</data>
-      <data key="d3">Biologia na Agricultura e no Ambiente</data>
-      <data key="d4">B+N+Q</data>
-      <data key="d5">36</data>
-      <data key="d6">27</data>
-      <data key="d7">B1</data>
-      <data key="d8">B1</data>
-      <data key="d9">methane; rumen; diversifolia; production; tithonia; fermentation; animal; tithonia diversifolia</data>
-    </node>
-    <node id="B::Luiz Carlos Ruiz Pessenda">
-      <data key="d0">Luiz Carlos Ruiz Pessenda</data>
-      <data key="d1">Luiz Carlos Ruiz Pessenda</data>
-      <data key="d2">B</data>
-      <data key="d3">Biologia na Agricultura e no Ambiente</data>
-      <data key="d4">B+N+Q</data>
-      <data key="d5">12</data>
-      <data key="d6">5</data>
-      <data key="d7">B3</data>
-      <data key="d8">B3</data>
-      <data key="d9">mangrove; avicennia; holocene; mangroves; gulf; hurricanes; climate; flats</data>
-    </node>
-    <node id="B::Hudson Wallace Pereira de Carvalho">
-      <data key="d0">Hudson Wallace Pereira de Carvalho</data>
-      <data key="d1">Hudson Wallace Pereira de Carvalho</data>
-      <data key="d2">B</data>
-      <data key="d3">Biologia na Agricultura e no Ambiente</data>
-      <data key="d4">B+N+Q</data>
-      <data key="d5">47</data>
-      <data key="d6">33</data>
-      <data key="d7">B1</data>
-      <data key="d8">B1</data>
-      <data key="d9">x-ray; zinc; soybean; fluorescence; x-ray fluorescence; seed; manganese; uptake</data>
-    </node>
-    <node id="B::Ernani Pinto Junior">
-      <data key="d0">Ernani Pinto Junior</data>
-      <data key="d1">Ernani Pinto Junior</data>
-      <data key="d2">B</data>
-      <data key="d3">Biologia na Agricultura e no Ambiente</data>
-      <data key="d4">B+Q</data>
-      <data key="d5">23</data>
-      <data key="d6">17</data>
-      <data key="d7">B2</data>
-      <data key="d8">B1</data>
-      <data key="d9">cyanobacteria; cyanobacterial; metabolites; blooms; aeruginosa; microcystis; cyanobacterial blooms; microcystis aeruginosa</data>
+      <data key="d8">B2</data>
+      <data key="d9">gene; expression; genome; gene expression; genes; cell; sugarcane; programming</data>
     </node>
     <node id="B::Elisabete Aparecida De Nadai Fernandes">
       <data key="d0">Elisabete Aparecida De Nadai Fernandes</data>
@@ -204,473 +180,479 @@
       <data key="d2">B</data>
       <data key="d3">Biologia na Agricultura e no Ambiente</data>
       <data key="d4">B+N+Q</data>
-      <data key="d5">5</data>
-      <data key="d6">3</data>
-      <data key="d7">B3</data>
-      <data key="d8">B2</data>
-      <data key="d9">beef; beef cattle; colubriformis; trichostrongylus colubriformis; trichostrongylus; fecal; fecal microbiome; colubriformis gastrointestinal</data>
+      <data key="d5">12</data>
+      <data key="d6">8</data>
+      <data key="d7">B1</data>
+      <data key="d8">B1</data>
+      <data key="d9">beef; cattle; gastrointestinal; zinc; beef cattle; zinc oxide; sheep; learning</data>
     </node>
-    <node id="B::Cassio Hamilton Abreu Junior">
-      <data key="d0">Cassio Hamilton Abreu Junior</data>
-      <data key="d1">Cassio Hamilton Abreu Junior</data>
+    <node id="B::Marli de Fatima Fiore">
+      <data key="d0">Marli de Fatima Fiore</data>
+      <data key="d1">Marli de Fatima Fiore</data>
       <data key="d2">B</data>
       <data key="d3">Biologia na Agricultura e no Ambiente</data>
       <data key="d4">B+N+Q</data>
-      <data key="d5">28</data>
-      <data key="d6">21</data>
-      <data key="d7">B1</data>
-      <data key="d8">B1</data>
-      <data key="d9">sewage; sewage sludge; soil; sludge; css; crop; composted sewage; composted</data>
+      <data key="d5">32</data>
+      <data key="d6">24</data>
+      <data key="d7">B2</data>
+      <data key="d8">B2</data>
+      <data key="d9">cyanobacteria; cyanobacterial; lakes; soda; soda lakes; pantanal; strains; genome</data>
     </node>
-    <edge source="B::Lucas William Mendes" target="B::Tsai Siu Mui">
+    <node id="B::Ernani Pinto Junior">
+      <data key="d0">Ernani Pinto Junior</data>
+      <data key="d1">Ernani Pinto Junior</data>
+      <data key="d2">B</data>
+      <data key="d3">Biologia na Agricultura e no Ambiente</data>
+      <data key="d4">B+Q</data>
+      <data key="d5">51</data>
+      <data key="d6">36</data>
+      <data key="d7">B2</data>
+      <data key="d8">B2</data>
+      <data key="d9">cyanobacterial; cyanobacteria; blooms; cyanotoxins; microcystins; metabolites; toxicity; cyanobacterial blooms</data>
+    </node>
+    <node id="B::Marisa de Cassia Piccolo">
+      <data key="d0">Marisa de Cassia Piccolo</data>
+      <data key="d1">Marisa de Cassia Piccolo</data>
+      <data key="d2">B</data>
+      <data key="d3">Biologia na Agricultura e no Ambiente</data>
+      <data key="d4">B</data>
+      <data key="d5">36</data>
+      <data key="d6">25</data>
+      <data key="d7">B3</data>
+      <data key="d8">B1</data>
+      <data key="d9">silicon; carbon; stoichiometry; soil; nutrient; organic carbon; matter; efficiency</data>
+    </node>
+    <edge source="B::Luiz Carlos Ruiz Pessenda" target="B::Tsai Siu Mui">
       <data key="d10">B</data>
-      <data key="d11">0.886647</data>
-      <data key="d12">22</data>
-      <data key="d13">126</data>
-      <data key="d14">43</data>
+      <data key="d11">0.880415</data>
+      <data key="d12">0</data>
+      <data key="d13">34</data>
+      <data key="d14">73</data>
       <data key="d15">1</data>
-      <data key="d16">1</data>
+      <data key="d16">0</data>
     </edge>
-    <edge source="B::Lucas William Mendes" target="B::Cassio Hamilton Abreu Junior">
+    <edge source="B::Luiz Carlos Ruiz Pessenda" target="B::Marisa de Cassia Piccolo">
       <data key="d10">B</data>
-      <data key="d11">0.717234</data>
-      <data key="d12">0</data>
-      <data key="d13">28</data>
-      <data key="d14">148</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Lucas William Mendes" target="B::José Lavres Junior">
-      <data key="d10">B</data>
-      <data key="d11">0.697967</data>
+      <data key="d11">0.854746</data>
       <data key="d12">2</data>
-      <data key="d13">80</data>
-      <data key="d14">146</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Lucas William Mendes" target="B::Antonio Vargas de Oliveira Figueira">
-      <data key="d10">B</data>
-      <data key="d11">0.67586</data>
-      <data key="d12">0</data>
-      <data key="d13">25</data>
-      <data key="d14">148</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Lucas William Mendes" target="B::Diego Mauricio Riaño Pachón">
-      <data key="d10">B</data>
-      <data key="d11">0.650647</data>
-      <data key="d12">1</data>
-      <data key="d13">25</data>
-      <data key="d14">147</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Lucas William Mendes" target="B::Adibe Luiz Abdalla">
-      <data key="d10">B</data>
-      <data key="d11">0.618274</data>
-      <data key="d12">4</data>
       <data key="d13">32</data>
-      <data key="d14">144</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Lucas William Mendes" target="B::Helder Louvandini">
-      <data key="d10">B</data>
-      <data key="d11">0.586149</data>
-      <data key="d12">4</data>
-      <data key="d13">25</data>
-      <data key="d14">144</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Lucas William Mendes" target="B::Elisabete Aparecida De Nadai Fernandes">
-      <data key="d10">B</data>
-      <data key="d11">0.486853</data>
-      <data key="d12">2</data>
-      <data key="d13">3</data>
-      <data key="d14">146</data>
+      <data key="d14">34</data>
       <data key="d15">1</data>
       <data key="d16">0</data>
     </edge>
-    <edge source="B::Lucas William Mendes" target="B::Luiz Carlos Ruiz Pessenda">
+    <edge source="B::Luiz Carlos Ruiz Pessenda" target="B::Cassio Hamilton Abreu Junior">
       <data key="d10">B</data>
-      <data key="d11">0.423109</data>
+      <data key="d11">0.854146</data>
       <data key="d12">0</data>
-      <data key="d13">148</data>
-      <data key="d14">12</data>
-      <data key="d15">1</data>
-      <data key="d16">0</data>
-    </edge>
-    <edge source="B::José Lavres Junior" target="B::Hudson Wallace Pereira de Carvalho">
-      <data key="d10">B</data>
-      <data key="d11">0.913423</data>
-      <data key="d12">10</data>
-      <data key="d13">37</data>
-      <data key="d14">72</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::José Lavres Junior" target="B::Marisa de Cassia Piccolo">
-      <data key="d10">B</data>
-      <data key="d11">0.897426</data>
-      <data key="d12">0</data>
-      <data key="d13">82</data>
-      <data key="d14">28</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::José Lavres Junior" target="B::Cassio Hamilton Abreu Junior">
-      <data key="d10">B</data>
-      <data key="d11">0.878112</data>
-      <data key="d12">5</data>
-      <data key="d13">23</data>
-      <data key="d14">77</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::José Lavres Junior" target="B::Kassio Ferreira Mendes">
-      <data key="d10">B</data>
-      <data key="d11">0.770248</data>
-      <data key="d12">0</data>
-      <data key="d13">82</data>
-      <data key="d14">25</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::José Lavres Junior" target="B::Antonio Vargas de Oliveira Figueira">
-      <data key="d10">B</data>
-      <data key="d11">0.706894</data>
-      <data key="d12">1</data>
-      <data key="d13">24</data>
-      <data key="d14">81</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::José Lavres Junior" target="B::Tsai Siu Mui">
-      <data key="d10">B</data>
-      <data key="d11">0.659275</data>
-      <data key="d12">0</data>
-      <data key="d13">82</data>
-      <data key="d14">65</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::José Lavres Junior" target="B::Adibe Luiz Abdalla">
-      <data key="d10">B</data>
-      <data key="d11">0.632753</data>
-      <data key="d12">1</data>
       <data key="d13">35</data>
-      <data key="d14">81</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::José Lavres Junior" target="B::Elisabete Aparecida De Nadai Fernandes">
-      <data key="d10">B</data>
-      <data key="d11">0.488171</data>
-      <data key="d12">0</data>
-      <data key="d13">5</data>
-      <data key="d14">82</data>
+      <data key="d14">34</data>
       <data key="d15">0</data>
       <data key="d16">0</data>
     </edge>
-    <edge source="B::Marli de Fatima Fiore" target="B::Ernani Pinto Junior">
+    <edge source="B::Luiz Carlos Ruiz Pessenda" target="B::Lucas William Mendes">
       <data key="d10">B</data>
-      <data key="d11">0.835103</data>
-      <data key="d12">7</data>
-      <data key="d13">16</data>
-      <data key="d14">22</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Marli de Fatima Fiore" target="B::Flavia Vischi Winck">
-      <data key="d10">B</data>
-      <data key="d11">0.676144</data>
+      <data key="d11">0.851935</data>
       <data key="d12">0</data>
-      <data key="d13">16</data>
-      <data key="d14">29</data>
+      <data key="d13">155</data>
+      <data key="d14">34</data>
       <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Marli de Fatima Fiore" target="B::Tsai Siu Mui">
-      <data key="d10">B</data>
-      <data key="d11">0.604116</data>
-      <data key="d12">1</data>
-      <data key="d13">28</data>
-      <data key="d14">64</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Marli de Fatima Fiore" target="B::Diego Mauricio Riaño Pachón">
-      <data key="d10">B</data>
-      <data key="d11">0.597475</data>
-      <data key="d12">1</data>
-      <data key="d13">25</data>
-      <data key="d14">28</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Marli de Fatima Fiore" target="B::Luiz Carlos Ruiz Pessenda">
-      <data key="d10">B</data>
-      <data key="d11">0.410653</data>
-      <data key="d12">0</data>
-      <data key="d13">12</data>
-      <data key="d14">29</data>
-      <data key="d15">0</data>
       <data key="d16">0</data>
     </edge>
     <edge source="B::Helder Louvandini" target="B::Adibe Luiz Abdalla">
       <data key="d10">B</data>
-      <data key="d11">0.603741</data>
-      <data key="d12">19</data>
-      <data key="d13">17</data>
-      <data key="d14">10</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Helder Louvandini" target="B::Kassio Ferreira Mendes">
-      <data key="d10">B</data>
-      <data key="d11">0.581938</data>
-      <data key="d12">0</data>
-      <data key="d13">29</data>
-      <data key="d14">25</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Helder Louvandini" target="B::Tsai Siu Mui">
-      <data key="d10">B</data>
-      <data key="d11">0.562662</data>
-      <data key="d12">2</data>
-      <data key="d13">27</data>
-      <data key="d14">63</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Marisa de Cassia Piccolo" target="B::Cassio Hamilton Abreu Junior">
-      <data key="d10">B</data>
-      <data key="d11">0.888243</data>
-      <data key="d12">0</data>
-      <data key="d13">28</data>
-      <data key="d14">28</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Marisa de Cassia Piccolo" target="B::Hudson Wallace Pereira de Carvalho">
-      <data key="d10">B</data>
-      <data key="d11">0.84226</data>
-      <data key="d12">0</data>
-      <data key="d13">47</data>
-      <data key="d14">28</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Marisa de Cassia Piccolo" target="B::Francisco Scaglia Linhares">
-      <data key="d10">B</data>
-      <data key="d11">0.780699</data>
-      <data key="d12">0</data>
-      <data key="d13">13</data>
-      <data key="d14">28</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Marisa de Cassia Piccolo" target="B::Kassio Ferreira Mendes">
-      <data key="d10">B</data>
-      <data key="d11">0.724687</data>
-      <data key="d12">0</data>
-      <data key="d13">25</data>
-      <data key="d14">28</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Marisa de Cassia Piccolo" target="B::Adibe Luiz Abdalla">
-      <data key="d10">B</data>
-      <data key="d11">0.63132</data>
-      <data key="d12">0</data>
-      <data key="d13">36</data>
-      <data key="d14">28</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Marisa de Cassia Piccolo" target="B::Luiz Carlos Ruiz Pessenda">
-      <data key="d10">B</data>
-      <data key="d11">0.422744</data>
-      <data key="d12">1</data>
-      <data key="d13">11</data>
+      <data key="d11">0.925868</data>
+      <data key="d12">30</data>
+      <data key="d13">49</data>
       <data key="d14">27</data>
-      <data key="d15">0</data>
-      <data key="d16">0</data>
-    </edge>
-    <edge source="B::Tsai Siu Mui" target="B::Cassio Hamilton Abreu Junior">
-      <data key="d10">B</data>
-      <data key="d11">0.684259</data>
-      <data key="d12">0</data>
-      <data key="d13">28</data>
-      <data key="d14">65</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Tsai Siu Mui" target="B::Diego Mauricio Riaño Pachón">
-      <data key="d10">B</data>
-      <data key="d11">0.657894</data>
-      <data key="d12">0</data>
-      <data key="d13">26</data>
-      <data key="d14">65</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Tsai Siu Mui" target="B::Elisabete Aparecida De Nadai Fernandes">
-      <data key="d10">B</data>
-      <data key="d11">0.563764</data>
-      <data key="d12">0</data>
-      <data key="d13">5</data>
-      <data key="d14">65</data>
       <data key="d15">1</data>
-      <data key="d16">0</data>
+      <data key="d16">1</data>
     </edge>
-    <edge source="B::Tsai Siu Mui" target="B::Luiz Carlos Ruiz Pessenda">
+    <edge source="B::Helder Louvandini" target="B::Marisa de Cassia Piccolo">
       <data key="d10">B</data>
-      <data key="d11">0.530343</data>
+      <data key="d11">0.876355</data>
       <data key="d12">0</data>
-      <data key="d13">12</data>
-      <data key="d14">65</data>
-      <data key="d15">1</data>
-      <data key="d16">0</data>
-    </edge>
-    <edge source="B::Tsai Siu Mui" target="B::Ernani Pinto Junior">
-      <data key="d10">B</data>
-      <data key="d11">0.514408</data>
-      <data key="d12">0</data>
-      <data key="d13">23</data>
-      <data key="d14">65</data>
+      <data key="d13">57</data>
+      <data key="d14">36</data>
       <data key="d15">0</data>
       <data key="d16">1</data>
     </edge>
-    <edge source="B::Diego Mauricio Riaño Pachón" target="B::Antonio Vargas de Oliveira Figueira">
+    <edge source="B::Helder Louvandini" target="B::Hudson Wallace Pereira de Carvalho">
       <data key="d10">B</data>
-      <data key="d11">0.797883</data>
+      <data key="d11">0.873252</data>
+      <data key="d12">0</data>
+      <data key="d13">57</data>
+      <data key="d14">75</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Helder Louvandini" target="B::Antonio Vargas de Oliveira Figueira">
+      <data key="d10">B</data>
+      <data key="d11">0.870409</data>
+      <data key="d12">0</data>
+      <data key="d13">27</data>
+      <data key="d14">57</data>
+      <data key="d15">0</data>
+      <data key="d16">0</data>
+    </edge>
+    <edge source="B::Antonio Vargas de Oliveira Figueira" target="B::Diego Mauricio Riaño Pachón">
+      <data key="d10">B</data>
+      <data key="d11">0.942709</data>
       <data key="d12">2</data>
-      <data key="d13">23</data>
-      <data key="d14">24</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Diego Mauricio Riaño Pachón" target="B::Flavia Vischi Winck">
-      <data key="d10">B</data>
-      <data key="d11">0.721883</data>
-      <data key="d12">4</data>
-      <data key="d13">22</data>
-      <data key="d14">12</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Diego Mauricio Riaño Pachón" target="B::Ernani Pinto Junior">
-      <data key="d10">B</data>
-      <data key="d11">0.541364</data>
-      <data key="d12">0</data>
-      <data key="d13">26</data>
-      <data key="d14">23</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Flavia Vischi Winck" target="B::Ernani Pinto Junior">
-      <data key="d10">B</data>
-      <data key="d11">0.686035</data>
-      <data key="d12">0</data>
-      <data key="d13">23</data>
-      <data key="d14">16</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Flavia Vischi Winck" target="B::Antonio Vargas de Oliveira Figueira">
-      <data key="d10">B</data>
-      <data key="d11">0.606654</data>
-      <data key="d12">0</data>
       <data key="d13">25</data>
-      <data key="d14">16</data>
+      <data key="d14">26</data>
       <data key="d15">1</data>
       <data key="d16">1</data>
     </edge>
-    <edge source="B::Kassio Ferreira Mendes" target="B::Cassio Hamilton Abreu Junior">
+    <edge source="B::Antonio Vargas de Oliveira Figueira" target="B::Francisco Scaglia Linhares">
       <data key="d10">B</data>
-      <data key="d11">0.766128</data>
+      <data key="d11">0.926846</data>
       <data key="d12">0</data>
-      <data key="d13">28</data>
-      <data key="d14">25</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Kassio Ferreira Mendes" target="B::Hudson Wallace Pereira de Carvalho">
-      <data key="d10">B</data>
-      <data key="d11">0.757944</data>
-      <data key="d12">0</data>
-      <data key="d13">47</data>
-      <data key="d14">25</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Kassio Ferreira Mendes" target="B::Antonio Vargas de Oliveira Figueira">
-      <data key="d10">B</data>
-      <data key="d11">0.699451</data>
-      <data key="d12">0</data>
-      <data key="d13">25</data>
-      <data key="d14">25</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Francisco Scaglia Linhares" target="B::Hudson Wallace Pereira de Carvalho">
-      <data key="d10">B</data>
-      <data key="d11">0.874326</data>
-      <data key="d12">2</data>
-      <data key="d13">11</data>
-      <data key="d14">45</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="B::Francisco Scaglia Linhares" target="B::Antonio Vargas de Oliveira Figueira">
-      <data key="d10">B</data>
-      <data key="d11">0.769334</data>
-      <data key="d12">0</data>
-      <data key="d13">25</data>
+      <data key="d13">27</data>
       <data key="d14">13</data>
       <data key="d15">0</data>
-      <data key="d16">1</data>
+      <data key="d16">0</data>
     </edge>
-    <edge source="B::Francisco Scaglia Linhares" target="B::Cassio Hamilton Abreu Junior">
+    <edge source="B::Antonio Vargas de Oliveira Figueira" target="B::José Lavres Junior">
       <data key="d10">B</data>
-      <data key="d11">0.744656</data>
+      <data key="d11">0.917829</data>
+      <data key="d12">1</data>
+      <data key="d13">26</data>
+      <data key="d14">90</data>
+      <data key="d15">0</data>
+      <data key="d16">0</data>
+    </edge>
+    <edge source="B::Antonio Vargas de Oliveira Figueira" target="B::Hudson Wallace Pereira de Carvalho">
+      <data key="d10">B</data>
+      <data key="d11">0.901466</data>
       <data key="d12">0</data>
-      <data key="d13">28</data>
-      <data key="d14">13</data>
+      <data key="d13">27</data>
+      <data key="d14">75</data>
+      <data key="d15">0</data>
+      <data key="d16">0</data>
+    </edge>
+    <edge source="B::Antonio Vargas de Oliveira Figueira" target="B::Flavia Vischi Winck">
+      <data key="d10">B</data>
+      <data key="d11">0.900859</data>
+      <data key="d12">0</data>
+      <data key="d13">27</data>
+      <data key="d14">17</data>
       <data key="d15">1</data>
       <data key="d16">1</data>
     </edge>
-    <edge source="B::Adibe Luiz Abdalla" target="B::Cassio Hamilton Abreu Junior">
+    <edge source="B::Hudson Wallace Pereira de Carvalho" target="B::José Lavres Junior">
       <data key="d10">B</data>
-      <data key="d11">0.625377</data>
-      <data key="d12">0</data>
-      <data key="d13">36</data>
-      <data key="d14">28</data>
+      <data key="d11">0.969335</data>
+      <data key="d12">14</data>
+      <data key="d13">61</data>
+      <data key="d14">77</data>
       <data key="d15">1</data>
       <data key="d16">1</data>
     </edge>
     <edge source="B::Hudson Wallace Pereira de Carvalho" target="B::Cassio Hamilton Abreu Junior">
       <data key="d10">B</data>
-      <data key="d11">0.866149</data>
-      <data key="d12">0</data>
-      <data key="d13">28</data>
-      <data key="d14">47</data>
+      <data key="d11">0.959944</data>
+      <data key="d12">1</data>
+      <data key="d13">34</data>
+      <data key="d14">74</data>
       <data key="d15">1</data>
       <data key="d16">1</data>
     </edge>
-    <edge source="B::Elisabete Aparecida De Nadai Fernandes" target="B::Cassio Hamilton Abreu Junior">
+    <edge source="B::Hudson Wallace Pereira de Carvalho" target="B::Francisco Scaglia Linhares">
       <data key="d10">B</data>
-      <data key="d11">0.505054</data>
+      <data key="d11">0.945492</data>
+      <data key="d12">2</data>
+      <data key="d13">11</data>
+      <data key="d14">73</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Hudson Wallace Pereira de Carvalho" target="B::Marisa de Cassia Piccolo">
+      <data key="d10">B</data>
+      <data key="d11">0.944172</data>
       <data key="d12">0</data>
-      <data key="d13">28</data>
-      <data key="d14">5</data>
+      <data key="d13">75</data>
+      <data key="d14">36</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Hudson Wallace Pereira de Carvalho" target="B::Kassio Ferreira Mendes">
+      <data key="d10">B</data>
+      <data key="d11">0.915391</data>
+      <data key="d12">0</data>
+      <data key="d13">75</data>
+      <data key="d14">72</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Hudson Wallace Pereira de Carvalho" target="B::Elisabete Aparecida De Nadai Fernandes">
+      <data key="d10">B</data>
+      <data key="d11">0.895956</data>
+      <data key="d12">1</data>
+      <data key="d13">11</data>
+      <data key="d14">74</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Hudson Wallace Pereira de Carvalho" target="B::Ernani Pinto Junior">
+      <data key="d10">B</data>
+      <data key="d11">0.87805</data>
+      <data key="d12">0</data>
+      <data key="d13">51</data>
+      <data key="d14">75</data>
       <data key="d15">0</data>
       <data key="d16">0</data>
+    </edge>
+    <edge source="B::José Lavres Junior" target="B::Cassio Hamilton Abreu Junior">
+      <data key="d10">B</data>
+      <data key="d11">0.963781</data>
+      <data key="d12">5</data>
+      <data key="d13">30</data>
+      <data key="d14">86</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::José Lavres Junior" target="B::Marisa de Cassia Piccolo">
+      <data key="d10">B</data>
+      <data key="d11">0.962579</data>
+      <data key="d12">0</data>
+      <data key="d13">91</data>
+      <data key="d14">36</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::José Lavres Junior" target="B::Francisco Scaglia Linhares">
+      <data key="d10">B</data>
+      <data key="d11">0.924946</data>
+      <data key="d12">7</data>
+      <data key="d13">6</data>
+      <data key="d14">84</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::José Lavres Junior" target="B::Lucas William Mendes">
+      <data key="d10">B</data>
+      <data key="d11">0.917107</data>
+      <data key="d12">2</data>
+      <data key="d13">89</data>
+      <data key="d14">153</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::José Lavres Junior" target="B::Kassio Ferreira Mendes">
+      <data key="d10">B</data>
+      <data key="d11">0.910453</data>
+      <data key="d12">0</data>
+      <data key="d13">91</data>
+      <data key="d14">72</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::José Lavres Junior" target="B::Elisabete Aparecida De Nadai Fernandes">
+      <data key="d10">B</data>
+      <data key="d11">0.899722</data>
+      <data key="d12">0</data>
+      <data key="d13">12</data>
+      <data key="d14">91</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::José Lavres Junior" target="B::Adibe Luiz Abdalla">
+      <data key="d10">B</data>
+      <data key="d11">0.890507</data>
+      <data key="d12">1</data>
+      <data key="d13">78</data>
+      <data key="d14">90</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Tsai Siu Mui" target="B::Lucas William Mendes">
+      <data key="d10">B</data>
+      <data key="d11">0.962672</data>
+      <data key="d12">22</data>
+      <data key="d13">133</data>
+      <data key="d14">51</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Tsai Siu Mui" target="B::Cassio Hamilton Abreu Junior">
+      <data key="d10">B</data>
+      <data key="d11">0.917055</data>
+      <data key="d12">0</data>
+      <data key="d13">35</data>
+      <data key="d14">73</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Tsai Siu Mui" target="B::Marisa de Cassia Piccolo">
+      <data key="d10">B</data>
+      <data key="d11">0.914382</data>
+      <data key="d12">2</data>
+      <data key="d13">34</data>
+      <data key="d14">71</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Tsai Siu Mui" target="B::Diego Mauricio Riaño Pachón">
+      <data key="d10">B</data>
+      <data key="d11">0.91001</data>
+      <data key="d12">0</data>
+      <data key="d13">28</data>
+      <data key="d14">73</data>
+      <data key="d15">0</data>
+      <data key="d16">0</data>
+    </edge>
+    <edge source="B::Adibe Luiz Abdalla" target="B::Marisa de Cassia Piccolo">
+      <data key="d10">B</data>
+      <data key="d11">0.903587</data>
+      <data key="d12">0</data>
+      <data key="d13">79</data>
+      <data key="d14">36</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Adibe Luiz Abdalla" target="B::Elisabete Aparecida De Nadai Fernandes">
+      <data key="d10">B</data>
+      <data key="d11">0.890377</data>
+      <data key="d12">5</data>
+      <data key="d13">74</data>
+      <data key="d14">7</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Lucas William Mendes" target="B::Marisa de Cassia Piccolo">
+      <data key="d10">B</data>
+      <data key="d11">0.924177</data>
+      <data key="d12">1</data>
+      <data key="d13">154</data>
+      <data key="d14">35</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Lucas William Mendes" target="B::Cassio Hamilton Abreu Junior">
+      <data key="d10">B</data>
+      <data key="d11">0.923212</data>
+      <data key="d12">0</data>
+      <data key="d13">35</data>
+      <data key="d14">155</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Lucas William Mendes" target="B::Diego Mauricio Riaño Pachón">
+      <data key="d10">B</data>
+      <data key="d11">0.90536</data>
+      <data key="d12">1</data>
+      <data key="d13">27</data>
+      <data key="d14">154</data>
+      <data key="d15">0</data>
+      <data key="d16">0</data>
+    </edge>
+    <edge source="B::Lucas William Mendes" target="B::Marli de Fatima Fiore">
+      <data key="d10">B</data>
+      <data key="d11">0.887678</data>
+      <data key="d12">1</data>
+      <data key="d13">154</data>
+      <data key="d14">31</data>
+      <data key="d15">0</data>
+      <data key="d16">0</data>
+    </edge>
+    <edge source="B::Cassio Hamilton Abreu Junior" target="B::Marisa de Cassia Piccolo">
+      <data key="d10">B</data>
+      <data key="d11">0.965341</data>
+      <data key="d12">0</data>
+      <data key="d13">35</data>
+      <data key="d14">36</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Cassio Hamilton Abreu Junior" target="B::Francisco Scaglia Linhares">
+      <data key="d10">B</data>
+      <data key="d11">0.921055</data>
+      <data key="d12">0</data>
+      <data key="d13">35</data>
+      <data key="d14">13</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Cassio Hamilton Abreu Junior" target="B::Kassio Ferreira Mendes">
+      <data key="d10">B</data>
+      <data key="d11">0.916497</data>
+      <data key="d12">0</data>
+      <data key="d13">35</data>
+      <data key="d14">72</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Cassio Hamilton Abreu Junior" target="B::Elisabete Aparecida De Nadai Fernandes">
+      <data key="d10">B</data>
+      <data key="d11">0.889431</data>
+      <data key="d12">0</data>
+      <data key="d13">35</data>
+      <data key="d14">12</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Flavia Vischi Winck" target="B::Diego Mauricio Riaño Pachón">
+      <data key="d10">B</data>
+      <data key="d11">0.934816</data>
+      <data key="d12">4</data>
+      <data key="d13">24</data>
+      <data key="d14">13</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Flavia Vischi Winck" target="B::Ernani Pinto Junior">
+      <data key="d10">B</data>
+      <data key="d11">0.92344</data>
+      <data key="d12">0</data>
+      <data key="d13">51</data>
+      <data key="d14">17</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Flavia Vischi Winck" target="B::Marli de Fatima Fiore">
+      <data key="d10">B</data>
+      <data key="d11">0.92242</data>
+      <data key="d12">0</data>
+      <data key="d13">17</data>
+      <data key="d14">32</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Kassio Ferreira Mendes" target="B::Marisa de Cassia Piccolo">
+      <data key="d10">B</data>
+      <data key="d11">0.907824</data>
+      <data key="d12">0</data>
+      <data key="d13">72</data>
+      <data key="d14">36</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Diego Mauricio Riaño Pachón" target="B::Marli de Fatima Fiore">
+      <data key="d10">B</data>
+      <data key="d11">0.904207</data>
+      <data key="d12">1</data>
+      <data key="d13">27</data>
+      <data key="d14">31</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Diego Mauricio Riaño Pachón" target="B::Ernani Pinto Junior">
+      <data key="d10">B</data>
+      <data key="d11">0.891766</data>
+      <data key="d12">0</data>
+      <data key="d13">28</data>
+      <data key="d14">51</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="B::Marli de Fatima Fiore" target="B::Ernani Pinto Junior">
+      <data key="d10">B</data>
+      <data key="d11">0.940552</data>
+      <data key="d12">7</data>
+      <data key="d13">44</data>
+      <data key="d14">25</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
     </edge>
   </graph>
 </graphml>
