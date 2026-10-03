@@ -20,6 +20,26 @@
     ]
   },
   {
+    "name": "Adriana Pinheiro Martinelli",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5073886068",
+        "name": "Adriana Pinheiro Martinelli",
+        "orcid": "https://orcid.org/0000-0003-1278-3930",
+        "works_count": 172,
+        "institutions": [
+          "Universidade de São Paulo"
+        ],
+        "topics": [
+          "Plant tissue culture and regeneration",
+          "Plant Reproductive Biology",
+          "Plant and animal studies",
+          "Fern and Epiphyte Biology"
+        ]
+      }
+    ]
+  },
+  {
     "name": "Antonio Vargas de Oliveira Figueira",
     "candidates": [
       {
@@ -31,12 +51,31 @@
           "Universidade de São Paulo"
         ],
         "topics": [
-          "Plant Molecular Biology Research",
           "Cocoa and Sweet Potato Agronomy",
           "Plant tissue culture and regeneration",
           "Sugarcane Cultivation and Processing",
           "Banana Cultivation and Research"
-	]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Augusto Tulmann Neto",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5087387580",
+        "name": "Augusto Tulmann Neto",
+        "orcid": "https://orcid.org/0000-0003-3619-0072",
+        "works_count": 162,
+        "institutions": [
+          "Universidade de São Paulo"
+        ],
+        "topics": [
+          "Plant tissue culture and regeneration",
+          "Banana Cultivation and Research",
+          "Plant Genetic and Mutation Studies",
+          "Growth and nutrition in plants"
+        ]
       }
     ]
   },
@@ -68,7 +107,7 @@
         "id": "https://openalex.org/A5088590069",
         "name": "Diego Mauricio Riaño‐Pachón",
         "orcid": "https://orcid.org/0000-0001-9803-3465",
-        "works_count": 295,
+        "works_count": 296,
         "institutions": [
           "Universidade de São Paulo",
           "Universidade Estadual de Campinas (UNICAMP)",
@@ -76,50 +115,9 @@
         ],
         "topics": [
           "Sugarcane Cultivation and Processing",
-          "Plant Molecular Biology Research",
           "Biofuel production and bioconversion",
           "Fungal and yeast genetics research",
           "Genomics and Phylogenetic Studies"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Elisabete Aparecida De Nadai Fernandes",
-    "candidates": [
-      {
-        "id": "https://openalex.org/A5019200111",
-        "name": "Elisabete A. De Nadai Fernandes",
-        "orcid": "https://orcid.org/0000-0003-1218-4882",
-        "works_count": 215,
-        "institutions": [
-          "Universidade de São Paulo"
-        ],
-        "topics": [
-          "Radioactivity and Radon Measurements",
-          "Nuclear Physics and Applications",
-          "Heavy Metals in Plants",
-          "Heavy metals in environment"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Ernani Pinto Junior",
-    "candidates": [
-      {
-        "id": "https://openalex.org/A5057582239",
-        "name": "Ernani Pinto",
-        "orcid": "https://orcid.org/0000-0001-7614-3014",
-        "works_count": 261,
-        "institutions": [
-          "Universidade de São Paulo"
-        ],
-        "topics": [
-          "Aquatic Ecosystems and Phytoplankton Dynamics",
-          "Algal biology and biofuel production",
-          "Biocrusts and Microbial Ecology",
-          "Marine and coastal ecosystems"
         ]
       }
     ]
@@ -185,75 +183,13 @@
     ]
   },
   {
-    "name": "Hudson Wallace Pereira de Carvalho",
-    "candidates": [
-      {
-        "id": "https://openalex.org/A5090708990",
-        "name": "Hudson Wallace Pereira de Carvalho",
-        "orcid": "https://orcid.org/0000-0003-0875-3261",
-        "works_count": 218,
-        "institutions": [
-          "Universidade de São Paulo",
-          "Université Mohammed VI Polytechnique"
-        ],
-        "topics": [
-          "Plant Micronutrient Interactions and Effects",
-          "Catalytic Processes in Materials Science",
-          "Nanoparticles: synthesis and applications",
-          "Soil Geostatistics and Mapping"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "José Lavres Junior",
-    "candidates": [
-      {
-        "id": "https://openalex.org/A5040307835",
-        "name": "José Lavres",
-        "orcid": "https://orcid.org/0000-0002-7183-4008",
-        "works_count": 221,
-        "institutions": [
-          "Universidade de São Paulo"
-        ],
-        "topics": [
-          "Plant Micronutrient Interactions and Effects",
-          "Growth and nutrition in plants",
-          "Plant Stress Responses and Tolerance",
-          "Plant nutrient uptake and metabolism"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Kassio Ferreira Mendes",
-    "candidates": [
-      {
-        "id": "https://openalex.org/A5041712530",
-        "name": "Kássio Ferreira Mendes",
-        "orcid": "https://orcid.org/0000-0002-2869-8434",
-        "works_count": 255,
-        "institutions": [
-          "University of Hohenheim",
-          "Universidade de São Paulo"
-        ],
-        "topics": [
-          "Pesticide and Herbicide Environmental Studies",
-          "Weed Control and Herbicide Applications",
-          "Soil Management and Crop Yield",
-          "Pharmaceutical and Antibiotic Environmental Impacts"
-        ]
-      }
-    ]
-  },
-  {
     "name": "Lucas William Mendes",
     "candidates": [
       {
         "id": "https://openalex.org/A5091528425",
         "name": "Lucas William Mendes",
         "orcid": "https://orcid.org/0000-0003-0980-7006",
-        "works_count": 259,
+        "works_count": 260,
         "institutions": [
           "Universidade de São Paulo",
           "Universidade Federal do Ceará"
@@ -268,41 +204,21 @@
     ]
   },
   {
-    "name": "Luiz Carlos Ruiz Pessenda",
+    "name": "Thiago de Araújo Mastrangelo",
     "candidates": [
       {
-        "id": "https://openalex.org/A5047794574",
-        "name": "Luiz Carlos Ruiz Pessenda",
-        "orcid": "https://orcid.org/0000-0001-9119-8195",
-        "works_count": 278,
+        "id": "https://openalex.org/A5002840845",
+        "name": "Thiago Mastrangelo",
+        "orcid": "https://orcid.org/0000-0003-1882-9565",
+        "works_count": 58,
         "institutions": [
           "Universidade de São Paulo"
         ],
         "topics": [
-          "Geology and Paleoclimatology Research",
-          "Coastal wetland ecosystem dynamics",
-          "Isotope Analysis in Ecology",
-          "Amazonian Archaeology and Ethnohistory"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Marisa de Cassia Piccolo",
-    "candidates": [
-      {
-        "id": "https://openalex.org/A5040621748",
-        "name": "Marisa de Cássia Píccolo",
-        "orcid": "https://orcid.org/0000-0003-2163-5630",
-        "works_count": 262,
-        "institutions": [
-          "Universidade de São Paulo"
-        ],
-        "topics": [
-          "Soil Carbon and Nitrogen Dynamics",
-          "Soil Management and Crop Yield",
-          "Soil and Water Nutrient Dynamics",
-          "Growth and nutrition in plants"
+          "Insect behavior and control techniques",
+          "Insect Pest Control Strategies",
+          "Insect Resistance and Genetics",
+          "Insect-Plant Interactions and Control"
         ]
       }
     ]
@@ -328,21 +244,83 @@
     ]
   },
   {
-    "name": "Tsai Siu Mui",
+    "name": "Valter Arthur",
     "candidates": [
       {
-        "id": "https://openalex.org/A5064797387",
-        "name": "Siu Mui Tsai",
-        "orcid": "https://orcid.org/0000-0002-3733-6312",
-        "works_count": 435,
+        "id": "https://openalex.org/A5043758282",
+        "name": "Valter Arthur",
+        "orcid": "https://orcid.org/0000-0003-3521-9136",
+        "works_count": 296,
+        "institutions": [
+          "Universidade de São Paulo",
+          "Instituto de Pesquisas Energéticas e Nucleares"
+        ],
+        "topics": [
+          "Insect Pest Control Strategies",
+          "Radiation Effects and Dosimetry",
+          "Insect behavior and control techniques",
+          "Insect Resistance and Genetics"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Alex Vladimir Krusche",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5021833493",
+        "name": "Alex Vladimir Krusche",
+        "orcid": "https://orcid.org/0000-0001-7094-5577",
+        "works_count": 172,
         "institutions": [
           "Universidade de São Paulo"
         ],
         "topics": [
-          "Microbial Community Ecology and Physiology",
-          "Soil Carbon and Nitrogen Dynamics",
-          "Legume Nitrogen Fixing Symbiosis",
-          "Plant pathogens and resistance mechanisms"
+          "Marine and coastal ecosystems",
+          "Soil and Water Nutrient Dynamics",
+          "Water Quality and Pollution Assessment",
+          "Fish biology, ecology, and behavior"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ernani Pinto Junior",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5057582239",
+        "name": "Ernani Pinto",
+        "orcid": "https://orcid.org/0000-0001-7614-3014",
+        "works_count": 261,
+        "institutions": [
+          "Universidade de São Paulo"
+        ],
+        "topics": [
+          "Aquatic Ecosystems and Phytoplankton Dynamics",
+          "Algal biology and biofuel production",
+          "Biocrusts and Microbial Ecology",
+          "Marine and coastal ecosystems"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Kassio Ferreira Mendes",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5041712530",
+        "name": "Kássio Ferreira Mendes",
+        "orcid": "https://orcid.org/0000-0002-2869-8434",
+        "works_count": 255,
+        "institutions": [
+          "University of Hohenheim",
+          "Universidade de São Paulo"
+        ],
+        "topics": [
+          "Pesticide and Herbicide Environmental Studies",
+          "Weed Control and Herbicide Applications",
+          "Soil Management and Crop Yield",
+          "Pharmaceutical and Antibiotic Environmental Impacts"
         ]
       }
     ]
@@ -388,82 +366,282 @@
     ]
   },
   {
-    "name": "Thiago de Araújo Mastrangelo",
+    "name": "Giuliano Maselli Locosselli",
     "candidates": [
       {
-        "id": "https://openalex.org/A5002840845",
-        "name": "Thiago Mastrangelo",
-        "orcid": "https://orcid.org/0000-0003-1882-9565",
-        "works_count": 58,
+        "id": "https://openalex.org/A5038309115",
+        "name": "Giuliano Maselli Locosselli",
+        "orcid": "https://orcid.org/0000-0002-2178-2027",
+        "works_count": 84,
         "institutions": [
           "Universidade de São Paulo"
         ],
         "topics": [
-          "Insect behavior and control techniques",
-          "Insect Pest Control Strategies",
-          "Insect Resistance and Genetics",
-          "Insect-Plant Interactions and Control"
+          "Plant Water Relations and Carbon Dynamics",
+          "Tree-ring climate responses",
+          "Urban Green Space and Health",
+          "Forest ecology and management"
         ]
       }
     ]
   },
   {
-    "name": "Valter Arthur",
+    "name": "Marcelo Zacharias Moreira",
     "candidates": [
       {
-        "id": "https://openalex.org/A5043758282",
-        "name": "Valter Arthur",
-        "orcid": "https://orcid.org/0000-0003-3521-9136",
-        "works_count": 295,
+        "id": "https://openalex.org/A5024946424",
+        "name": "Marcelo Zacharias Moreira",
+        "orcid": "https://orcid.org/0000-0001-6769-5570",
+        "works_count": 152,
         "institutions": [
-          "Universidade de São Paulo",
-          "Instituto de Pesquisas Energéticas e Nucleares"
+          "Universidade de São Paulo"
         ],
         "topics": [
-          "Insect Pest Control Strategies",
-          "Radiation Effects and Dosimetry",
-          "Insect behavior and control techniques",
-          "Insect Resistance and Genetics"
+          "Isotope Analysis in Ecology",
+          "Plant Water Relations and Carbon Dynamics",
+          "Soil Carbon and Nitrogen Dynamics",
+          "Fish Ecology and Management Studies"
         ]
       }
     ]
   },
   {
-    "name": "Alex Virgilio",
+    "name": "Maria Gabriella da Silva Araújo",
     "candidates": [
       {
-        "id": "https://openalex.org/A5034259827",
-        "name": "Alex Virgílio",
-        "orcid": "https://orcid.org/0000-0002-7263-5094",
-        "works_count": 51,
+        "id": "https://openalex.org/A5028238227",
+        "name": "Maria Gabriella da Silva Araújo",
+        "orcid": "https://orcid.org/0000-0003-1366-9929",
+        "works_count": 30,
+        "institutions": [
+          "Universidade de São Paulo"
+        ],
+        "topics": [
+          "Isotope Analysis in Ecology",
+          "Marine and coastal ecosystems",
+          "Soil Carbon and Nitrogen Dynamics",
+          "Plant Water Relations and Carbon Dynamics"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Maria Victoria Ramos Ballester",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5049970140",
+        "name": "Maria Victória Ramos Ballester",
+        "orcid": "https://orcid.org/0000-0003-2567-6747",
+        "works_count": 94,
+        "institutions": [
+          "Universidade de São Paulo"
+        ],
+        "topics": [
+          "Water Quality and Pollution Assessment",
+          "Soil erosion and sediment transport",
+          "Geography and Environmental Studies",
+          "Hydrology and Watershed Management Studies"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Marília Campos",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5060974266",
+        "name": "Marília de Carvalho Campos",
+        "orcid": "https://orcid.org/0000-0003-0059-9853",
+        "works_count": 50,
+        "institutions": [
+          "Universidade Estadual de Campinas (UNICAMP)"
+        ],
+        "topics": [
+          "Geology and Paleoclimatology Research",
+          "Geological formations and processes",
+          "Isotope Analysis in Ecology",
+          "Methane Hydrates and Related Phenomena"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mauricio Cruz Mantoani",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5035244480",
+        "name": "Maurício Cruz Mantoani",
+        "orcid": "https://orcid.org/0000-0002-1514-6200",
+        "works_count": 35,
+        "institutions": [
+          "Universidade de São Paulo"
+        ],
+        "topics": [
+          "Indoor Air Quality and Microbial Exposure",
+          "Ecology and Vegetation Dynamics Studies",
+          "Plant responses to elevated CO2",
+          "Species Distribution and Climate Change"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Paulo César Ocheuze Trivelin",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5037896506",
+        "name": "Paulo César Ocheuze Trivelin",
+        "orcid": "https://orcid.org/0000-0001-6191-9748",
+        "works_count": 359,
+        "institutions": [],
+        "topics": [
+          "Sugarcane Cultivation and Processing",
+          "Soil Management and Crop Yield",
+          "Growth and nutrition in plants",
+          "Plant nutrient uptake and metabolism"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Plínio Barbosa de Camargo",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5081023590",
+        "name": "Plínio Barbosa de Camargo",
+        "orcid": "https://orcid.org/0000-0002-0696-3778",
+        "works_count": 448,
+        "institutions": [
+          "Universidade Federal do Oeste do Pará",
+          "Universidade de São Paulo"
+        ],
+        "topics": [
+          "Soil Carbon and Nitrogen Dynamics",
+          "Isotope Analysis in Ecology",
+          "Soil Management and Crop Yield",
+          "Forest ecology and management"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rafael Silva Santos",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5048989680",
+        "name": "Rafael Silva Santos",
+        "orcid": "https://orcid.org/0000-0003-4829-0644",
+        "works_count": 31,
+        "institutions": [
+          "Universidade de São Paulo",
+          "Colorado State University"
+        ],
+        "topics": [
+          "Soil Carbon and Nitrogen Dynamics",
+          "Soil Management and Crop Yield",
+          "Soil erosion and sediment transport",
+          "Peatlands and Wetlands Ecology"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Samara Soares",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5062739787",
+        "name": "Samara Soares",
+        "orcid": "https://orcid.org/0000-0002-4125-9153",
+        "works_count": 29,
         "institutions": [
           "Universidade de São Paulo"
         ],
         "topics": [
           "Analytical chemistry methods development",
-          "Heavy metals in environment",
-          "Electrochemical Analysis and Applications",
-          "Mass Spectrometry Techniques and Applications"
+          "Advanced Chemical Sensor Technologies",
+          "Biodiesel Production and Applications",
+          "Pesticide Residue Analysis and Safety"
         ]
       }
     ]
   },
   {
-    "name": "Celia Regina Montes",
+    "name": "Thaís Nascimento Pessoa",
     "candidates": [
       {
-        "id": "https://openalex.org/A5086131541",
-        "name": "Célia Regina Montes",
-        "orcid": "https://orcid.org/0000-0002-5173-1909",
-        "works_count": 151,
+        "id": "https://openalex.org/A5008805339",
+        "name": "Thaís Nascimento Pessoa",
+        "orcid": "https://orcid.org/0000-0002-6392-7650",
+        "works_count": 24,
+        "institutions": [
+          "Universidade de São Paulo",
+          "Brazilian Center for Research in Energy and Materials"
+        ],
+        "topics": [
+          "Soil and Unsaturated Flow",
+          "Soil Management and Crop Yield",
+          "Soil Carbon and Nitrogen Dynamics",
+          "Soil erosion and sediment transport"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tsai Siu Mui",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5064797387",
+        "name": "Siu Mui Tsai",
+        "orcid": "https://orcid.org/0000-0002-3733-6312",
+        "works_count": 435,
         "institutions": [
           "Universidade de São Paulo"
         ],
         "topics": [
-          "Wastewater Treatment and Reuse",
-          "Clay minerals and soil interactions",
-          "Soil Management and Crop Yield",
-          "Growth and nutrition in plants"
+          "Microbial Community Ecology and Physiology",
+          "Soil Carbon and Nitrogen Dynamics",
+          "Legume Nitrogen Fixing Symbiosis",
+          "Plant pathogens and resistance mechanisms"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Victor Alexandre Vitorello",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5006124120",
+        "name": "Victor Alexandre Vitorello",
+        "orcid": "https://orcid.org/0000-0001-9677-7444",
+        "works_count": 34,
+        "institutions": [
+          "Universidade de São Paulo"
+        ],
+        "topics": [
+          "Aluminum toxicity and tolerance in plants and animals",
+          "Plant Stress Responses and Tolerance",
+          "Plant Micronutrient Interactions and Effects",
+          "Plant nutrient uptake and metabolism"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Valdemar Luiz Tornisielo",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5048027286",
+        "name": "Valdemar Luiz Tornisielo",
+        "orcid": "https://orcid.org/0000-0002-6618-6579",
+        "works_count": 188,
+        "institutions": [
+          "Universidade de São Paulo"
+        ],
+        "topics": [
+          "Pesticide and Herbicide Environmental Studies",
+          "Weed Control and Herbicide Applications",
+          "Pharmaceutical and Antibiotic Environmental Impacts",
+          "Pesticide Residue Analysis and Safety"
         ]
       }
     ]
@@ -489,61 +667,184 @@
     ]
   },
   {
-    "name": "Marcos Yassuo Kamogawa",
+    "name": "Deoclecio Jardim Amorim",
     "candidates": [
       {
-        "id": "https://openalex.org/A5076622288",
-        "name": "Marcos Y. Kamogawa",
-        "orcid": "https://orcid.org/0000-0002-2370-628X",
-        "works_count": 75,
+        "id": "https://openalex.org/A5041109568",
+        "name": "Deoclécio Jardim Amorim",
+        "orcid": "https://orcid.org/0000-0002-2844-3239",
+        "works_count": 40,
         "institutions": [
           "Universidade de São Paulo"
         ],
         "topics": [
-          "Analytical chemistry methods development",
-          "Water Quality Monitoring and Analysis",
+          "Genetics and Plant Breeding",
+          "Soil Management and Crop Yield",
+          "Seed Germination and Physiology",
+          "Growth and nutrition in plants"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Eduardo Mariano",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5055449270",
+        "name": "Eduardo Mariano",
+        "orcid": "https://orcid.org/0000-0001-5566-1920",
+        "works_count": 77,
+        "institutions": [
+          "Bangor University",
+          "Universidade de São Paulo",
+          "Universidade Estadual Paulista (Unesp)"
+        ],
+        "topics": [
           "Soil Carbon and Nitrogen Dynamics",
-          "Analytical Chemistry and Sensors"
+          "Sugarcane Cultivation and Processing",
+          "Plant nutrient uptake and metabolism",
+          "Soil Management and Crop Yield"
         ]
       }
     ]
   },
   {
-    "name": "Severino Matias de Alencar",
+    "name": "Elias Ayres Guidetti Zagatto",
     "candidates": [
       {
-        "id": "https://openalex.org/A5030245678",
-        "name": "Severino Matias de Alencar",
-        "orcid": "https://orcid.org/0000-0002-6637-7973",
-        "works_count": 354,
-        "institutions": [
-          "Universidade de São Paulo"
-        ],
-        "topics": [
-          "Bee Products Chemical Analysis",
-          "Phytochemicals and Antioxidant Activities",
-          "Essential Oils and Antimicrobial Activity",
-          "Phytochemistry Medicinal Plant Applications"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Wanessa Melchert Mattos",
-    "candidates": [
-      {
-        "id": "https://openalex.org/A5027100484",
-        "name": "Wanessa R. Melchert",
-        "orcid": "https://orcid.org/0000-0003-0989-4349",
-        "works_count": 83,
+        "id": "https://openalex.org/A5001714775",
+        "name": "Elias A.G. Zagatto",
+        "orcid": "https://orcid.org/0000-0002-4234-3664",
+        "works_count": 271,
         "institutions": [
           "Universidade de São Paulo"
         ],
         "topics": [
           "Analytical chemistry methods development",
-          "Pesticide Residue Analysis and Safety",
-          "Water Quality Monitoring and Analysis",
-          "Advanced Chemical Sensor Technologies"
+          "Electrochemical Analysis and Applications",
+          "Analytical Chemistry and Sensors",
+          "Water Quality Monitoring and Analysis"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Boaventura Freire dos Reis",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5077336040",
+        "name": "Boaventura  Freire dos Reis",
+        "orcid": "https://orcid.org/0000-0003-1520-2804",
+        "works_count": 253,
+        "institutions": [
+          "Universidade de São Paulo"
+        ],
+        "topics": [
+          "Analytical chemistry methods development",
+          "Analytical Chemistry and Sensors",
+          "Electrochemical Analysis and Applications",
+          "Water Quality Monitoring and Analysis"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Luiz Carlos Ruiz Pessenda",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5047794574",
+        "name": "Luiz Carlos Ruiz Pessenda",
+        "orcid": "https://orcid.org/0000-0001-9119-8195",
+        "works_count": 278,
+        "institutions": [
+          "Universidade de São Paulo"
+        ],
+        "topics": [
+          "Geology and Paleoclimatology Research",
+          "Coastal wetland ecosystem dynamics",
+          "Isotope Analysis in Ecology",
+          "Amazonian Archaeology and Ethnohistory"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Elisabete Aparecida De Nadai Fernandes",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5019200111",
+        "name": "Elisabete A. De Nadai Fernandes",
+        "orcid": "https://orcid.org/0000-0003-1218-4882",
+        "works_count": 215,
+        "institutions": [
+          "Universidade de São Paulo"
+        ],
+        "topics": [
+          "Radioactivity and Radon Measurements",
+          "Nuclear Physics and Applications",
+          "Heavy Metals in Plants",
+          "Heavy metals in environment"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Alex Virgilio",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5034259827",
+        "name": "Alex Virgílio",
+        "orcid": "https://orcid.org/0000-0002-7263-5094",
+        "works_count": 51,
+        "institutions": [
+          "Universidade de São Paulo"
+        ],
+        "topics": [
+          "Analytical chemistry methods development",
+          "Heavy metals in environment",
+          "Electrochemical Analysis and Applications",
+          "Mass Spectrometry Techniques and Applications"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hudson Wallace Pereira de Carvalho",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5090708990",
+        "name": "Hudson Wallace Pereira de Carvalho",
+        "orcid": "https://orcid.org/0000-0003-0875-3261",
+        "works_count": 218,
+        "institutions": [
+          "Universidade de São Paulo",
+          "Université Mohammed VI Polytechnique"
+        ],
+        "topics": [
+          "Plant Micronutrient Interactions and Effects",
+          "Catalytic Processes in Materials Science",
+          "Nanoparticles: synthesis and applications",
+          "Soil Geostatistics and Mapping"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "José Lavres Junior",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5040307835",
+        "name": "José Lavres",
+        "orcid": "https://orcid.org/0000-0002-7183-4008",
+        "works_count": 222,
+        "institutions": [
+          "Universidade de São Paulo"
+        ],
+        "topics": [
+          "Plant Micronutrient Interactions and Effects",
+          "Growth and nutrition in plants",
+          "Plant Stress Responses and Tolerance",
+          "Plant nutrient uptake and metabolism"
         ]
       }
     ]
