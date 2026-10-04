@@ -400,8 +400,8 @@ def classify(fields, metadata, vectors, prototypes, seeds, args, overrides):
             "has_keywords": int(bool(fields[wid]["keywords"])),
         })
     write_csv(DATA / "work_area_suggestions.csv",
-              ("work_id", "title", "doi", "publication_date", "score_B", "score_N",
-               "score_Q", "score_gap", "suggested_areas", "assigned_areas", "source",
+              ("work_id", "title", "doi", "publication_date", "score_P", "score_E",
+               "score_T", "score_gap", "suggested_areas", "assigned_areas", "source",
                "review_flags",
                "exclusive_author_seed", "has_abstract", "has_keywords"), rows)
     return assigned, rows
@@ -542,7 +542,7 @@ def area_outputs(names, areas, author_ids, fields, vectors, assignments, args):
 
 
 def write_report(args, support, classification, coverage, descriptions, override_count):
-    lines = ["# Redes semânticas por área de concentração", "",
+    lines = ["# Redes semânticas por divisão científica", "",
              f"Período: {args.start_date} a {args.end_date}. Modelo: `{args.model}`; dispositivo: `{args.device}`.",
              (f"Limite de {args.max_tokens} tokens por segmento, incluindo tokens especiais."
               if args.max_tokens is not None else
