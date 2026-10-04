@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d16" for="edge" attr.name="same_proposed_group" attr.type="long" />
+  <key id="d15" for="edge" attr.name="same_louvain" attr.type="long" />
+  <key id="d14" for="edge" attr.name="target_articles_compared" attr.type="long" />
+  <key id="d13" for="edge" attr.name="source_articles_compared" attr.type="long" />
+  <key id="d12" for="edge" attr.name="shared_article_count" attr.type="long" />
+  <key id="d11" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d10" for="edge" attr.name="area" attr.type="string" />
+  <key id="d9" for="node" attr.name="top_terms" attr.type="string" />
+  <key id="d8" for="node" attr.name="proposed_group" attr.type="string" />
+  <key id="d7" for="node" attr.name="louvain" attr.type="string" />
+  <key id="d6" for="node" attr.name="abstract_count" attr.type="long" />
+  <key id="d5" for="node" attr.name="article_count" attr.type="long" />
+  <key id="d4" for="node" attr.name="original_areas" attr.type="string" />
+  <key id="d3" for="node" attr.name="area_name" attr.type="string" />
+  <key id="d2" for="node" attr.name="area" attr.type="string" />
+  <key id="d1" for="node" attr.name="supervisor" attr.type="string" />
+  <key id="d0" for="node" attr.name="label" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="T::Samara Soares">
+      <data key="d0">Samara Soares</data>
+      <data key="d1">Samara Soares</data>
+      <data key="d2">T</data>
+      <data key="d3">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="d4">T</data>
+      <data key="d5">17</data>
+      <data key="d6">5</data>
+      <data key="d7">T2</data>
+      <data key="d8">T1</data>
+      <data key="d9">determination; matrix; microextraction; green; matrix effects; calibration; sample; analytical</data>
+    </node>
+    <node id="T::Boaventura Freire dos Reis">
+      <data key="d0">Boaventura Freire dos Reis</data>
+      <data key="d1">Boaventura Freire dos Reis</data>
+      <data key="d2">T</data>
+      <data key="d3">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="d4">T</data>
+      <data key="d5">4</data>
+      <data key="d6">3</data>
+      <data key="d7">T2</data>
+      <data key="d8">T1</data>
+      <data key="d9">luminometer; determination; flow; detection; wine; integrated; xylene; acids sugarcane</data>
+    </node>
+    <node id="T::Alex Virgilio">
+      <data key="d0">Alex Virgilio</data>
+      <data key="d1">Alex Virgilio</data>
+      <data key="d2">T</data>
+      <data key="d3">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="d4">T</data>
+      <data key="d5">14</data>
+      <data key="d6">10</data>
+      <data key="d7">T2</data>
+      <data key="d8">T1</data>
+      <data key="d9">digestion; trace; preparation; sample; microwave; microwave digestion; elemental; trace elements</data>
+    </node>
+    <node id="T::Hudson Wallace Pereira de Carvalho">
+      <data key="d0">Hudson Wallace Pereira de Carvalho</data>
+      <data key="d1">Hudson Wallace Pereira de Carvalho</data>
+      <data key="d2">T</data>
+      <data key="d3">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="d4">T</data>
+      <data key="d5">80</data>
+      <data key="d6">50</data>
+      <data key="d7">T1</data>
+      <data key="d8">T1</data>
+      <data key="d9">x-ray; fluorescence; x-ray fluorescence; soil; zinc; soybean; seed; nutrient</data>
+    </node>
+    <node id="T::Fabio Rodrigo Piovezani Rocha">
+      <data key="d0">Fabio Rodrigo Piovezani Rocha</data>
+      <data key="d1">Fabio Rodrigo Piovezani Rocha</data>
+      <data key="d2">T</data>
+      <data key="d3">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="d4">T</data>
+      <data key="d5">45</data>
+      <data key="d6">22</data>
+      <data key="d7">T2</data>
+      <data key="d8">T1</data>
+      <data key="d9">determination; green; milk; analytical; chemistry; green analytical; analytical chemistry; digital</data>
+    </node>
+    <node id="T::Deoclecio Jardim Amorim">
+      <data key="d0">Deoclecio Jardim Amorim</data>
+      <data key="d1">Deoclecio Jardim Amorim</data>
+      <data key="d2">T</data>
+      <data key="d3">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="d4">T</data>
+      <data key="d5">14</data>
+      <data key="d6">11</data>
+      <data key="d7">T1</data>
+      <data key="d8">T1</data>
+      <data key="d9">hormesis; illegal; safflower; wood; remus; timber; spodoptera; frugiperda</data>
+    </node>
+    <node id="T::Paulo César Ocheuze Trivelin">
+      <data key="d0">Paulo César Ocheuze Trivelin</data>
+      <data key="d1">Paulo César Ocheuze Trivelin</data>
+      <data key="d2">T</data>
+      <data key="d3">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="d4">T</data>
+      <data key="d5">14</data>
+      <data key="d6">8</data>
+      <data key="d7">T1</data>
+      <data key="d8">T1</data>
+      <data key="d9">nitrogen; sugarcane; fertilizer; tracer; nitrogen uptake; uptake; recovery; maize</data>
+    </node>
+    <node id="T::José Lavres Junior">
+      <data key="d0">José Lavres Junior</data>
+      <data key="d1">José Lavres Junior</data>
+      <data key="d2">T</data>
+      <data key="d3">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="d4">T</data>
+      <data key="d5">91</data>
+      <data key="d6">58</data>
+      <data key="d7">T1</data>
+      <data key="d8">T1</data>
+      <data key="d9">nitrogen; efficiency; soil; use efficiency; fertilization; plant; use; leaf</data>
+    </node>
+    <node id="T::Eduardo Mariano">
+      <data key="d0">Eduardo Mariano</data>
+      <data key="d1">Eduardo Mariano</data>
+      <data key="d2">T</data>
+      <data key="d3">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="d4">T</data>
+      <data key="d5">26</data>
+      <data key="d6">15</data>
+      <data key="d7">T1</data>
+      <data key="d8">T1</data>
+      <data key="d9">nitrogen; soil; microbial; maize; fertilizer; brachiaria; urea; carbon</data>
+    </node>
+    <node id="T::Elias Ayres Guidetti Zagatto">
+      <data key="d0">Elias Ayres Guidetti Zagatto</data>
+      <data key="d1">Elias Ayres Guidetti Zagatto</data>
+      <data key="d2">T</data>
+      <data key="d3">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="d4">T</data>
+      <data key="d5">8</data>
+      <data key="d6">6</data>
+      <data key="d7">T2</data>
+      <data key="d8">T1</data>
+      <data key="d9">flow; analytical chemistry; chemistry; analytical; flow injection; detection; injection; spectrophotometric</data>
+    </node>
+    <node id="T::Luiz Carlos Ruiz Pessenda">
+      <data key="d0">Luiz Carlos Ruiz Pessenda</data>
+      <data key="d1">Luiz Carlos Ruiz Pessenda</data>
+      <data key="d2">T</data>
+      <data key="d3">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="d4">T</data>
+      <data key="d5">31</data>
+      <data key="d6">15</data>
+      <data key="d7">T1</data>
+      <data key="d8">T2</data>
+      <data key="d9">mangrove; holocene; sea-level; mangroves; relative sea-level; avicennia; change; sea-level change</data>
+    </node>
+    <node id="T::Marília Campos">
+      <data key="d0">Marília Campos</data>
+      <data key="d1">Marília Campos</data>
+      <data key="d2">T</data>
+      <data key="d3">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="d4">T</data>
+      <data key="d5">20</data>
+      <data key="d6">8</data>
+      <data key="d7">T1</data>
+      <data key="d8">T2</data>
+      <data key="d9">atlantic; south; circulation; convergence; convergence zone; zone; meridional; climate</data>
+    </node>
+    <node id="T::Elisabete Aparecida De Nadai Fernandes">
+      <data key="d0">Elisabete Aparecida De Nadai Fernandes</data>
+      <data key="d1">Elisabete Aparecida De Nadai Fernandes</data>
+      <data key="d2">T</data>
+      <data key="d3">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="d4">T</data>
+      <data key="d5">20</data>
+      <data key="d6">10</data>
+      <data key="d7">T2</data>
+      <data key="d8">T1</data>
+      <data key="d9">neutron; neutron activation; activation; learning; beef; cattle; machine; classification</data>
+    </node>
+    <edge source="T::Samara Soares" target="T::Alex Virgilio">
+      <data key="d10">T</data>
+      <data key="d11">0.924103</data>
+      <data key="d12">1</data>
+      <data key="d13">16</data>
+      <data key="d14">13</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Samara Soares" target="T::Elias Ayres Guidetti Zagatto">
+      <data key="d10">T</data>
+      <data key="d11">0.905512</data>
+      <data key="d12">0</data>
+      <data key="d13">17</data>
+      <data key="d14">8</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Samara Soares" target="T::Elisabete Aparecida De Nadai Fernandes">
+      <data key="d10">T</data>
+      <data key="d11">0.904368</data>
+      <data key="d12">0</data>
+      <data key="d13">17</data>
+      <data key="d14">20</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Samara Soares" target="T::Boaventura Freire dos Reis">
+      <data key="d10">T</data>
+      <data key="d11">0.898959</data>
+      <data key="d12">0</data>
+      <data key="d13">17</data>
+      <data key="d14">4</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Boaventura Freire dos Reis" target="T::Elias Ayres Guidetti Zagatto">
+      <data key="d10">T</data>
+      <data key="d11">0.867852</data>
+      <data key="d12">1</data>
+      <data key="d13">7</data>
+      <data key="d14">3</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Boaventura Freire dos Reis" target="T::Fabio Rodrigo Piovezani Rocha">
+      <data key="d10">T</data>
+      <data key="d11">0.867677</data>
+      <data key="d12">1</data>
+      <data key="d13">44</data>
+      <data key="d14">3</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Boaventura Freire dos Reis" target="T::Alex Virgilio">
+      <data key="d10">T</data>
+      <data key="d11">0.85677</data>
+      <data key="d12">0</data>
+      <data key="d13">4</data>
+      <data key="d14">14</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Alex Virgilio" target="T::Fabio Rodrigo Piovezani Rocha">
+      <data key="d10">T</data>
+      <data key="d11">0.940134</data>
+      <data key="d12">1</data>
+      <data key="d13">44</data>
+      <data key="d14">13</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Alex Virgilio" target="T::Elisabete Aparecida De Nadai Fernandes">
+      <data key="d10">T</data>
+      <data key="d11">0.938362</data>
+      <data key="d12">0</data>
+      <data key="d13">20</data>
+      <data key="d14">14</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Alex Virgilio" target="T::Hudson Wallace Pereira de Carvalho">
+      <data key="d10">T</data>
+      <data key="d11">0.917675</data>
+      <data key="d12">2</data>
+      <data key="d13">12</data>
+      <data key="d14">78</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Alex Virgilio" target="T::Elias Ayres Guidetti Zagatto">
+      <data key="d10">T</data>
+      <data key="d11">0.890716</data>
+      <data key="d12">0</data>
+      <data key="d13">8</data>
+      <data key="d14">14</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Hudson Wallace Pereira de Carvalho" target="T::José Lavres Junior">
+      <data key="d10">T</data>
+      <data key="d11">0.966935</data>
+      <data key="d12">14</data>
+      <data key="d13">66</data>
+      <data key="d14">77</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Hudson Wallace Pereira de Carvalho" target="T::Deoclecio Jardim Amorim">
+      <data key="d10">T</data>
+      <data key="d11">0.933307</data>
+      <data key="d12">1</data>
+      <data key="d13">13</data>
+      <data key="d14">79</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Hudson Wallace Pereira de Carvalho" target="T::Eduardo Mariano">
+      <data key="d10">T</data>
+      <data key="d11">0.930224</data>
+      <data key="d12">2</data>
+      <data key="d13">24</data>
+      <data key="d14">78</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Hudson Wallace Pereira de Carvalho" target="T::Elisabete Aparecida De Nadai Fernandes">
+      <data key="d10">T</data>
+      <data key="d11">0.916522</data>
+      <data key="d12">1</data>
+      <data key="d13">19</data>
+      <data key="d14">79</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Hudson Wallace Pereira de Carvalho" target="T::Paulo César Ocheuze Trivelin">
+      <data key="d10">T</data>
+      <data key="d11">0.910063</data>
+      <data key="d12">0</data>
+      <data key="d13">14</data>
+      <data key="d14">80</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Hudson Wallace Pereira de Carvalho" target="T::Fabio Rodrigo Piovezani Rocha">
+      <data key="d10">T</data>
+      <data key="d11">0.907038</data>
+      <data key="d12">0</data>
+      <data key="d13">45</data>
+      <data key="d14">80</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Fabio Rodrigo Piovezani Rocha" target="T::Elisabete Aparecida De Nadai Fernandes">
+      <data key="d10">T</data>
+      <data key="d11">0.919565</data>
+      <data key="d12">0</data>
+      <data key="d13">45</data>
+      <data key="d14">20</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Fabio Rodrigo Piovezani Rocha" target="T::Elias Ayres Guidetti Zagatto">
+      <data key="d10">T</data>
+      <data key="d11">0.914673</data>
+      <data key="d12">2</data>
+      <data key="d13">43</data>
+      <data key="d14">6</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Deoclecio Jardim Amorim" target="T::José Lavres Junior">
+      <data key="d10">T</data>
+      <data key="d11">0.926477</data>
+      <data key="d12">2</data>
+      <data key="d13">12</data>
+      <data key="d14">89</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Deoclecio Jardim Amorim" target="T::Elisabete Aparecida De Nadai Fernandes">
+      <data key="d10">T</data>
+      <data key="d11">0.920616</data>
+      <data key="d12">0</data>
+      <data key="d13">14</data>
+      <data key="d14">20</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Deoclecio Jardim Amorim" target="T::Eduardo Mariano">
+      <data key="d10">T</data>
+      <data key="d11">0.914033</data>
+      <data key="d12">1</data>
+      <data key="d13">13</data>
+      <data key="d14">25</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Deoclecio Jardim Amorim" target="T::Paulo César Ocheuze Trivelin">
+      <data key="d10">T</data>
+      <data key="d11">0.902818</data>
+      <data key="d12">0</data>
+      <data key="d13">14</data>
+      <data key="d14">14</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Deoclecio Jardim Amorim" target="T::Luiz Carlos Ruiz Pessenda">
+      <data key="d10">T</data>
+      <data key="d11">0.879711</data>
+      <data key="d12">0</data>
+      <data key="d13">14</data>
+      <data key="d14">31</data>
+      <data key="d15">1</data>
+      <data key="d16">0</data>
+    </edge>
+    <edge source="T::Deoclecio Jardim Amorim" target="T::Marília Campos">
+      <data key="d10">T</data>
+      <data key="d11">0.831155</data>
+      <data key="d12">0</data>
+      <data key="d13">20</data>
+      <data key="d14">14</data>
+      <data key="d15">1</data>
+      <data key="d16">0</data>
+    </edge>
+    <edge source="T::Paulo César Ocheuze Trivelin" target="T::Eduardo Mariano">
+      <data key="d10">T</data>
+      <data key="d11">0.960305</data>
+      <data key="d12">3</data>
+      <data key="d13">11</data>
+      <data key="d14">23</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::Paulo César Ocheuze Trivelin" target="T::José Lavres Junior">
+      <data key="d10">T</data>
+      <data key="d11">0.947837</data>
+      <data key="d12">0</data>
+      <data key="d13">14</data>
+      <data key="d14">91</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::José Lavres Junior" target="T::Eduardo Mariano">
+      <data key="d10">T</data>
+      <data key="d11">0.955448</data>
+      <data key="d12">5</data>
+      <data key="d13">21</data>
+      <data key="d14">86</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="T::José Lavres Junior" target="T::Luiz Carlos Ruiz Pessenda">
+      <data key="d10">T</data>
+      <data key="d11">0.846133</data>
+      <data key="d12">0</data>
+      <data key="d13">31</data>
+      <data key="d14">91</data>
+      <data key="d15">1</data>
+      <data key="d16">0</data>
+    </edge>
+    <edge source="T::José Lavres Junior" target="T::Marília Campos">
+      <data key="d10">T</data>
+      <data key="d11">0.777187</data>
+      <data key="d12">0</data>
+      <data key="d13">20</data>
+      <data key="d14">91</data>
+      <data key="d15">1</data>
+      <data key="d16">0</data>
+    </edge>
+    <edge source="T::Eduardo Mariano" target="T::Luiz Carlos Ruiz Pessenda">
+      <data key="d10">T</data>
+      <data key="d11">0.855088</data>
+      <data key="d12">0</data>
+      <data key="d13">26</data>
+      <data key="d14">31</data>
+      <data key="d15">1</data>
+      <data key="d16">0</data>
+    </edge>
+    <edge source="T::Eduardo Mariano" target="T::Marília Campos">
+      <data key="d10">T</data>
+      <data key="d11">0.799002</data>
+      <data key="d12">0</data>
+      <data key="d13">20</data>
+      <data key="d14">26</data>
+      <data key="d15">1</data>
+      <data key="d16">0</data>
+    </edge>
+    <edge source="T::Luiz Carlos Ruiz Pessenda" target="T::Marília Campos">
+      <data key="d10">T</data>
+      <data key="d11">0.906291</data>
+      <data key="d12">1</data>
+      <data key="d13">19</data>
+      <data key="d14">30</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+  </graph>
+</graphml>

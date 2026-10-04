@@ -1,0 +1,115 @@
+source,target,area,weight,shared_article_count,source_articles_compared,target_articles_compared,same_louvain,same_proposed_group
+P::Lucas William Mendes,P::Tsai Siu Mui,P,0.964568,19,128,44,1,1
+P::Antonio Vargas de Oliveira Figueira,P::Diego Mauricio Riaño Pachón,P,0.942709,2,25,26,0,1
+P::Diego Mauricio Riaño Pachón,P::Flavia Vischi Winck,P,0.934816,4,24,13,1,1
+P::Adibe Luiz Abdalla,P::Helder Louvandini,P,0.931756,31,49,30,1,1
+P::Antonio Vargas de Oliveira Figueira,P::Francisco Scaglia Linhares,P,0.926846,0,27,13,1,1
+P::Flavia Vischi Winck,P::Marli de Fatima Fiore,P,0.92242,0,17,32,1,1
+P::Cassio Hamilton Abreu Junior,P::Francisco Scaglia Linhares,P,0.921184,0,34,13,1,1
+P::Cassio Hamilton Abreu Junior,P::Lucas William Mendes,P,0.919401,0,34,147,0,1
+P::Adriana Pinheiro Martinelli,P::Antonio Vargas de Oliveira Figueira,P,0.91694,0,29,27,1,1
+P::Diego Mauricio Riaño Pachón,P::Tsai Siu Mui,P,0.915988,0,28,63,1,1
+P::Cassio Hamilton Abreu Junior,P::Tsai Siu Mui,P,0.911866,0,34,63,0,1
+P::Augusto Tulmann Neto,P::Valter Arthur,P,0.91054,0,3,41,1,1
+P::Francisco Scaglia Linhares,P::Victor Alexandre Vitorello,P,0.910002,0,13,2,1,1
+P::Diego Mauricio Riaño Pachón,P::Lucas William Mendes,P,0.906104,1,27,146,1,1
+P::Diego Mauricio Riaño Pachón,P::Marli de Fatima Fiore,P,0.904207,1,27,31,1,1
+P::Thiago de Araújo Mastrangelo,P::Valter Arthur,P,0.901153,3,10,38,1,1
+P::Antonio Vargas de Oliveira Figueira,P::Flavia Vischi Winck,P,0.900859,0,27,17,0,1
+P::Adriana Pinheiro Martinelli,P::Diego Mauricio Riaño Pachón,P,0.899903,0,29,28,0,1
+P::Antonio Vargas de Oliveira Figueira,P::Lucas William Mendes,P,0.898637,0,27,147,0,1
+P::Flavia Vischi Winck,P::Lucas William Mendes,P,0.896437,0,17,147,1,1
+P::Flavia Vischi Winck,P::Tsai Siu Mui,P,0.896435,0,17,63,1,1
+P::Diego Mauricio Riaño Pachón,P::Francisco Scaglia Linhares,P,0.895637,0,28,13,0,1
+P::Marli de Fatima Fiore,P::Tsai Siu Mui,P,0.894364,2,30,61,1,1
+P::Adriana Pinheiro Martinelli,P::Francisco Scaglia Linhares,P,0.89274,0,29,13,1,1
+P::Antonio Vargas de Oliveira Figueira,P::Cassio Hamilton Abreu Junior,P,0.89169,0,27,34,1,1
+P::Antonio Vargas de Oliveira Figueira,P::Thiago de Araújo Mastrangelo,P,0.890518,0,27,13,0,0
+P::Lucas William Mendes,P::Marli de Fatima Fiore,P,0.88878,1,146,31,1,1
+P::Antonio Vargas de Oliveira Figueira,P::Victor Alexandre Vitorello,P,0.887419,0,27,2,1,1
+P::Adibe Luiz Abdalla,P::Cassio Hamilton Abreu Junior,P,0.886891,0,80,34,0,1
+P::Adibe Luiz Abdalla,P::Valter Arthur,P,0.885925,0,80,41,1,0
+P::Adibe Luiz Abdalla,P::Tsai Siu Mui,P,0.884484,1,79,62,0,1
+P::Helder Louvandini,P::Valter Arthur,P,0.88324,0,61,41,1,0
+P::Helder Louvandini,P::Thiago de Araújo Mastrangelo,P,0.878841,0,61,13,1,0
+P::Diego Mauricio Riaño Pachón,P::Thiago de Araújo Mastrangelo,P,0.877824,0,28,13,0,0
+P::Cassio Hamilton Abreu Junior,P::Victor Alexandre Vitorello,P,0.877051,0,34,2,1,1
+P::Antonio Vargas de Oliveira Figueira,P::Helder Louvandini,P,0.871689,0,27,61,0,1
+P::Diego Mauricio Riaño Pachón,P::Victor Alexandre Vitorello,P,0.863812,0,28,2,0,1
+P::Adriana Pinheiro Martinelli,P::Thiago de Araújo Mastrangelo,P,0.861771,0,29,13,0,0
+P::Augusto Tulmann Neto,P::Thiago de Araújo Mastrangelo,P,0.849274,0,3,13,1,1
+P::Antonio Vargas de Oliveira Figueira,P::Augusto Tulmann Neto,P,0.827695,0,27,3,0,0
+P::Augusto Tulmann Neto,P::Francisco Scaglia Linhares,P,0.818817,0,3,13,0,0
+E::Luiz Antonio Martinelli,E::Plínio Barbosa de Camargo,E,0.972827,13,35,82,0,1
+E::Luiz Antonio Martinelli,E::Marcelo Zacharias Moreira,E,0.968995,4,44,25,0,1
+E::Kassio Ferreira Mendes,E::Valdemar Luiz Tornisielo,E,0.968908,14,61,21,1,1
+E::Maria Gabriella da Silva Araújo,E::Plínio Barbosa de Camargo,E,0.966906,3,12,92,0,1
+E::Marcelo Zacharias Moreira,E::Plínio Barbosa de Camargo,E,0.952268,4,25,91,0,1
+E::Plínio Barbosa de Camargo,E::Rafael Silva Santos,E,0.950232,0,95,17,1,1
+E::Marcelo Zacharias Moreira,E::Maria Gabriella da Silva Araújo,E,0.946419,2,27,13,1,1
+E::Giuliano Maselli Locosselli,E::Plínio Barbosa de Camargo,E,0.944615,0,33,95,0,1
+E::Mauricio Cruz Mantoani,E::Plínio Barbosa de Camargo,E,0.944567,0,22,95,0,1
+E::Maria Victoria Ramos Ballester,E::Rafael Silva Santos,E,0.94336,0,8,17,1,1
+E::Maria Victoria Ramos Ballester,E::Plínio Barbosa de Camargo,E,0.9341,2,6,93,1,1
+E::Luiz Antonio Martinelli,E::Maria Victoria Ramos Ballester,E,0.93141,0,48,8,0,1
+E::Luiz Antonio Martinelli,E::Rafael Silva Santos,E,0.929303,0,48,17,0,1
+E::Luiz Antonio Martinelli,E::Mauricio Cruz Mantoani,E,0.927972,0,48,22,1,1
+E::Alex Vladimir Krusche,E::Plínio Barbosa de Camargo,E,0.926367,0,9,95,0,1
+E::Quirijn de Jong van Lier,E::Thaís Nascimento Pessoa,E,0.923262,0,46,13,1,1
+E::Luiz Antonio Martinelli,E::Giuliano Maselli Locosselli,E,0.921985,0,48,33,1,1
+E::Alex Vladimir Krusche,E::Luiz Antonio Martinelli,E,0.917732,0,9,48,0,1
+E::Maria Gabriella da Silva Araújo,E::Maria Victoria Ramos Ballester,E,0.913892,1,14,7,0,1
+E::Maria Gabriella da Silva Araújo,E::Rafael Silva Santos,E,0.912208,0,15,17,0,1
+E::Giuliano Maselli Locosselli,E::Mauricio Cruz Mantoani,E,0.911132,1,32,21,1,1
+E::Giuliano Maselli Locosselli,E::Maria Victoria Ramos Ballester,E,0.910069,0,33,8,0,1
+E::Maria Gabriella da Silva Araújo,E::Mauricio Cruz Mantoani,E,0.909497,0,15,22,0,1
+E::Ernani Pinto Junior,E::Valdemar Luiz Tornisielo,E,0.903371,0,51,35,1,1
+E::Quirijn de Jong van Lier,E::Rafael Silva Santos,E,0.901538,0,46,17,1,1
+E::Marcelo Zacharias Moreira,E::Mauricio Cruz Mantoani,E,0.900661,0,29,22,0,1
+E::Alex Vladimir Krusche,E::Maria Gabriella da Silva Araújo,E,0.89603,4,5,11,1,1
+E::Quirijn de Jong van Lier,E::Plínio Barbosa de Camargo,E,0.890521,0,46,95,1,1
+E::Luiz Antonio Martinelli,E::Valdemar Luiz Tornisielo,E,0.889773,0,48,35,1,0
+E::Quirijn de Jong van Lier,E::Maria Victoria Ramos Ballester,E,0.889475,0,46,8,1,1
+E::Mauricio Cruz Mantoani,E::Valdemar Luiz Tornisielo,E,0.885483,0,22,35,1,0
+E::Kassio Ferreira Mendes,E::Mauricio Cruz Mantoani,E,0.885357,0,75,22,1,0
+E::Rafael Silva Santos,E::Thaís Nascimento Pessoa,E,0.882585,1,16,12,1,1
+E::Alex Vladimir Krusche,E::Marcelo Zacharias Moreira,E,0.882297,1,8,28,1,1
+E::Ernani Pinto Junior,E::Kassio Ferreira Mendes,E,0.882116,0,51,75,1,1
+E::Kassio Ferreira Mendes,E::Luiz Antonio Martinelli,E,0.880393,0,75,48,1,0
+E::Maria Victoria Ramos Ballester,E::Thaís Nascimento Pessoa,E,0.877692,0,8,13,1,1
+E::Ernani Pinto Junior,E::Luiz Antonio Martinelli,E,0.876226,0,51,48,1,0
+E::Plínio Barbosa de Camargo,E::Thaís Nascimento Pessoa,E,0.87252,0,95,13,1,1
+E::Ernani Pinto Junior,E::Mauricio Cruz Mantoani,E,0.864788,0,51,22,1,0
+T::Hudson Wallace Pereira de Carvalho,T::José Lavres Junior,T,0.966935,14,66,77,1,1
+T::Paulo César Ocheuze Trivelin,T::Eduardo Mariano,T,0.960305,3,11,23,1,1
+T::Eduardo Mariano,T::José Lavres Junior,T,0.955448,5,21,86,1,1
+T::Paulo César Ocheuze Trivelin,T::José Lavres Junior,T,0.947837,0,14,91,1,1
+T::Fabio Rodrigo Piovezani Rocha,T::Alex Virgilio,T,0.940134,1,44,13,1,1
+T::Elisabete Aparecida De Nadai Fernandes,T::Alex Virgilio,T,0.938362,0,20,14,1,1
+T::Deoclecio Jardim Amorim,T::Hudson Wallace Pereira de Carvalho,T,0.933307,1,13,79,1,1
+T::Eduardo Mariano,T::Hudson Wallace Pereira de Carvalho,T,0.930224,2,24,78,1,1
+T::Deoclecio Jardim Amorim,T::José Lavres Junior,T,0.926477,2,12,89,1,1
+T::Samara Soares,T::Alex Virgilio,T,0.924103,1,16,13,1,1
+T::Deoclecio Jardim Amorim,T::Elisabete Aparecida De Nadai Fernandes,T,0.920616,0,14,20,0,1
+T::Fabio Rodrigo Piovezani Rocha,T::Elisabete Aparecida De Nadai Fernandes,T,0.919565,0,45,20,1,1
+T::Alex Virgilio,T::Hudson Wallace Pereira de Carvalho,T,0.917675,2,12,78,0,1
+T::Elisabete Aparecida De Nadai Fernandes,T::Hudson Wallace Pereira de Carvalho,T,0.916522,1,19,79,0,1
+T::Fabio Rodrigo Piovezani Rocha,T::Elias Ayres Guidetti Zagatto,T,0.914673,2,43,6,1,1
+T::Deoclecio Jardim Amorim,T::Eduardo Mariano,T,0.914033,1,13,25,1,1
+T::Paulo César Ocheuze Trivelin,T::Hudson Wallace Pereira de Carvalho,T,0.910063,0,14,80,1,1
+T::Fabio Rodrigo Piovezani Rocha,T::Hudson Wallace Pereira de Carvalho,T,0.907038,0,45,80,0,1
+T::Marília Campos,T::Luiz Carlos Ruiz Pessenda,T,0.906291,1,19,30,1,1
+T::Samara Soares,T::Elias Ayres Guidetti Zagatto,T,0.905512,0,17,8,1,1
+T::Samara Soares,T::Elisabete Aparecida De Nadai Fernandes,T,0.904368,0,17,20,1,1
+T::Paulo César Ocheuze Trivelin,T::Deoclecio Jardim Amorim,T,0.902818,0,14,14,1,1
+T::Samara Soares,T::Boaventura Freire dos Reis,T,0.898959,0,17,4,1,1
+T::Elias Ayres Guidetti Zagatto,T::Alex Virgilio,T,0.890716,0,8,14,1,1
+T::Deoclecio Jardim Amorim,T::Luiz Carlos Ruiz Pessenda,T,0.879711,0,14,31,1,0
+T::Elias Ayres Guidetti Zagatto,T::Boaventura Freire dos Reis,T,0.867852,1,7,3,1,1
+T::Fabio Rodrigo Piovezani Rocha,T::Boaventura Freire dos Reis,T,0.867677,1,44,3,1,1
+T::Boaventura Freire dos Reis,T::Alex Virgilio,T,0.85677,0,4,14,1,1
+T::Eduardo Mariano,T::Luiz Carlos Ruiz Pessenda,T,0.855088,0,26,31,1,0
+T::Luiz Carlos Ruiz Pessenda,T::José Lavres Junior,T,0.846133,0,31,91,1,0
+T::Marília Campos,T::Deoclecio Jardim Amorim,T,0.831155,0,20,14,1,0
+T::Marília Campos,T::Eduardo Mariano,T,0.799002,0,20,26,1,0
+T::Marília Campos,T::José Lavres Junior,T,0.777187,0,20,91,1,0
