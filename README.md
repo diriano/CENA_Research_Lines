@@ -154,18 +154,18 @@ Os nós representam os docentes presentes em [candidates.json](data/candidates.j
 
 As saídas em `data/` incluem [area_semantic.graphml](data/area_semantic.graphml) (que pode ser visualizado em Cytoscape) e os arquivos [area_semantic_P.graphml](data/area_semantic_P.graphml), [area_semantic_E.graphml](data/area_semantic_E.graphml) e [area_semantic_T.graphml](data/area_semantic_T.graphml); [area_semantic_nodes.csv](data/area_semantic_nodes.csv) e [area_semantic_edges.csv](data/area_semantic_edges.csv) descrevem seus nós e arestas. [area_semantic_matrix_P.csv](data/area_semantic_matrix_P.csv), [area_semantic_matrix_E.csv](data/area_semantic_matrix_E.csv) e [area_semantic_matrix_T.csv](data/area_semantic_matrix_T.csv) preservam os pares comparáveis que não aparecem nas redes. [area_semantic_coverage.csv](data/area_semantic_coverage.csv) mostra quantos artigos de cada docentes foram aproveitados em cada divisão. Os vetores dos artigos ficam em cache em [area_semantic_embeddings.npz](data/area_semantic_embeddings.npz), de modo que uma nova execução após a curadoria no arquivo ([work_area_curated.csv](data/work_area_curated.csv)) pode reutilizá-los.
 
-| Área | Orientadores de referência | Artigos de referência | Artigos atribuídos |
-| --- | ---: | ---: | ---: |
-| B | 6 | 266 | 967 |
-| N | 4 | 145 | 957 |
-| Q | 6 | 216 | 837 |
 
+| Área | Docentes de referência | Artigos de referência | Artigos atribuídos |
+| --- | ---: | ---: | ---: |
+| P | 15 | 477 | 974 |
+| E | 14 | 417 | 1042 |
+| T | 13 | 296 | 1027 |
 Para discutir novas linhas de pesquisa, a rede global pode indicar aproximações amplas; as redes por área mostram **quais dessas aproximações persistem** quando os artigos são filtrados. A interpretação final deve considerar cobertura desigual de publicações, qualidade da atribuição dos artigos às áreas, termos e artigos representativos, além das prioridades do programa.
 
 
 ![Rede de similaridade semântica por divisão CENA/USP](Figs/area_semantic.png)
 **Figura 3. Redes semânticas por divisão científica.**
-A imagem apresenta três conjuntos separados: DVPROD (P), à esquerda; Química (Q), na região superior direita; e Energia Nuclear (N), abaixo. Cada nó corresponde à atuação de um orientador naquela área, identificada pelo prefixo B::, N:: ou Q::. Por isso, orientadores vinculados a várias áreas podem aparecer mais de uma vez em diferentes conjuntos. As linhas verdes ligam pares de orientadores dentro da mesma área. A separação entre B, N e Q decorre da construção da rede, que não inclui arestas entre áreas. As posições dos nós também dependem do algoritmo de disposição e não devem ser interpretadas como uma escala numérica de similaridade. As cores dos nós correspondem ás comunidades detectadas pelo algoritmo de Louvain. A espessura das arestas indica a similaridade semantica entre os orientadores, calculada com base em títulos, resumos e palavras-chave dos artigos.
+A imagem apresenta três conjuntos separados: DVPROD (P), à esquerda; DVECO (E), na região superior direita; e DVTEC (T), abaixo. Cada nó corresponde à atuação de um docente naquela divisão, identificada pelo prefixo P::, E:: ou T::. As linhas verdes ligam pares de orientadores dentro da mesma área. A separação entre P, E e T decorre da construção da rede, que não inclui arestas entre áreas. As posições dos nós também dependem do algoritmo de disposição e não devem ser interpretadas como uma escala numérica de similaridade. As cores dos nós correspondem ás comunidades detectadas pelo algoritmo de Louvain. A espessura das arestas indica a similaridade semântica entre os docentes, calculada com base em títulos, resumos e palavras-chave dos artigos.
 
 ### Proposta de linhas de pesquisa por área
 
