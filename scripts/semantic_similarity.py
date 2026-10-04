@@ -35,11 +35,11 @@ import numpy as np
 
 ROOT = None  # Set from argparse when run directly, or by an importing script.
 DATA = None  # All input and output files live inside ROOT/data.
-AREA_ORDER = ("B", "N", "Q")
+AREA_ORDER = ("P", "E", "T")
 AREA_LABELS = {
-    "B": "Biologia na Agricultura e no Ambiente",
-    "N": "Energia Nuclear na Agricultura e no Ambiente",
-    "Q": "Química na Agricultura e no Ambiente",
+    "P": "Divisão de Produtividade Agroindustrial e Alimentos",
+    "E": "Divisão de  Funcionamento de Ecossistemas Tropicais",
+    "T": "Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares",
 }
 DEFAULT_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
@@ -358,7 +358,7 @@ def graphml(path, node_rows, edge_rows):
 
     root = ET.Element(tag("graphml"))
     node_types = {"label": "string", "area_group": "string", "area_names": "string",
-                  "in_B": "int", "in_N": "int", "in_Q": "int",
+                  "in_P": "int", "in_T": "int", "in_E": "int",
                   "article_count": "int", "text_article_count": "int",
                   "abstract_count": "int", "keyword_count": "int"}
     edge_types = {"weight": "double", "similarity": "double",

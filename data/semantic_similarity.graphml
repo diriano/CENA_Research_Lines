@@ -1,0 +1,1406 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key id="label" for="node" attr.name="label" attr.type="string" />
+  <key id="area_group" for="node" attr.name="area_group" attr.type="string" />
+  <key id="area_names" for="node" attr.name="area_names" attr.type="string" />
+  <key id="in_P" for="node" attr.name="in_P" attr.type="int" />
+  <key id="in_T" for="node" attr.name="in_T" attr.type="int" />
+  <key id="in_E" for="node" attr.name="in_E" attr.type="int" />
+  <key id="article_count" for="node" attr.name="article_count" attr.type="int" />
+  <key id="text_article_count" for="node" attr.name="text_article_count" attr.type="int" />
+  <key id="abstract_count" for="node" attr.name="abstract_count" attr.type="int" />
+  <key id="keyword_count" for="node" attr.name="keyword_count" attr.type="int" />
+  <key id="weight" for="edge" attr.name="weight" attr.type="double" />
+  <key id="similarity" for="edge" attr.name="similarity" attr.type="double" />
+  <key id="shared_article_count" for="edge" attr.name="shared_article_count" attr.type="int" />
+  <key id="source_articles_compared" for="edge" attr.name="source_articles_compared" attr.type="int" />
+  <key id="target_articles_compared" for="edge" attr.name="target_articles_compared" attr.type="int" />
+  <graph id="semantic_similarity" edgedefault="undirected">
+    <node id="n0">
+      <data key="label">Adibe Luiz Abdalla</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="in_P">1</data>
+      <data key="in_T">0</data>
+      <data key="in_E">0</data>
+      <data key="article_count">82</data>
+      <data key="text_article_count">82</data>
+      <data key="abstract_count">58</data>
+      <data key="keyword_count">82</data>
+    </node>
+    <node id="n1">
+      <data key="label">Adriana Pinheiro Martinelli</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="in_P">1</data>
+      <data key="in_T">0</data>
+      <data key="in_E">0</data>
+      <data key="article_count">29</data>
+      <data key="text_article_count">29</data>
+      <data key="abstract_count">21</data>
+      <data key="keyword_count">28</data>
+    </node>
+    <node id="n2">
+      <data key="label">Antonio Vargas de Oliveira Figueira</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="in_P">1</data>
+      <data key="in_T">0</data>
+      <data key="in_E">0</data>
+      <data key="article_count">27</data>
+      <data key="text_article_count">27</data>
+      <data key="abstract_count">22</data>
+      <data key="keyword_count">27</data>
+    </node>
+    <node id="n3">
+      <data key="label">Augusto Tulmann Neto</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="in_P">1</data>
+      <data key="in_T">0</data>
+      <data key="in_E">0</data>
+      <data key="article_count">3</data>
+      <data key="text_article_count">3</data>
+      <data key="abstract_count">2</data>
+      <data key="keyword_count">3</data>
+    </node>
+    <node id="n4">
+      <data key="label">Cassio Hamilton Abreu Junior</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="in_P">1</data>
+      <data key="in_T">0</data>
+      <data key="in_E">0</data>
+      <data key="article_count">35</data>
+      <data key="text_article_count">35</data>
+      <data key="abstract_count">26</data>
+      <data key="keyword_count">35</data>
+    </node>
+    <node id="n5">
+      <data key="label">Diego Mauricio Riaño Pachón</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="in_P">1</data>
+      <data key="in_T">0</data>
+      <data key="in_E">0</data>
+      <data key="article_count">28</data>
+      <data key="text_article_count">28</data>
+      <data key="abstract_count">26</data>
+      <data key="keyword_count">28</data>
+    </node>
+    <node id="n6">
+      <data key="label">Flavia Vischi Winck</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="in_P">1</data>
+      <data key="in_T">0</data>
+      <data key="in_E">0</data>
+      <data key="article_count">17</data>
+      <data key="text_article_count">17</data>
+      <data key="abstract_count">15</data>
+      <data key="keyword_count">17</data>
+    </node>
+    <node id="n7">
+      <data key="label">Francisco Scaglia Linhares</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="in_P">1</data>
+      <data key="in_T">0</data>
+      <data key="in_E">0</data>
+      <data key="article_count">13</data>
+      <data key="text_article_count">13</data>
+      <data key="abstract_count">10</data>
+      <data key="keyword_count">13</data>
+    </node>
+    <node id="n8">
+      <data key="label">Helder Louvandini</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="in_P">1</data>
+      <data key="in_T">0</data>
+      <data key="in_E">0</data>
+      <data key="article_count">61</data>
+      <data key="text_article_count">61</data>
+      <data key="abstract_count">35</data>
+      <data key="keyword_count">61</data>
+    </node>
+    <node id="n9">
+      <data key="label">Lucas William Mendes</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="in_P">1</data>
+      <data key="in_T">0</data>
+      <data key="in_E">0</data>
+      <data key="article_count">155</data>
+      <data key="text_article_count">155</data>
+      <data key="abstract_count">77</data>
+      <data key="keyword_count">155</data>
+    </node>
+    <node id="n10">
+      <data key="label">Thiago de Araújo Mastrangelo</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="in_P">1</data>
+      <data key="in_T">0</data>
+      <data key="in_E">0</data>
+      <data key="article_count">14</data>
+      <data key="text_article_count">14</data>
+      <data key="abstract_count">12</data>
+      <data key="keyword_count">14</data>
+    </node>
+    <node id="n11">
+      <data key="label">Marli de Fatima Fiore</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="in_P">1</data>
+      <data key="in_T">0</data>
+      <data key="in_E">0</data>
+      <data key="article_count">32</data>
+      <data key="text_article_count">32</data>
+      <data key="abstract_count">24</data>
+      <data key="keyword_count">30</data>
+    </node>
+    <node id="n12">
+      <data key="label">Valter Arthur</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="in_P">1</data>
+      <data key="in_T">0</data>
+      <data key="in_E">0</data>
+      <data key="article_count">42</data>
+      <data key="text_article_count">42</data>
+      <data key="abstract_count">40</data>
+      <data key="keyword_count">42</data>
+    </node>
+    <node id="n13">
+      <data key="label">Alex Vladimir Krusche</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="in_P">0</data>
+      <data key="in_T">0</data>
+      <data key="in_E">1</data>
+      <data key="article_count">9</data>
+      <data key="text_article_count">9</data>
+      <data key="abstract_count">6</data>
+      <data key="keyword_count">9</data>
+    </node>
+    <node id="n14">
+      <data key="label">Ernani Pinto Junior</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="in_P">0</data>
+      <data key="in_T">0</data>
+      <data key="in_E">1</data>
+      <data key="article_count">59</data>
+      <data key="text_article_count">59</data>
+      <data key="abstract_count">41</data>
+      <data key="keyword_count">58</data>
+    </node>
+    <node id="n15">
+      <data key="label">Kassio Ferreira Mendes</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="in_P">0</data>
+      <data key="in_T">0</data>
+      <data key="in_E">1</data>
+      <data key="article_count">76</data>
+      <data key="text_article_count">76</data>
+      <data key="abstract_count">63</data>
+      <data key="keyword_count">76</data>
+    </node>
+    <node id="n16">
+      <data key="label">Luiz Antonio Martinelli</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="in_P">0</data>
+      <data key="in_T">0</data>
+      <data key="in_E">1</data>
+      <data key="article_count">48</data>
+      <data key="text_article_count">48</data>
+      <data key="abstract_count">29</data>
+      <data key="keyword_count">48</data>
+    </node>
+    <node id="n17">
+      <data key="label">Quirijn de Jong van Lier</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="in_P">0</data>
+      <data key="in_T">0</data>
+      <data key="in_E">1</data>
+      <data key="article_count">46</data>
+      <data key="text_article_count">46</data>
+      <data key="abstract_count">32</data>
+      <data key="keyword_count">46</data>
+    </node>
+    <node id="n18">
+      <data key="label">Giuliano Maselli Locosselli</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="in_P">0</data>
+      <data key="in_T">0</data>
+      <data key="in_E">1</data>
+      <data key="article_count">33</data>
+      <data key="text_article_count">33</data>
+      <data key="abstract_count">20</data>
+      <data key="keyword_count">33</data>
+    </node>
+    <node id="n19">
+      <data key="label">Marcelo Zacharias Moreira</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="in_P">0</data>
+      <data key="in_T">0</data>
+      <data key="in_E">1</data>
+      <data key="article_count">29</data>
+      <data key="text_article_count">29</data>
+      <data key="abstract_count">16</data>
+      <data key="keyword_count">29</data>
+    </node>
+    <node id="n20">
+      <data key="label">Maria Gabriella da Silva Araújo</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="in_P">0</data>
+      <data key="in_T">0</data>
+      <data key="in_E">1</data>
+      <data key="article_count">15</data>
+      <data key="text_article_count">15</data>
+      <data key="abstract_count">10</data>
+      <data key="keyword_count">15</data>
+    </node>
+    <node id="n21">
+      <data key="label">Maria Victoria Ramos Ballester</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="in_P">0</data>
+      <data key="in_T">0</data>
+      <data key="in_E">1</data>
+      <data key="article_count">8</data>
+      <data key="text_article_count">8</data>
+      <data key="abstract_count">7</data>
+      <data key="keyword_count">8</data>
+    </node>
+    <node id="n22">
+      <data key="label">Marília Campos</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="in_P">0</data>
+      <data key="in_T">1</data>
+      <data key="in_E">0</data>
+      <data key="article_count">23</data>
+      <data key="text_article_count">23</data>
+      <data key="abstract_count">9</data>
+      <data key="keyword_count">23</data>
+    </node>
+    <node id="n23">
+      <data key="label">Mauricio Cruz Mantoani</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="in_P">0</data>
+      <data key="in_T">0</data>
+      <data key="in_E">1</data>
+      <data key="article_count">22</data>
+      <data key="text_article_count">22</data>
+      <data key="abstract_count">17</data>
+      <data key="keyword_count">22</data>
+    </node>
+    <node id="n24">
+      <data key="label">Paulo César Ocheuze Trivelin</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="in_P">0</data>
+      <data key="in_T">1</data>
+      <data key="in_E">0</data>
+      <data key="article_count">14</data>
+      <data key="text_article_count">14</data>
+      <data key="abstract_count">8</data>
+      <data key="keyword_count">14</data>
+    </node>
+    <node id="n25">
+      <data key="label">Plínio Barbosa de Camargo</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="in_P">0</data>
+      <data key="in_T">0</data>
+      <data key="in_E">1</data>
+      <data key="article_count">95</data>
+      <data key="text_article_count">95</data>
+      <data key="abstract_count">53</data>
+      <data key="keyword_count">95</data>
+    </node>
+    <node id="n26">
+      <data key="label">Rafael Silva Santos</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="in_P">0</data>
+      <data key="in_T">0</data>
+      <data key="in_E">1</data>
+      <data key="article_count">17</data>
+      <data key="text_article_count">17</data>
+      <data key="abstract_count">6</data>
+      <data key="keyword_count">17</data>
+    </node>
+    <node id="n27">
+      <data key="label">Samara Soares</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="in_P">0</data>
+      <data key="in_T">1</data>
+      <data key="in_E">0</data>
+      <data key="article_count">17</data>
+      <data key="text_article_count">17</data>
+      <data key="abstract_count">5</data>
+      <data key="keyword_count">17</data>
+    </node>
+    <node id="n28">
+      <data key="label">Thaís Nascimento Pessoa</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="in_P">0</data>
+      <data key="in_T">0</data>
+      <data key="in_E">1</data>
+      <data key="article_count">13</data>
+      <data key="text_article_count">13</data>
+      <data key="abstract_count">6</data>
+      <data key="keyword_count">13</data>
+    </node>
+    <node id="n29">
+      <data key="label">Tsai Siu Mui</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="in_P">1</data>
+      <data key="in_T">0</data>
+      <data key="in_E">0</data>
+      <data key="article_count">73</data>
+      <data key="text_article_count">73</data>
+      <data key="abstract_count">50</data>
+      <data key="keyword_count">73</data>
+    </node>
+    <node id="n30">
+      <data key="label">Victor Alexandre Vitorello</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="in_P">1</data>
+      <data key="in_T">0</data>
+      <data key="in_E">0</data>
+      <data key="article_count">2</data>
+      <data key="text_article_count">2</data>
+      <data key="abstract_count">2</data>
+      <data key="keyword_count">2</data>
+    </node>
+    <node id="n31">
+      <data key="label">Valdemar Luiz Tornisielo</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="in_P">0</data>
+      <data key="in_T">0</data>
+      <data key="in_E">1</data>
+      <data key="article_count">35</data>
+      <data key="text_article_count">35</data>
+      <data key="abstract_count">25</data>
+      <data key="keyword_count">35</data>
+    </node>
+    <node id="n32">
+      <data key="label">Fabio Rodrigo Piovezani Rocha</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="in_P">0</data>
+      <data key="in_T">1</data>
+      <data key="in_E">0</data>
+      <data key="article_count">45</data>
+      <data key="text_article_count">45</data>
+      <data key="abstract_count">22</data>
+      <data key="keyword_count">45</data>
+    </node>
+    <node id="n33">
+      <data key="label">Deoclecio Jardim Amorim</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="in_P">0</data>
+      <data key="in_T">1</data>
+      <data key="in_E">0</data>
+      <data key="article_count">15</data>
+      <data key="text_article_count">15</data>
+      <data key="abstract_count">12</data>
+      <data key="keyword_count">15</data>
+    </node>
+    <node id="n34">
+      <data key="label">Eduardo Mariano</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="in_P">0</data>
+      <data key="in_T">1</data>
+      <data key="in_E">0</data>
+      <data key="article_count">27</data>
+      <data key="text_article_count">27</data>
+      <data key="abstract_count">16</data>
+      <data key="keyword_count">27</data>
+    </node>
+    <node id="n35">
+      <data key="label">Elias Ayres Guidetti Zagatto</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="in_P">0</data>
+      <data key="in_T">1</data>
+      <data key="in_E">0</data>
+      <data key="article_count">8</data>
+      <data key="text_article_count">8</data>
+      <data key="abstract_count">6</data>
+      <data key="keyword_count">8</data>
+    </node>
+    <node id="n36">
+      <data key="label">Boaventura Freire dos Reis</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="in_P">0</data>
+      <data key="in_T">1</data>
+      <data key="in_E">0</data>
+      <data key="article_count">4</data>
+      <data key="text_article_count">4</data>
+      <data key="abstract_count">3</data>
+      <data key="keyword_count">4</data>
+    </node>
+    <node id="n37">
+      <data key="label">Luiz Carlos Ruiz Pessenda</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="in_P">0</data>
+      <data key="in_T">1</data>
+      <data key="in_E">0</data>
+      <data key="article_count">37</data>
+      <data key="text_article_count">37</data>
+      <data key="abstract_count">19</data>
+      <data key="keyword_count">37</data>
+    </node>
+    <node id="n38">
+      <data key="label">Elisabete Aparecida De Nadai Fernandes</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="in_P">0</data>
+      <data key="in_T">1</data>
+      <data key="in_E">0</data>
+      <data key="article_count">20</data>
+      <data key="text_article_count">20</data>
+      <data key="abstract_count">10</data>
+      <data key="keyword_count">20</data>
+    </node>
+    <node id="n39">
+      <data key="label">Alex Virgilio</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="in_P">0</data>
+      <data key="in_T">1</data>
+      <data key="in_E">0</data>
+      <data key="article_count">14</data>
+      <data key="text_article_count">14</data>
+      <data key="abstract_count">10</data>
+      <data key="keyword_count">14</data>
+    </node>
+    <node id="n40">
+      <data key="label">Hudson Wallace Pereira de Carvalho</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="in_P">0</data>
+      <data key="in_T">1</data>
+      <data key="in_E">0</data>
+      <data key="article_count">80</data>
+      <data key="text_article_count">80</data>
+      <data key="abstract_count">50</data>
+      <data key="keyword_count">80</data>
+    </node>
+    <node id="n41">
+      <data key="label">José Lavres Junior</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="in_P">0</data>
+      <data key="in_T">1</data>
+      <data key="in_E">0</data>
+      <data key="article_count">91</data>
+      <data key="text_article_count">91</data>
+      <data key="abstract_count">58</data>
+      <data key="keyword_count">91</data>
+    </node>
+    <edge id="e0" source="n16" target="n25">
+      <data key="weight">0.972827</data>
+      <data key="similarity">0.972827</data>
+      <data key="shared_article_count">13</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">82</data>
+    </edge>
+    <edge id="e1" source="n15" target="n31">
+      <data key="weight">0.969086</data>
+      <data key="similarity">0.969086</data>
+      <data key="shared_article_count">14</data>
+      <data key="source_articles_compared">62</data>
+      <data key="target_articles_compared">21</data>
+    </edge>
+    <edge id="e2" source="n16" target="n19">
+      <data key="weight">0.968995</data>
+      <data key="similarity">0.968995</data>
+      <data key="shared_article_count">4</data>
+      <data key="source_articles_compared">44</data>
+      <data key="target_articles_compared">25</data>
+    </edge>
+    <edge id="e3" source="n40" target="n41">
+      <data key="weight">0.966935</data>
+      <data key="similarity">0.966935</data>
+      <data key="shared_article_count">14</data>
+      <data key="source_articles_compared">66</data>
+      <data key="target_articles_compared">77</data>
+    </edge>
+    <edge id="e4" source="n20" target="n25">
+      <data key="weight">0.966906</data>
+      <data key="similarity">0.966906</data>
+      <data key="shared_article_count">3</data>
+      <data key="source_articles_compared">12</data>
+      <data key="target_articles_compared">92</data>
+    </edge>
+    <edge id="e5" source="n4" target="n41">
+      <data key="weight">0.963781</data>
+      <data key="similarity">0.963781</data>
+      <data key="shared_article_count">5</data>
+      <data key="source_articles_compared">30</data>
+      <data key="target_articles_compared">86</data>
+    </edge>
+    <edge id="e6" source="n9" target="n29">
+      <data key="weight">0.962672</data>
+      <data key="similarity">0.962672</data>
+      <data key="shared_article_count">22</data>
+      <data key="source_articles_compared">133</data>
+      <data key="target_articles_compared">51</data>
+    </edge>
+    <edge id="e7" source="n24" target="n34">
+      <data key="weight">0.960274</data>
+      <data key="similarity">0.960274</data>
+      <data key="shared_article_count">3</data>
+      <data key="source_articles_compared">11</data>
+      <data key="target_articles_compared">24</data>
+    </edge>
+    <edge id="e8" source="n4" target="n40">
+      <data key="weight">0.958170</data>
+      <data key="similarity">0.958170</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">34</data>
+      <data key="target_articles_compared">79</data>
+    </edge>
+    <edge id="e9" source="n34" target="n41">
+      <data key="weight">0.955692</data>
+      <data key="similarity">0.955692</data>
+      <data key="shared_article_count">5</data>
+      <data key="source_articles_compared">22</data>
+      <data key="target_articles_compared">86</data>
+    </edge>
+    <edge id="e10" source="n4" target="n34">
+      <data key="weight">0.954282</data>
+      <data key="similarity">0.954282</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">34</data>
+      <data key="target_articles_compared">26</data>
+    </edge>
+    <edge id="e11" source="n19" target="n25">
+      <data key="weight">0.952268</data>
+      <data key="similarity">0.952268</data>
+      <data key="shared_article_count">4</data>
+      <data key="source_articles_compared">25</data>
+      <data key="target_articles_compared">91</data>
+    </edge>
+    <edge id="e12" source="n25" target="n26">
+      <data key="weight">0.950232</data>
+      <data key="similarity">0.950232</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">95</data>
+      <data key="target_articles_compared">17</data>
+    </edge>
+    <edge id="e13" source="n24" target="n41">
+      <data key="weight">0.947837</data>
+      <data key="similarity">0.947837</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">14</data>
+      <data key="target_articles_compared">91</data>
+    </edge>
+    <edge id="e14" source="n19" target="n20">
+      <data key="weight">0.946419</data>
+      <data key="similarity">0.946419</data>
+      <data key="shared_article_count">2</data>
+      <data key="source_articles_compared">27</data>
+      <data key="target_articles_compared">13</data>
+    </edge>
+    <edge id="e15" source="n25" target="n37">
+      <data key="weight">0.946386</data>
+      <data key="similarity">0.946386</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">95</data>
+      <data key="target_articles_compared">37</data>
+    </edge>
+    <edge id="e16" source="n25" target="n33">
+      <data key="weight">0.945170</data>
+      <data key="similarity">0.945170</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">95</data>
+      <data key="target_articles_compared">15</data>
+    </edge>
+    <edge id="e17" source="n18" target="n25">
+      <data key="weight">0.944615</data>
+      <data key="similarity">0.944615</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">33</data>
+      <data key="target_articles_compared">95</data>
+    </edge>
+    <edge id="e18" source="n23" target="n25">
+      <data key="weight">0.944567</data>
+      <data key="similarity">0.944567</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">22</data>
+      <data key="target_articles_compared">95</data>
+    </edge>
+    <edge id="e19" source="n21" target="n26">
+      <data key="weight">0.943360</data>
+      <data key="similarity">0.943360</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">8</data>
+      <data key="target_articles_compared">17</data>
+    </edge>
+    <edge id="e20" source="n7" target="n40">
+      <data key="weight">0.943106</data>
+      <data key="similarity">0.943106</data>
+      <data key="shared_article_count">2</data>
+      <data key="source_articles_compared">11</data>
+      <data key="target_articles_compared">78</data>
+    </edge>
+    <edge id="e21" source="n2" target="n5">
+      <data key="weight">0.942709</data>
+      <data key="similarity">0.942709</data>
+      <data key="shared_article_count">2</data>
+      <data key="source_articles_compared">25</data>
+      <data key="target_articles_compared">26</data>
+    </edge>
+    <edge id="e22" source="n32" target="n39">
+      <data key="weight">0.940134</data>
+      <data key="similarity">0.940134</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">44</data>
+      <data key="target_articles_compared">13</data>
+    </edge>
+    <edge id="e23" source="n16" target="n33">
+      <data key="weight">0.939838</data>
+      <data key="similarity">0.939838</data>
+      <data key="shared_article_count">2</data>
+      <data key="source_articles_compared">46</data>
+      <data key="target_articles_compared">13</data>
+    </edge>
+    <edge id="e24" source="n25" target="n29">
+      <data key="weight">0.939744</data>
+      <data key="similarity">0.939744</data>
+      <data key="shared_article_count">11</data>
+      <data key="source_articles_compared">84</data>
+      <data key="target_articles_compared">62</data>
+    </edge>
+    <edge id="e25" source="n38" target="n39">
+      <data key="weight">0.938362</data>
+      <data key="similarity">0.938362</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">20</data>
+      <data key="target_articles_compared">14</data>
+    </edge>
+    <edge id="e26" source="n11" target="n14">
+      <data key="weight">0.935914</data>
+      <data key="similarity">0.935914</data>
+      <data key="shared_article_count">7</data>
+      <data key="source_articles_compared">25</data>
+      <data key="target_articles_compared">52</data>
+    </edge>
+    <edge id="e27" source="n5" target="n6">
+      <data key="weight">0.934816</data>
+      <data key="similarity">0.934816</data>
+      <data key="shared_article_count">4</data>
+      <data key="source_articles_compared">24</data>
+      <data key="target_articles_compared">13</data>
+    </edge>
+    <edge id="e28" source="n16" target="n29">
+      <data key="weight">0.934460</data>
+      <data key="similarity">0.934460</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">48</data>
+      <data key="target_articles_compared">73</data>
+    </edge>
+    <edge id="e29" source="n21" target="n25">
+      <data key="weight">0.934100</data>
+      <data key="similarity">0.934100</data>
+      <data key="shared_article_count">2</data>
+      <data key="source_articles_compared">6</data>
+      <data key="target_articles_compared">93</data>
+    </edge>
+    <edge id="e30" source="n9" target="n34">
+      <data key="weight">0.931761</data>
+      <data key="similarity">0.931761</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">155</data>
+      <data key="target_articles_compared">27</data>
+    </edge>
+    <edge id="e31" source="n16" target="n21">
+      <data key="weight">0.931410</data>
+      <data key="similarity">0.931410</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">48</data>
+      <data key="target_articles_compared">8</data>
+    </edge>
+    <edge id="e32" source="n0" target="n8">
+      <data key="weight">0.931205</data>
+      <data key="similarity">0.931205</data>
+      <data key="shared_article_count">31</data>
+      <data key="source_articles_compared">51</data>
+      <data key="target_articles_compared">30</data>
+    </edge>
+    <edge id="e33" source="n33" target="n40">
+      <data key="weight">0.930267</data>
+      <data key="similarity">0.930267</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">14</data>
+      <data key="target_articles_compared">79</data>
+    </edge>
+    <edge id="e34" source="n16" target="n26">
+      <data key="weight">0.929303</data>
+      <data key="similarity">0.929303</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">48</data>
+      <data key="target_articles_compared">17</data>
+    </edge>
+    <edge id="e35" source="n4" target="n33">
+      <data key="weight">0.928191</data>
+      <data key="similarity">0.928191</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">15</data>
+    </edge>
+    <edge id="e36" source="n29" target="n34">
+      <data key="weight">0.928095</data>
+      <data key="similarity">0.928095</data>
+      <data key="shared_article_count">2</data>
+      <data key="source_articles_compared">71</data>
+      <data key="target_articles_compared">25</data>
+    </edge>
+    <edge id="e37" source="n16" target="n23">
+      <data key="weight">0.927972</data>
+      <data key="similarity">0.927972</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">48</data>
+      <data key="target_articles_compared">22</data>
+    </edge>
+    <edge id="e38" source="n2" target="n7">
+      <data key="weight">0.926846</data>
+      <data key="similarity">0.926846</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">27</data>
+      <data key="target_articles_compared">13</data>
+    </edge>
+    <edge id="e39" source="n26" target="n34">
+      <data key="weight">0.926830</data>
+      <data key="similarity">0.926830</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">17</data>
+      <data key="target_articles_compared">27</data>
+    </edge>
+    <edge id="e40" source="n23" target="n29">
+      <data key="weight">0.926733</data>
+      <data key="similarity">0.926733</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">22</data>
+      <data key="target_articles_compared">73</data>
+    </edge>
+    <edge id="e41" source="n19" target="n33">
+      <data key="weight">0.926516</data>
+      <data key="similarity">0.926516</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">29</data>
+      <data key="target_articles_compared">15</data>
+    </edge>
+    <edge id="e42" source="n13" target="n25">
+      <data key="weight">0.926367</data>
+      <data key="similarity">0.926367</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">9</data>
+      <data key="target_articles_compared">95</data>
+    </edge>
+    <edge id="e43" source="n4" target="n24">
+      <data key="weight">0.925863</data>
+      <data key="similarity">0.925863</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">34</data>
+      <data key="target_articles_compared">13</data>
+    </edge>
+    <edge id="e44" source="n2" target="n33">
+      <data key="weight">0.925697</data>
+      <data key="similarity">0.925697</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">27</data>
+      <data key="target_articles_compared">15</data>
+    </edge>
+    <edge id="e45" source="n7" target="n41">
+      <data key="weight">0.924946</data>
+      <data key="similarity">0.924946</data>
+      <data key="shared_article_count">7</data>
+      <data key="source_articles_compared">6</data>
+      <data key="target_articles_compared">84</data>
+    </edge>
+    <edge id="e46" source="n6" target="n14">
+      <data key="weight">0.924526</data>
+      <data key="similarity">0.924526</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">17</data>
+      <data key="target_articles_compared">59</data>
+    </edge>
+    <edge id="e47" source="n27" target="n39">
+      <data key="weight">0.924103</data>
+      <data key="similarity">0.924103</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">16</data>
+      <data key="target_articles_compared">13</data>
+    </edge>
+    <edge id="e48" source="n17" target="n28">
+      <data key="weight">0.923262</data>
+      <data key="similarity">0.923262</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">46</data>
+      <data key="target_articles_compared">13</data>
+    </edge>
+    <edge id="e49" source="n4" target="n9">
+      <data key="weight">0.923212</data>
+      <data key="similarity">0.923212</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">155</data>
+    </edge>
+    <edge id="e50" source="n23" target="n33">
+      <data key="weight">0.922647</data>
+      <data key="similarity">0.922647</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">22</data>
+      <data key="target_articles_compared">15</data>
+    </edge>
+    <edge id="e51" source="n6" target="n11">
+      <data key="weight">0.922420</data>
+      <data key="similarity">0.922420</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">17</data>
+      <data key="target_articles_compared">32</data>
+    </edge>
+    <edge id="e52" source="n16" target="n18">
+      <data key="weight">0.921985</data>
+      <data key="similarity">0.921985</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">48</data>
+      <data key="target_articles_compared">33</data>
+    </edge>
+    <edge id="e53" source="n16" target="n37">
+      <data key="weight">0.921625</data>
+      <data key="similarity">0.921625</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">48</data>
+      <data key="target_articles_compared">37</data>
+    </edge>
+    <edge id="e54" source="n20" target="n37">
+      <data key="weight">0.921571</data>
+      <data key="similarity">0.921571</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">15</data>
+      <data key="target_articles_compared">37</data>
+    </edge>
+    <edge id="e55" source="n4" target="n7">
+      <data key="weight">0.921055</data>
+      <data key="similarity">0.921055</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">13</data>
+    </edge>
+    <edge id="e56" source="n10" target="n33">
+      <data key="weight">0.920843</data>
+      <data key="similarity">0.920843</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">14</data>
+      <data key="target_articles_compared">15</data>
+    </edge>
+    <edge id="e57" source="n32" target="n38">
+      <data key="weight">0.919565</data>
+      <data key="similarity">0.919565</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">45</data>
+      <data key="target_articles_compared">20</data>
+    </edge>
+    <edge id="e58" source="n9" target="n25">
+      <data key="weight">0.918508</data>
+      <data key="similarity">0.918508</data>
+      <data key="shared_article_count">5</data>
+      <data key="source_articles_compared">150</data>
+      <data key="target_articles_compared">90</data>
+    </edge>
+    <edge id="e59" source="n33" target="n38">
+      <data key="weight">0.918422</data>
+      <data key="similarity">0.918422</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">15</data>
+      <data key="target_articles_compared">20</data>
+    </edge>
+    <edge id="e60" source="n4" target="n15">
+      <data key="weight">0.918033</data>
+      <data key="similarity">0.918033</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">76</data>
+    </edge>
+    <edge id="e61" source="n2" target="n41">
+      <data key="weight">0.917829</data>
+      <data key="similarity">0.917829</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">26</data>
+      <data key="target_articles_compared">90</data>
+    </edge>
+    <edge id="e62" source="n13" target="n16">
+      <data key="weight">0.917732</data>
+      <data key="similarity">0.917732</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">9</data>
+      <data key="target_articles_compared">48</data>
+    </edge>
+    <edge id="e63" source="n39" target="n40">
+      <data key="weight">0.917675</data>
+      <data key="similarity">0.917675</data>
+      <data key="shared_article_count">2</data>
+      <data key="source_articles_compared">12</data>
+      <data key="target_articles_compared">78</data>
+    </edge>
+    <edge id="e64" source="n1" target="n2">
+      <data key="weight">0.916940</data>
+      <data key="similarity">0.916940</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">29</data>
+      <data key="target_articles_compared">27</data>
+    </edge>
+    <edge id="e65" source="n38" target="n40">
+      <data key="weight">0.916522</data>
+      <data key="similarity">0.916522</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">19</data>
+      <data key="target_articles_compared">79</data>
+    </edge>
+    <edge id="e66" source="n15" target="n40">
+      <data key="weight">0.916261</data>
+      <data key="similarity">0.916261</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">76</data>
+      <data key="target_articles_compared">80</data>
+    </edge>
+    <edge id="e67" source="n15" target="n33">
+      <data key="weight">0.915188</data>
+      <data key="similarity">0.915188</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">76</data>
+      <data key="target_articles_compared">15</data>
+    </edge>
+    <edge id="e68" source="n22" target="n37">
+      <data key="weight">0.914999</data>
+      <data key="similarity">0.914999</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">22</data>
+      <data key="target_articles_compared">36</data>
+    </edge>
+    <edge id="e69" source="n32" target="n35">
+      <data key="weight">0.914673</data>
+      <data key="similarity">0.914673</data>
+      <data key="shared_article_count">2</data>
+      <data key="source_articles_compared">43</data>
+      <data key="target_articles_compared">6</data>
+    </edge>
+    <edge id="e70" source="n20" target="n21">
+      <data key="weight">0.913892</data>
+      <data key="similarity">0.913892</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">14</data>
+      <data key="target_articles_compared">7</data>
+    </edge>
+    <edge id="e71" source="n18" target="n37">
+      <data key="weight">0.913579</data>
+      <data key="similarity">0.913579</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">33</data>
+      <data key="target_articles_compared">37</data>
+    </edge>
+    <edge id="e72" source="n4" target="n31">
+      <data key="weight">0.912925</data>
+      <data key="similarity">0.912925</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">35</data>
+    </edge>
+    <edge id="e73" source="n0" target="n33">
+      <data key="weight">0.912791</data>
+      <data key="similarity">0.912791</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">82</data>
+      <data key="target_articles_compared">15</data>
+    </edge>
+    <edge id="e74" source="n12" target="n38">
+      <data key="weight">0.912764</data>
+      <data key="similarity">0.912764</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">42</data>
+      <data key="target_articles_compared">20</data>
+    </edge>
+    <edge id="e75" source="n31" target="n33">
+      <data key="weight">0.911962</data>
+      <data key="similarity">0.911962</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">15</data>
+    </edge>
+    <edge id="e76" source="n31" target="n40">
+      <data key="weight">0.911733</data>
+      <data key="similarity">0.911733</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">80</data>
+    </edge>
+    <edge id="e77" source="n18" target="n23">
+      <data key="weight">0.911132</data>
+      <data key="similarity">0.911132</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">32</data>
+      <data key="target_articles_compared">21</data>
+    </edge>
+    <edge id="e78" source="n24" target="n40">
+      <data key="weight">0.910063</data>
+      <data key="similarity">0.910063</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">14</data>
+      <data key="target_articles_compared">80</data>
+    </edge>
+    <edge id="e79" source="n5" target="n33">
+      <data key="weight">0.910054</data>
+      <data key="similarity">0.910054</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">28</data>
+      <data key="target_articles_compared">15</data>
+    </edge>
+    <edge id="e80" source="n5" target="n29">
+      <data key="weight">0.910010</data>
+      <data key="similarity">0.910010</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">28</data>
+      <data key="target_articles_compared">73</data>
+    </edge>
+    <edge id="e81" source="n7" target="n30">
+      <data key="weight">0.910002</data>
+      <data key="similarity">0.910002</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">13</data>
+      <data key="target_articles_compared">2</data>
+    </edge>
+    <edge id="e82" source="n3" target="n12">
+      <data key="weight">0.909188</data>
+      <data key="similarity">0.909188</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">3</data>
+      <data key="target_articles_compared">42</data>
+    </edge>
+    <edge id="e83" source="n12" target="n40">
+      <data key="weight">0.908140</data>
+      <data key="similarity">0.908140</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">41</data>
+      <data key="target_articles_compared">79</data>
+    </edge>
+    <edge id="e84" source="n32" target="n40">
+      <data key="weight">0.907038</data>
+      <data key="similarity">0.907038</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">45</data>
+      <data key="target_articles_compared">80</data>
+    </edge>
+    <edge id="e85" source="n4" target="n28">
+      <data key="weight">0.906488</data>
+      <data key="similarity">0.906488</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">13</data>
+    </edge>
+    <edge id="e86" source="n27" target="n35">
+      <data key="weight">0.905512</data>
+      <data key="similarity">0.905512</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">17</data>
+      <data key="target_articles_compared">8</data>
+    </edge>
+    <edge id="e87" source="n27" target="n38">
+      <data key="weight">0.904368</data>
+      <data key="similarity">0.904368</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">17</data>
+      <data key="target_articles_compared">20</data>
+    </edge>
+    <edge id="e88" source="n5" target="n11">
+      <data key="weight">0.904207</data>
+      <data key="similarity">0.904207</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">27</data>
+      <data key="target_articles_compared">31</data>
+    </edge>
+    <edge id="e89" source="n12" target="n33">
+      <data key="weight">0.904088</data>
+      <data key="similarity">0.904088</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">41</data>
+      <data key="target_articles_compared">14</data>
+    </edge>
+    <edge id="e90" source="n14" target="n31">
+      <data key="weight">0.904032</data>
+      <data key="similarity">0.904032</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">59</data>
+      <data key="target_articles_compared">35</data>
+    </edge>
+    <edge id="e91" source="n10" target="n12">
+      <data key="weight">0.903646</data>
+      <data key="similarity">0.903646</data>
+      <data key="shared_article_count">3</data>
+      <data key="source_articles_compared">11</data>
+      <data key="target_articles_compared">39</data>
+    </edge>
+    <edge id="e92" source="n8" target="n33">
+      <data key="weight">0.903475</data>
+      <data key="similarity">0.903475</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">61</data>
+      <data key="target_articles_compared">15</data>
+    </edge>
+    <edge id="e93" source="n0" target="n16">
+      <data key="weight">0.901605</data>
+      <data key="similarity">0.901605</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">82</data>
+      <data key="target_articles_compared">48</data>
+    </edge>
+    <edge id="e94" source="n17" target="n26">
+      <data key="weight">0.901538</data>
+      <data key="similarity">0.901538</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">46</data>
+      <data key="target_articles_compared">17</data>
+    </edge>
+    <edge id="e95" source="n0" target="n34">
+      <data key="weight">0.901477</data>
+      <data key="similarity">0.901477</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">82</data>
+      <data key="target_articles_compared">27</data>
+    </edge>
+    <edge id="e96" source="n2" target="n6">
+      <data key="weight">0.900859</data>
+      <data key="similarity">0.900859</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">27</data>
+      <data key="target_articles_compared">17</data>
+    </edge>
+    <edge id="e97" source="n1" target="n5">
+      <data key="weight">0.899903</data>
+      <data key="similarity">0.899903</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">29</data>
+      <data key="target_articles_compared">28</data>
+    </edge>
+    <edge id="e98" source="n20" target="n22">
+      <data key="weight">0.899149</data>
+      <data key="similarity">0.899149</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">15</data>
+      <data key="target_articles_compared">23</data>
+    </edge>
+    <edge id="e99" source="n27" target="n36">
+      <data key="weight">0.898959</data>
+      <data key="similarity">0.898959</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">17</data>
+      <data key="target_articles_compared">4</data>
+    </edge>
+    <edge id="e100" source="n22" target="n25">
+      <data key="weight">0.897234</data>
+      <data key="similarity">0.897234</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">23</data>
+      <data key="target_articles_compared">95</data>
+    </edge>
+    <edge id="e101" source="n2" target="n10">
+      <data key="weight">0.896308</data>
+      <data key="similarity">0.896308</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">27</data>
+      <data key="target_articles_compared">14</data>
+    </edge>
+    <edge id="e102" source="n13" target="n20">
+      <data key="weight">0.896030</data>
+      <data key="similarity">0.896030</data>
+      <data key="shared_article_count">4</data>
+      <data key="source_articles_compared">5</data>
+      <data key="target_articles_compared">11</data>
+    </edge>
+    <edge id="e103" source="n1" target="n33">
+      <data key="weight">0.894190</data>
+      <data key="similarity">0.894190</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">29</data>
+      <data key="target_articles_compared">15</data>
+    </edge>
+    <edge id="e104" source="n5" target="n14">
+      <data key="weight">0.893580</data>
+      <data key="similarity">0.893580</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">28</data>
+      <data key="target_articles_compared">59</data>
+    </edge>
+    <edge id="e105" source="n1" target="n7">
+      <data key="weight">0.892740</data>
+      <data key="similarity">0.892740</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">29</data>
+      <data key="target_articles_compared">13</data>
+    </edge>
+    <edge id="e106" source="n35" target="n39">
+      <data key="weight">0.890716</data>
+      <data key="similarity">0.890716</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">8</data>
+      <data key="target_articles_compared">14</data>
+    </edge>
+    <edge id="e107" source="n17" target="n25">
+      <data key="weight">0.890521</data>
+      <data key="similarity">0.890521</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">46</data>
+      <data key="target_articles_compared">95</data>
+    </edge>
+    <edge id="e108" source="n4" target="n17">
+      <data key="weight">0.890265</data>
+      <data key="similarity">0.890265</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">46</data>
+    </edge>
+    <edge id="e109" source="n10" target="n38">
+      <data key="weight">0.889840</data>
+      <data key="similarity">0.889840</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">14</data>
+      <data key="target_articles_compared">20</data>
+    </edge>
+    <edge id="e110" source="n13" target="n29">
+      <data key="weight">0.889804</data>
+      <data key="similarity">0.889804</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">9</data>
+      <data key="target_articles_compared">73</data>
+    </edge>
+    <edge id="e111" source="n9" target="n11">
+      <data key="weight">0.887678</data>
+      <data key="similarity">0.887678</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">154</data>
+      <data key="target_articles_compared">31</data>
+    </edge>
+    <edge id="e112" source="n2" target="n30">
+      <data key="weight">0.887419</data>
+      <data key="similarity">0.887419</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">27</data>
+      <data key="target_articles_compared">2</data>
+    </edge>
+    <edge id="e113" source="n16" target="n22">
+      <data key="weight">0.887235</data>
+      <data key="similarity">0.887235</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">48</data>
+      <data key="target_articles_compared">23</data>
+    </edge>
+    <edge id="e114" source="n28" target="n40">
+      <data key="weight">0.884693</data>
+      <data key="similarity">0.884693</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">13</data>
+      <data key="target_articles_compared">80</data>
+    </edge>
+    <edge id="e115" source="n8" target="n12">
+      <data key="weight">0.884624</data>
+      <data key="similarity">0.884624</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">61</data>
+      <data key="target_articles_compared">42</data>
+    </edge>
+    <edge id="e116" source="n8" target="n10">
+      <data key="weight">0.883838</data>
+      <data key="similarity">0.883838</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">61</data>
+      <data key="target_articles_compared">14</data>
+    </edge>
+    <edge id="e117" source="n26" target="n28">
+      <data key="weight">0.882585</data>
+      <data key="similarity">0.882585</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">16</data>
+      <data key="target_articles_compared">12</data>
+    </edge>
+    <edge id="e118" source="n4" target="n30">
+      <data key="weight">0.876766</data>
+      <data key="similarity">0.876766</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">35</data>
+      <data key="target_articles_compared">2</data>
+    </edge>
+    <edge id="e119" source="n35" target="n36">
+      <data key="weight">0.867852</data>
+      <data key="similarity">0.867852</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">7</data>
+      <data key="target_articles_compared">3</data>
+    </edge>
+    <edge id="e120" source="n32" target="n36">
+      <data key="weight">0.867677</data>
+      <data key="similarity">0.867677</data>
+      <data key="shared_article_count">1</data>
+      <data key="source_articles_compared">44</data>
+      <data key="target_articles_compared">3</data>
+    </edge>
+    <edge id="e121" source="n24" target="n30">
+      <data key="weight">0.866738</data>
+      <data key="similarity">0.866738</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">14</data>
+      <data key="target_articles_compared">2</data>
+    </edge>
+    <edge id="e122" source="n36" target="n39">
+      <data key="weight">0.856770</data>
+      <data key="similarity">0.856770</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">4</data>
+      <data key="target_articles_compared">14</data>
+    </edge>
+    <edge id="e123" source="n3" target="n10">
+      <data key="weight">0.847466</data>
+      <data key="similarity">0.847466</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">3</data>
+      <data key="target_articles_compared">14</data>
+    </edge>
+    <edge id="e124" source="n3" target="n40">
+      <data key="weight">0.828291</data>
+      <data key="similarity">0.828291</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">3</data>
+      <data key="target_articles_compared">80</data>
+    </edge>
+    <edge id="e125" source="n3" target="n33">
+      <data key="weight">0.827726</data>
+      <data key="similarity">0.827726</data>
+      <data key="shared_article_count">0</data>
+      <data key="source_articles_compared">3</data>
+      <data key="target_articles_compared">15</data>
+    </edge>
+  </graph>
+</graphml>
