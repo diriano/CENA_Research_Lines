@@ -38,11 +38,11 @@ if len(sys.argv) != 2:
 ROOT = pathlib.Path(sys.argv[1])
 START_DATE = "2021-01-01"
 END_DATE = "2026-12-31"
-AREA_ORDER = ("B", "N", "Q")
+AREA_ORDER = ("P", "E", "T")
 AREA_LABELS = {
-    "B": "Biologia na Agricultura e no Ambiente",
-    "N": "Energia Nuclear na Agricultura e no Ambiente",
-    "Q": "Química na Agricultura e no Ambiente",
+    "P": "Divisão de Produtividade Agroindustrial e Alimentos",
+    "E": "Divisão de  Funcionamento de Ecossistemas Tropicais",
+    "T": "Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares",
 }
 
 
