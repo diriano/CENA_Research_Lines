@@ -1,0 +1,691 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key id="label" for="node" attr.name="label" attr.type="string" />
+  <key id="area_group" for="node" attr.name="area_group" attr.type="string" />
+  <key id="area_names" for="node" attr.name="area_names" attr.type="string" />
+  <key id="in_B" for="node" attr.name="in_B" attr.type="int" />
+  <key id="in_N" for="node" attr.name="in_N" attr.type="int" />
+  <key id="in_Q" for="node" attr.name="in_Q" attr.type="int" />
+  <key id="article_count" for="node" attr.name="article_count" attr.type="int" />
+  <key id="weight" for="edge" attr.name="weight" attr.type="int" />
+  <graph id="coauthorship" edgedefault="undirected">
+    <node id="n0">
+      <data key="label">Adibe Luiz Abdalla</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="article_count">82</data>
+      <data key="in_P">1</data>
+      <data key="in_E">0</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n1">
+      <data key="label">Adriana Pinheiro Martinelli</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="article_count">29</data>
+      <data key="in_P">1</data>
+      <data key="in_E">0</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n2">
+      <data key="label">Antonio Vargas de Oliveira Figueira</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="article_count">27</data>
+      <data key="in_P">1</data>
+      <data key="in_E">0</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n3">
+      <data key="label">Augusto Tulmann Neto</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="article_count">3</data>
+      <data key="in_P">1</data>
+      <data key="in_E">0</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n4">
+      <data key="label">Cassio Hamilton Abreu Junior</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="article_count">35</data>
+      <data key="in_P">1</data>
+      <data key="in_E">0</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n5">
+      <data key="label">Diego Mauricio Riaño Pachón</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="article_count">28</data>
+      <data key="in_P">1</data>
+      <data key="in_E">0</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n6">
+      <data key="label">Flavia Vischi Winck</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="article_count">17</data>
+      <data key="in_P">1</data>
+      <data key="in_E">0</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n7">
+      <data key="label">Francisco Scaglia Linhares</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="article_count">13</data>
+      <data key="in_P">1</data>
+      <data key="in_E">0</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n8">
+      <data key="label">Helder Louvandini</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="article_count">61</data>
+      <data key="in_P">1</data>
+      <data key="in_E">0</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n9">
+      <data key="label">Lucas William Mendes</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="article_count">155</data>
+      <data key="in_P">1</data>
+      <data key="in_E">0</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n10">
+      <data key="label">Thiago de Araújo Mastrangelo</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="article_count">14</data>
+      <data key="in_P">1</data>
+      <data key="in_E">0</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n11">
+      <data key="label">Marli de Fatima Fiore</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="article_count">32</data>
+      <data key="in_P">1</data>
+      <data key="in_E">0</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n12">
+      <data key="label">Valter Arthur</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="article_count">42</data>
+      <data key="in_P">1</data>
+      <data key="in_E">0</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n13">
+      <data key="label">Alex Vladimir Krusche</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="article_count">9</data>
+      <data key="in_P">0</data>
+      <data key="in_E">1</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n14">
+      <data key="label">Ernani Pinto Junior</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="article_count">59</data>
+      <data key="in_P">0</data>
+      <data key="in_E">1</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n15">
+      <data key="label">Kassio Ferreira Mendes</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="article_count">76</data>
+      <data key="in_P">0</data>
+      <data key="in_E">1</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n16">
+      <data key="label">Luiz Antonio Martinelli</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="article_count">48</data>
+      <data key="in_P">0</data>
+      <data key="in_E">1</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n17">
+      <data key="label">Quirijn de Jong van Lier</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="article_count">46</data>
+      <data key="in_P">0</data>
+      <data key="in_E">1</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n18">
+      <data key="label">Giuliano Maselli Locosselli</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="article_count">33</data>
+      <data key="in_P">0</data>
+      <data key="in_E">1</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n19">
+      <data key="label">Marcelo Zacharias Moreira</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="article_count">29</data>
+      <data key="in_P">0</data>
+      <data key="in_E">1</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n20">
+      <data key="label">Maria Gabriella da Silva Araújo</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="article_count">15</data>
+      <data key="in_P">0</data>
+      <data key="in_E">1</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n21">
+      <data key="label">Maria Victoria Ramos Ballester</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="article_count">8</data>
+      <data key="in_P">0</data>
+      <data key="in_E">1</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n22">
+      <data key="label">Marília Campos</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="article_count">23</data>
+      <data key="in_P">0</data>
+      <data key="in_E">0</data>
+      <data key="in_T">1</data>
+    </node>
+    <node id="n23">
+      <data key="label">Mauricio Cruz Mantoani</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="article_count">22</data>
+      <data key="in_P">0</data>
+      <data key="in_E">1</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n24">
+      <data key="label">Paulo César Ocheuze Trivelin</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="article_count">14</data>
+      <data key="in_P">0</data>
+      <data key="in_E">0</data>
+      <data key="in_T">1</data>
+    </node>
+    <node id="n25">
+      <data key="label">Plínio Barbosa de Camargo</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="article_count">95</data>
+      <data key="in_P">0</data>
+      <data key="in_E">1</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n26">
+      <data key="label">Rafael Silva Santos</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="article_count">17</data>
+      <data key="in_P">0</data>
+      <data key="in_E">1</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n27">
+      <data key="label">Samara Soares</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="article_count">17</data>
+      <data key="in_P">0</data>
+      <data key="in_E">0</data>
+      <data key="in_T">1</data>
+    </node>
+    <node id="n28">
+      <data key="label">Thaís Nascimento Pessoa</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="article_count">13</data>
+      <data key="in_P">0</data>
+      <data key="in_E">1</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n29">
+      <data key="label">Tsai Siu Mui</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="article_count">73</data>
+      <data key="in_P">1</data>
+      <data key="in_E">0</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n30">
+      <data key="label">Victor Alexandre Vitorello</data>
+      <data key="area_group">P</data>
+      <data key="area_names">Divisão de Produtividade Agroindustrial e Alimentos</data>
+      <data key="article_count">2</data>
+      <data key="in_P">1</data>
+      <data key="in_E">0</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n31">
+      <data key="label">Valdemar Luiz Tornisielo</data>
+      <data key="area_group">E</data>
+      <data key="area_names">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="article_count">35</data>
+      <data key="in_P">0</data>
+      <data key="in_E">1</data>
+      <data key="in_T">0</data>
+    </node>
+    <node id="n32">
+      <data key="label">Fabio Rodrigo Piovezani Rocha</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="article_count">45</data>
+      <data key="in_P">0</data>
+      <data key="in_E">0</data>
+      <data key="in_T">1</data>
+    </node>
+    <node id="n33">
+      <data key="label">Deoclecio Jardim Amorim</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="article_count">15</data>
+      <data key="in_P">0</data>
+      <data key="in_E">0</data>
+      <data key="in_T">1</data>
+    </node>
+    <node id="n34">
+      <data key="label">Eduardo Mariano</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="article_count">27</data>
+      <data key="in_P">0</data>
+      <data key="in_E">0</data>
+      <data key="in_T">1</data>
+    </node>
+    <node id="n35">
+      <data key="label">Elias Ayres Guidetti Zagatto</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="article_count">8</data>
+      <data key="in_P">0</data>
+      <data key="in_E">0</data>
+      <data key="in_T">1</data>
+    </node>
+    <node id="n36">
+      <data key="label">Boaventura Freire dos Reis</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="article_count">4</data>
+      <data key="in_P">0</data>
+      <data key="in_E">0</data>
+      <data key="in_T">1</data>
+    </node>
+    <node id="n37">
+      <data key="label">Luiz Carlos Ruiz Pessenda</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="article_count">37</data>
+      <data key="in_P">0</data>
+      <data key="in_E">0</data>
+      <data key="in_T">1</data>
+    </node>
+    <node id="n38">
+      <data key="label">Elisabete Aparecida De Nadai Fernandes</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="article_count">20</data>
+      <data key="in_P">0</data>
+      <data key="in_E">0</data>
+      <data key="in_T">1</data>
+    </node>
+    <node id="n39">
+      <data key="label">Alex Virgilio</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="article_count">14</data>
+      <data key="in_P">0</data>
+      <data key="in_E">0</data>
+      <data key="in_T">1</data>
+    </node>
+    <node id="n40">
+      <data key="label">Hudson Wallace Pereira de Carvalho</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="article_count">80</data>
+      <data key="in_P">0</data>
+      <data key="in_E">0</data>
+      <data key="in_T">1</data>
+    </node>
+    <node id="n41">
+      <data key="label">José Lavres Junior</data>
+      <data key="area_group">T</data>
+      <data key="area_names">Divisão de Desenvolvimento de Métodos e Técnicas Analíticas Nucleares</data>
+      <data key="article_count">91</data>
+      <data key="in_P">0</data>
+      <data key="in_E">0</data>
+      <data key="in_T">1</data>
+    </node>
+    <edge source="n0" target="n1">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n0" target="n8">
+      <data key="weight">31</data>
+    </edge>
+    <edge source="n0" target="n9">
+      <data key="weight">4</data>
+    </edge>
+    <edge source="n0" target="n19">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n0" target="n29">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n0" target="n38">
+      <data key="weight">5</data>
+    </edge>
+    <edge source="n0" target="n40">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n0" target="n41">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n1" target="n4">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n1" target="n6">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n1" target="n8">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n1" target="n41">
+      <data key="weight">3</data>
+    </edge>
+    <edge source="n2" target="n5">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n2" target="n16">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n2" target="n19">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n2" target="n25">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n2" target="n41">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n4" target="n24">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n4" target="n34">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n4" target="n40">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n4" target="n41">
+      <data key="weight">5</data>
+    </edge>
+    <edge source="n5" target="n6">
+      <data key="weight">4</data>
+    </edge>
+    <edge source="n5" target="n9">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n5" target="n11">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n6" target="n41">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n7" target="n24">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n7" target="n39">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n7" target="n40">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n7" target="n41">
+      <data key="weight">7</data>
+    </edge>
+    <edge source="n8" target="n9">
+      <data key="weight">4</data>
+    </edge>
+    <edge source="n8" target="n29">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n8" target="n31">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n8" target="n38">
+      <data key="weight">6</data>
+    </edge>
+    <edge source="n8" target="n40">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n8" target="n41">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n9" target="n11">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n9" target="n19">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n9" target="n25">
+      <data key="weight">5</data>
+    </edge>
+    <edge source="n9" target="n29">
+      <data key="weight">22</data>
+    </edge>
+    <edge source="n9" target="n38">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n9" target="n41">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n10" target="n12">
+      <data key="weight">3</data>
+    </edge>
+    <edge source="n10" target="n16">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n11" target="n14">
+      <data key="weight">7</data>
+    </edge>
+    <edge source="n11" target="n25">
+      <data key="weight">3</data>
+    </edge>
+    <edge source="n11" target="n29">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n12" target="n33">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n12" target="n40">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n13" target="n19">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n13" target="n20">
+      <data key="weight">4</data>
+    </edge>
+    <edge source="n14" target="n29">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n14" target="n33">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n15" target="n31">
+      <data key="weight">14</data>
+    </edge>
+    <edge source="n16" target="n19">
+      <data key="weight">4</data>
+    </edge>
+    <edge source="n16" target="n20">
+      <data key="weight">9</data>
+    </edge>
+    <edge source="n16" target="n25">
+      <data key="weight">13</data>
+    </edge>
+    <edge source="n16" target="n27">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n16" target="n33">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n16" target="n34">
+      <data key="weight">4</data>
+    </edge>
+    <edge source="n16" target="n40">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n17" target="n40">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n18" target="n23">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n18" target="n33">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n19" target="n20">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n19" target="n25">
+      <data key="weight">4</data>
+    </edge>
+    <edge source="n19" target="n29">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n19" target="n34">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n20" target="n21">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n20" target="n25">
+      <data key="weight">3</data>
+    </edge>
+    <edge source="n20" target="n29">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n20" target="n33">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n20" target="n34">
+      <data key="weight">3</data>
+    </edge>
+    <edge source="n21" target="n25">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n22" target="n37">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n24" target="n29">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n24" target="n34">
+      <data key="weight">3</data>
+    </edge>
+    <edge source="n25" target="n29">
+      <data key="weight">11</data>
+    </edge>
+    <edge source="n25" target="n34">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n26" target="n28">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n27" target="n32">
+      <data key="weight">16</data>
+    </edge>
+    <edge source="n27" target="n39">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n29" target="n34">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n30" target="n34">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n30" target="n40">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n30" target="n41">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n32" target="n35">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n32" target="n36">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n32" target="n39">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n33" target="n34">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n33" target="n40">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n33" target="n41">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n34" target="n40">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n34" target="n41">
+      <data key="weight">5</data>
+    </edge>
+    <edge source="n35" target="n36">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n35" target="n37">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n37" target="n40">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n38" target="n40">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n39" target="n40">
+      <data key="weight">2</data>
+    </edge>
+    <edge source="n39" target="n41">
+      <data key="weight">1</data>
+    </edge>
+    <edge source="n40" target="n41">
+      <data key="weight">14</data>
+    </edge>
+  </graph>
+</graphml>
