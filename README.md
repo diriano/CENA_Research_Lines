@@ -1,4 +1,4 @@
-# Análise das linhas de pesquisa do PPG-Ciências CENA/USP
+# Análise das linhas de pesquisa do CENA/USP
 
 ## Autor
 
@@ -6,7 +6,7 @@
 
 ## Justificativa
 
-Esta metodologia foi desenvolvida para examinar a produção científica dos orientadores do [PPG-Ciencias CENA/USP](https://www.cena.usp.br/ensino/pos-ciencias). O programa possui atualmente 16 linhas de pesquisa, agrupadas em três áreas de concentração (Biologia na agricultura e no ambiente - B, Energia Nuclear na Agricultura e no Ambiente - N e Quimica na Agricultura e no Ambiente - Q), criadas em diferentes momentos de sua história. A análise busca identificar temas compartilhados entre orientadores e fornecer subsídios para discutir uma possível reorganização em um número menor de linhas mais abrangentes. As redes e os agrupamentos são instrumentos exploratórios: a definição das linhas também depende de avaliação científica e institucional.
+Esta metodologia foi desenvolvida para examinar a produção científica dos docentes do [CENA/USP](https://www.cena.usp.br/). 
 
 ## Resultados
 
@@ -16,49 +16,61 @@ O grafo resultante está em [coauthorship.graphml](data/coauthorship.graphml) e 
 
 | Orientador | Áreas | Número de artigos |
 | --- | --- | ---: |
-| Adibe Luiz Abdalla | B+N+Q | 83 |
-| Antonio Vargas de Oliveira Figueira | B | 27 |
-| Cassio Hamilton Abreu Junior | B+N+Q | 35 |
-| Diego Mauricio Riaño Pachón | B | 27 |
-| Elisabete Aparecida De Nadai Fernandes | B+N+Q | 20 |
-| Ernani Pinto Junior | B+Q | 58 |
-| Flavia Vischi Winck | B | 17 |
-| Francisco Scaglia Linhares | B | 13 |
-| Helder Louvandini | B+N | 62 |
-| Hudson Wallace Pereira de Carvalho | B+N+Q | 80 |
-| José Lavres Junior | B+N+Q | 90 |
-| Kassio Ferreira Mendes | B+N+Q | 75 |
-| Lucas William Mendes | B | 155 |
-| Luiz Carlos Ruiz Pessenda | B+N+Q | 37 |
-| Marisa de Cassia Piccolo | B | 36 |
-| Marli de Fatima Fiore | B+N+Q | 32 |
-| Tsai Siu Mui | B+N+Q | 73 |
-| Luiz Antonio Martinelli | N | 48 |
-| Quirijn de Jong van Lier | N | 46 |
-| Thiago de Araújo Mastrangelo | N | 14 |
-| Valter Arthur | N | 42 |
-| Alex Virgilio | Q | 14 |
-| Celia Regina Montes | Q | 20 |
-| Fabio Rodrigo Piovezani Rocha | Q | 45 |
-| Marcos Yassuo Kamogawa | Q | 5 |
-| Severino Matias de Alencar | Q | 104 |
-| Wanessa Melchert Mattos | Q | 35 |
+| Adibe Luiz Abdalla | P | 82 |
+| Adriana Pinheiro Martinelli | P | 29 |
+| Antonio Vargas de Oliveira Figueira | P | 27 |
+| Augusto Tulmann Neto | P | 3 |
+| Cassio Hamilton Abreu Junior | P | 35 |
+| Diego Mauricio Riaño Pachón | P | 28 |
+| Flavia Vischi Winck | P | 17 |
+| Francisco Scaglia Linhares | P | 13 |
+| Helder Louvandini | P | 61 |
+| Lucas William Mendes | P | 155 |
+| Thiago de Araújo Mastrangelo | P | 14 |
+| Marli de Fatima Fiore | P | 32 |
+| Valter Arthur | P | 42 |
+| Alex Vladimir Krusche | E | 9 |
+| Ernani Pinto Junior | E | 59 |
+| Kassio Ferreira Mendes | E | 76 |
+| Luiz Antonio Martinelli | E | 48 |
+| Quirijn de Jong van Lier | E | 46 |
+| Giuliano Maselli Locosselli | E | 33 |
+| Marcelo Zacharias Moreira | E | 29 |
+| Maria Gabriella da Silva Araújo | E | 15 |
+| Maria Victoria Ramos Ballester | E | 8 |
+| Marília Campos | T | 23 |
+| Mauricio Cruz Mantoani | E | 22 |
+| Paulo César Ocheuze Trivelin | T | 14 |
+| Plínio Barbosa de Camargo | E | 95 |
+| Rafael Silva Santos | E | 17 |
+| Samara Soares | T | 17 |
+| Thaís Nascimento Pessoa | E | 13 |
+| Tsai Siu Mui | P | 73 |
+| Victor Alexandre Vitorello | P | 2 |
+| Valdemar Luiz Tornisielo | E | 35 |
+| Fabio Rodrigo Piovezani Rocha | T | 45 |
+| Deoclecio Jardim Amorim | T | 15 |
+| Eduardo Mariano | T | 27 |
+| Elias Ayres Guidetti Zagatto | T | 8 |
+| Boaventura Freire dos Reis | T | 4 |
+| Luiz Carlos Ruiz Pessenda | T | 37 |
+| Elisabete Aparecida De Nadai Fernandes | T | 20 |
+| Alex Virgilio | T | 14 |
+| Hudson Wallace Pereira de Carvalho | T | 80 |
+| José Lavres Junior | T | 91 |
 
-No Cytoscape, os nós foram coloridos de acordo com a combinação de áreas registrada em `supervisors.json`:
+No Cytoscape, os nós foram coloridos assim:
 
-| Área ou combinação | Cor usada | Código hexadecimal |
+| Divisão | Cor usada | Código hexadecimal |
 | --- | --- | ---: |
-| Biologia (B) | Laranja | #FD8D3C |
-| Nuclear (N) | Amarelo | #FDFB00 | 
-| Química (Q) | Vermelho | #EF3B2C | 
-| B + N | Verde | #41AB5D | 
-| B + Q | Lilás | #D0D1E6 | 
-| B + N + Q | Verde-claro | #99D8C9 | 
+| DVPROD (P) | Laranja | #FEBD2A |
+| DVECO (E) | Verde | #4CC26C | 
+| DVTEC (T) | Roxo | #8B0AA5 | 
 
 ![Rede de coautoria dos orientadores do PPG-Ciências CENA/USP](Figs/coauthorship.png)
 
-**Figura 1. Rede de coautoria dos orientadores do PPG-Ciências (2021–2026).**
-Os nós representam os orientadores selecionados em `candidates.json`. Uma aresta indica ao menos um artigo compartilhado no OpenAlex; sua espessura corresponde ao número de artigos distintos em coautoria. As cores mostram as áreas de concentração dos orientadores, inclusive as combinações entre áreas.
+**Figura 1. Rede de coautoria dos docentes do CENA/USP (2021–2026).**
+Os nós representam os docentes presentes em [candidates.json](data/candidates.json). Uma aresta indica ao menos um artigo compartilhado no OpenAlex; sua espessura corresponde ao número de artigos distintos em coautoria. As cores mostram as divisões científicas.
 
 ### Rede de similaridade semântica
 
