@@ -6,6 +6,8 @@ Critério: trabalhos do OpenAlex com `type = article` e data de publicação ent
 
 | Orientador | Áreas | Número de artigos |
 | --- | --- | ---: |
+| José Hernandes Lopes Filho | P | 5 |
+| Lílian Angélica Moreira | P | 10 |
 | Adibe Luiz Abdalla | P | 82 |
 | Adriana Pinheiro Martinelli | P | 29 |
 | Antonio Vargas de Oliveira Figueira | P | 27 |
