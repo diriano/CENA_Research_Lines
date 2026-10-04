@@ -18,119 +18,11 @@
   <key id="d1" for="node" attr.name="supervisor" attr.type="string" />
   <key id="d0" for="node" attr.name="label" attr.type="string" />
   <graph edgedefault="undirected">
-    <node id="E::Maria Gabriella da Silva Araújo">
-      <data key="d0">Maria Gabriella da Silva Araújo</data>
-      <data key="d1">Maria Gabriella da Silva Araújo</data>
-      <data key="d2">E</data>
-      <data key="d3">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
-      <data key="d4">E</data>
-      <data key="d5">15</data>
-      <data key="d6">10</data>
-      <data key="d7">E3</data>
-      <data key="d8">E1</data>
-      <data key="d9">nitrogen; dissolved; carbon; tocantins; tocantins river; isotopes; stable; organic carbon</data>
-    </node>
-    <node id="E::Luiz Antonio Martinelli">
-      <data key="d0">Luiz Antonio Martinelli</data>
-      <data key="d1">Luiz Antonio Martinelli</data>
-      <data key="d2">E</data>
-      <data key="d3">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
-      <data key="d4">E</data>
-      <data key="d5">48</data>
-      <data key="d6">29</data>
-      <data key="d7">E1</data>
-      <data key="d8">E1</data>
-      <data key="d9">isotopes; stable; food; sugarcane; stable isotopes; nitrogen; carbon; forest</data>
-    </node>
-    <node id="E::Alex Vladimir Krusche">
-      <data key="d0">Alex Vladimir Krusche</data>
-      <data key="d1">Alex Vladimir Krusche</data>
-      <data key="d2">E</data>
-      <data key="d3">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
-      <data key="d4">E</data>
-      <data key="d5">9</data>
-      <data key="d6">6</data>
-      <data key="d7">E3</data>
-      <data key="d8">E1</data>
-      <data key="d9">dissolved; dissolved organic; flux; tocantins; tocantins river; carbon dissolved; organic carbon; lower tocantins</data>
-    </node>
-    <node id="E::Ernani Pinto Junior">
-      <data key="d0">Ernani Pinto Junior</data>
-      <data key="d1">Ernani Pinto Junior</data>
-      <data key="d2">E</data>
-      <data key="d3">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
-      <data key="d4">E</data>
-      <data key="d5">51</data>
-      <data key="d6">35</data>
-      <data key="d7">E1</data>
-      <data key="d8">E2</data>
-      <data key="d9">cyanobacterial; cyanobacteria; blooms; cyanotoxins; microcystins; metabolites; toxicity; cyanobacterial blooms</data>
-    </node>
-    <node id="E::Kassio Ferreira Mendes">
-      <data key="d0">Kassio Ferreira Mendes</data>
-      <data key="d1">Kassio Ferreira Mendes</data>
-      <data key="d2">E</data>
-      <data key="d3">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
-      <data key="d4">E</data>
-      <data key="d5">75</data>
-      <data key="d6">62</data>
-      <data key="d7">E1</data>
-      <data key="d8">E2</data>
-      <data key="d9">herbicide; weed; control; herbicides; soil; weed control; glyphosate; soils</data>
-    </node>
-    <node id="E::Mauricio Cruz Mantoani">
-      <data key="d0">Mauricio Cruz Mantoani</data>
-      <data key="d1">Mauricio Cruz Mantoani</data>
-      <data key="d2">E</data>
-      <data key="d3">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
-      <data key="d4">E</data>
-      <data key="d5">22</data>
-      <data key="d6">17</data>
-      <data key="d7">E1</data>
-      <data key="d8">E1</data>
-      <data key="d9">fungal; fungi; invasive; tinctoria; airborne; gunnera; gunnera tinctoria; spores</data>
-    </node>
-    <node id="E::Plínio Barbosa de Camargo">
-      <data key="d0">Plínio Barbosa de Camargo</data>
-      <data key="d1">Plínio Barbosa de Camargo</data>
-      <data key="d2">E</data>
-      <data key="d3">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
-      <data key="d4">E</data>
-      <data key="d5">95</data>
-      <data key="d6">53</data>
-      <data key="d7">E2</data>
-      <data key="d8">E1</data>
-      <data key="d9">carbon; forest; soil; nitrogen; isotopes; tropical; amazon; forests</data>
-    </node>
-    <node id="E::Marcelo Zacharias Moreira">
-      <data key="d0">Marcelo Zacharias Moreira</data>
-      <data key="d1">Marcelo Zacharias Moreira</data>
-      <data key="d2">E</data>
-      <data key="d3">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
-      <data key="d4">E</data>
-      <data key="d5">29</data>
-      <data key="d6">16</data>
-      <data key="d7">E3</data>
-      <data key="d8">E1</data>
-      <data key="d9">isotopes; stable; niche; isotopic; trophic; nitrogen isotopes; nitrogen; carbon</data>
-    </node>
-    <node id="E::Thaís Nascimento Pessoa">
-      <data key="d0">Thaís Nascimento Pessoa</data>
-      <data key="d1">Thaís Nascimento Pessoa</data>
-      <data key="d2">E</data>
-      <data key="d3">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
-      <data key="d4">E</data>
-      <data key="d5">13</data>
-      <data key="d6">6</data>
-      <data key="d7">E2</data>
-      <data key="d8">E1</data>
-      <data key="d9">soil; pore; oxisol; soil structure; structure; hydraulic; oxisols; soil pore</data>
-    </node>
     <node id="E::Quirijn de Jong van Lier">
       <data key="d0">Quirijn de Jong van Lier</data>
       <data key="d1">Quirijn de Jong van Lier</data>
       <data key="d2">E</data>
-      <data key="d3">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="d3">E</data>
       <data key="d4">E</data>
       <data key="d5">46</data>
       <data key="d6">32</data>
@@ -138,47 +30,23 @@
       <data key="d8">E1</data>
       <data key="d9">water; soil; soil water; hydraulic; model; soil hydraulic; hydraulic properties; properties</data>
     </node>
-    <node id="E::Rafael Silva Santos">
-      <data key="d0">Rafael Silva Santos</data>
-      <data key="d1">Rafael Silva Santos</data>
+    <node id="E::Mauricio Cruz Mantoani">
+      <data key="d0">Mauricio Cruz Mantoani</data>
+      <data key="d1">Mauricio Cruz Mantoani</data>
       <data key="d2">E</data>
-      <data key="d3">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="d3">E</data>
       <data key="d4">E</data>
-      <data key="d5">17</data>
-      <data key="d6">6</data>
-      <data key="d7">E2</data>
-      <data key="d8">E1</data>
-      <data key="d9">cerrado; soil; carbon; organic; soil carbon; soil organic; native vegetation; no-tillage</data>
-    </node>
-    <node id="E::Maria Victoria Ramos Ballester">
-      <data key="d0">Maria Victoria Ramos Ballester</data>
-      <data key="d1">Maria Victoria Ramos Ballester</data>
-      <data key="d2">E</data>
-      <data key="d3">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
-      <data key="d4">E</data>
-      <data key="d5">8</data>
-      <data key="d6">7</data>
-      <data key="d7">E2</data>
-      <data key="d8">E1</data>
-      <data key="d9">land; land use; soil color; color; use; agroforestry; agroforestry systems; spectral</data>
-    </node>
-    <node id="E::Giuliano Maselli Locosselli">
-      <data key="d0">Giuliano Maselli Locosselli</data>
-      <data key="d1">Giuliano Maselli Locosselli</data>
-      <data key="d2">E</data>
-      <data key="d3">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
-      <data key="d4">E</data>
-      <data key="d5">33</data>
-      <data key="d6">20</data>
+      <data key="d5">22</data>
+      <data key="d6">17</data>
       <data key="d7">E1</data>
       <data key="d8">E1</data>
-      <data key="d9">urban; tree; trees; climate; tree-ring; growth; urban trees; green</data>
+      <data key="d9">fungal; fungi; invasive; tinctoria; airborne; gunnera; gunnera tinctoria; spores</data>
     </node>
     <node id="E::Valdemar Luiz Tornisielo">
       <data key="d0">Valdemar Luiz Tornisielo</data>
       <data key="d1">Valdemar Luiz Tornisielo</data>
       <data key="d2">E</data>
-      <data key="d3">Divisão de  Funcionamento de Ecossistemas Tropicais</data>
+      <data key="d3">E</data>
       <data key="d4">E</data>
       <data key="d5">35</data>
       <data key="d6">25</data>
@@ -186,6 +54,273 @@
       <data key="d8">E2</data>
       <data key="d9">herbicide; soil; pesticide; contamination; sorption; glyphosate; residues; desorption</data>
     </node>
+    <node id="E::Maria Gabriella da Silva Araújo">
+      <data key="d0">Maria Gabriella da Silva Araújo</data>
+      <data key="d1">Maria Gabriella da Silva Araújo</data>
+      <data key="d2">E</data>
+      <data key="d3">E</data>
+      <data key="d4">E</data>
+      <data key="d5">15</data>
+      <data key="d6">10</data>
+      <data key="d7">E3</data>
+      <data key="d8">E1</data>
+      <data key="d9">nitrogen; dissolved; carbon; isotopes; tocantins; tocantins river; stable; organic carbon</data>
+    </node>
+    <node id="E::Plínio Barbosa de Camargo">
+      <data key="d0">Plínio Barbosa de Camargo</data>
+      <data key="d1">Plínio Barbosa de Camargo</data>
+      <data key="d2">E</data>
+      <data key="d3">E</data>
+      <data key="d4">E</data>
+      <data key="d5">95</data>
+      <data key="d6">53</data>
+      <data key="d7">E2</data>
+      <data key="d8">E1</data>
+      <data key="d9">carbon; forest; soil; nitrogen; isotopes; tropical; amazon; forests</data>
+    </node>
+    <node id="E::Rafael Silva Santos">
+      <data key="d0">Rafael Silva Santos</data>
+      <data key="d1">Rafael Silva Santos</data>
+      <data key="d2">E</data>
+      <data key="d3">E</data>
+      <data key="d4">E</data>
+      <data key="d5">17</data>
+      <data key="d6">6</data>
+      <data key="d7">E2</data>
+      <data key="d8">E1</data>
+      <data key="d9">cerrado; soil; carbon; organic; soil carbon; soil organic; native vegetation; no-tillage</data>
+    </node>
+    <node id="E::Thaís Nascimento Pessoa">
+      <data key="d0">Thaís Nascimento Pessoa</data>
+      <data key="d1">Thaís Nascimento Pessoa</data>
+      <data key="d2">E</data>
+      <data key="d3">E</data>
+      <data key="d4">E</data>
+      <data key="d5">13</data>
+      <data key="d6">6</data>
+      <data key="d7">E2</data>
+      <data key="d8">E1</data>
+      <data key="d9">soil; pore; oxisol; soil structure; structure; hydraulic; oxisols; soil pore</data>
+    </node>
+    <node id="E::Luiz Antonio Martinelli">
+      <data key="d0">Luiz Antonio Martinelli</data>
+      <data key="d1">Luiz Antonio Martinelli</data>
+      <data key="d2">E</data>
+      <data key="d3">E</data>
+      <data key="d4">E</data>
+      <data key="d5">48</data>
+      <data key="d6">29</data>
+      <data key="d7">E1</data>
+      <data key="d8">E1</data>
+      <data key="d9">isotopes; stable; food; sugarcane; stable isotopes; nitrogen; carbon; forest</data>
+    </node>
+    <node id="E::Maria Victoria Ramos Ballester">
+      <data key="d0">Maria Victoria Ramos Ballester</data>
+      <data key="d1">Maria Victoria Ramos Ballester</data>
+      <data key="d2">E</data>
+      <data key="d3">E</data>
+      <data key="d4">E</data>
+      <data key="d5">8</data>
+      <data key="d6">7</data>
+      <data key="d7">E2</data>
+      <data key="d8">E1</data>
+      <data key="d9">land; land use; soil color; use; color; agroforestry; agroforestry systems; spectral</data>
+    </node>
+    <node id="E::Marcelo Zacharias Moreira">
+      <data key="d0">Marcelo Zacharias Moreira</data>
+      <data key="d1">Marcelo Zacharias Moreira</data>
+      <data key="d2">E</data>
+      <data key="d3">E</data>
+      <data key="d4">E</data>
+      <data key="d5">29</data>
+      <data key="d6">16</data>
+      <data key="d7">E3</data>
+      <data key="d8">E1</data>
+      <data key="d9">isotopes; stable; niche; isotopic; trophic; nitrogen isotopes; nitrogen; carbon</data>
+    </node>
+    <node id="E::Ernani Pinto Junior">
+      <data key="d0">Ernani Pinto Junior</data>
+      <data key="d1">Ernani Pinto Junior</data>
+      <data key="d2">E</data>
+      <data key="d3">E</data>
+      <data key="d4">E</data>
+      <data key="d5">59</data>
+      <data key="d6">41</data>
+      <data key="d7">E1</data>
+      <data key="d8">E2</data>
+      <data key="d9">cyanobacterial; cyanobacteria; blooms; cyanotoxins; metabolites; microcystins; toxicity; cyanobacterial blooms</data>
+    </node>
+    <node id="E::Kassio Ferreira Mendes">
+      <data key="d0">Kassio Ferreira Mendes</data>
+      <data key="d1">Kassio Ferreira Mendes</data>
+      <data key="d2">E</data>
+      <data key="d3">E</data>
+      <data key="d4">E</data>
+      <data key="d5">76</data>
+      <data key="d6">63</data>
+      <data key="d7">E1</data>
+      <data key="d8">E2</data>
+      <data key="d9">herbicide; weed; control; herbicides; soil; weed control; glyphosate; soils</data>
+    </node>
+    <node id="E::Alex Vladimir Krusche">
+      <data key="d0">Alex Vladimir Krusche</data>
+      <data key="d1">Alex Vladimir Krusche</data>
+      <data key="d2">E</data>
+      <data key="d3">E</data>
+      <data key="d4">E</data>
+      <data key="d5">9</data>
+      <data key="d6">6</data>
+      <data key="d7">E3</data>
+      <data key="d8">E1</data>
+      <data key="d9">dissolved; dissolved organic; flux; tocantins; tocantins river; carbon dissolved; organic carbon; lower tocantins</data>
+    </node>
+    <node id="E::Giuliano Maselli Locosselli">
+      <data key="d0">Giuliano Maselli Locosselli</data>
+      <data key="d1">Giuliano Maselli Locosselli</data>
+      <data key="d2">E</data>
+      <data key="d3">E</data>
+      <data key="d4">E</data>
+      <data key="d5">33</data>
+      <data key="d6">20</data>
+      <data key="d7">E1</data>
+      <data key="d8">E1</data>
+      <data key="d9">urban; tree; trees; climate; tree-ring; growth; urban trees; green</data>
+    </node>
+    <edge source="E::Quirijn de Jong van Lier" target="E::Thaís Nascimento Pessoa">
+      <data key="d10">E</data>
+      <data key="d11">0.923262</data>
+      <data key="d12">0</data>
+      <data key="d13">46</data>
+      <data key="d14">13</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="E::Quirijn de Jong van Lier" target="E::Rafael Silva Santos">
+      <data key="d10">E</data>
+      <data key="d11">0.901538</data>
+      <data key="d12">0</data>
+      <data key="d13">46</data>
+      <data key="d14">17</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="E::Quirijn de Jong van Lier" target="E::Plínio Barbosa de Camargo">
+      <data key="d10">E</data>
+      <data key="d11">0.890521</data>
+      <data key="d12">0</data>
+      <data key="d13">46</data>
+      <data key="d14">95</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="E::Quirijn de Jong van Lier" target="E::Maria Victoria Ramos Ballester">
+      <data key="d10">E</data>
+      <data key="d11">0.889475</data>
+      <data key="d12">0</data>
+      <data key="d13">46</data>
+      <data key="d14">8</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="E::Mauricio Cruz Mantoani" target="E::Plínio Barbosa de Camargo">
+      <data key="d10">E</data>
+      <data key="d11">0.944567</data>
+      <data key="d12">0</data>
+      <data key="d13">22</data>
+      <data key="d14">95</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="E::Mauricio Cruz Mantoani" target="E::Luiz Antonio Martinelli">
+      <data key="d10">E</data>
+      <data key="d11">0.927972</data>
+      <data key="d12">0</data>
+      <data key="d13">48</data>
+      <data key="d14">22</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="E::Mauricio Cruz Mantoani" target="E::Giuliano Maselli Locosselli">
+      <data key="d10">E</data>
+      <data key="d11">0.911132</data>
+      <data key="d12">1</data>
+      <data key="d13">32</data>
+      <data key="d14">21</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="E::Mauricio Cruz Mantoani" target="E::Maria Gabriella da Silva Araújo">
+      <data key="d10">E</data>
+      <data key="d11">0.909497</data>
+      <data key="d12">0</data>
+      <data key="d13">15</data>
+      <data key="d14">22</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="E::Mauricio Cruz Mantoani" target="E::Marcelo Zacharias Moreira">
+      <data key="d10">E</data>
+      <data key="d11">0.900661</data>
+      <data key="d12">0</data>
+      <data key="d13">29</data>
+      <data key="d14">22</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="E::Mauricio Cruz Mantoani" target="E::Kassio Ferreira Mendes">
+      <data key="d10">E</data>
+      <data key="d11">0.886495</data>
+      <data key="d12">0</data>
+      <data key="d13">76</data>
+      <data key="d14">22</data>
+      <data key="d15">1</data>
+      <data key="d16">0</data>
+    </edge>
+    <edge source="E::Mauricio Cruz Mantoani" target="E::Valdemar Luiz Tornisielo">
+      <data key="d10">E</data>
+      <data key="d11">0.885483</data>
+      <data key="d12">0</data>
+      <data key="d13">22</data>
+      <data key="d14">35</data>
+      <data key="d15">1</data>
+      <data key="d16">0</data>
+    </edge>
+    <edge source="E::Mauricio Cruz Mantoani" target="E::Ernani Pinto Junior">
+      <data key="d10">E</data>
+      <data key="d11">0.867673</data>
+      <data key="d12">0</data>
+      <data key="d13">59</data>
+      <data key="d14">22</data>
+      <data key="d15">1</data>
+      <data key="d16">0</data>
+    </edge>
+    <edge source="E::Valdemar Luiz Tornisielo" target="E::Kassio Ferreira Mendes">
+      <data key="d10">E</data>
+      <data key="d11">0.969086</data>
+      <data key="d12">14</data>
+      <data key="d13">62</data>
+      <data key="d14">21</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="E::Valdemar Luiz Tornisielo" target="E::Ernani Pinto Junior">
+      <data key="d10">E</data>
+      <data key="d11">0.904032</data>
+      <data key="d12">0</data>
+      <data key="d13">59</data>
+      <data key="d14">35</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="E::Valdemar Luiz Tornisielo" target="E::Luiz Antonio Martinelli">
+      <data key="d10">E</data>
+      <data key="d11">0.889773</data>
+      <data key="d12">0</data>
+      <data key="d13">48</data>
+      <data key="d14">35</data>
+      <data key="d15">1</data>
+      <data key="d16">0</data>
+    </edge>
     <edge source="E::Maria Gabriella da Silva Araújo" target="E::Plínio Barbosa de Camargo">
       <data key="d10">E</data>
       <data key="d11">0.966906</data>
@@ -222,15 +357,6 @@
       <data key="d15">0</data>
       <data key="d16">1</data>
     </edge>
-    <edge source="E::Maria Gabriella da Silva Araújo" target="E::Mauricio Cruz Mantoani">
-      <data key="d10">E</data>
-      <data key="d11">0.909497</data>
-      <data key="d12">0</data>
-      <data key="d13">15</data>
-      <data key="d14">22</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
     <edge source="E::Maria Gabriella da Silva Araújo" target="E::Alex Vladimir Krusche">
       <data key="d10">E</data>
       <data key="d11">0.89603</data>
@@ -240,7 +366,7 @@
       <data key="d15">1</data>
       <data key="d16">1</data>
     </edge>
-    <edge source="E::Luiz Antonio Martinelli" target="E::Plínio Barbosa de Camargo">
+    <edge source="E::Plínio Barbosa de Camargo" target="E::Luiz Antonio Martinelli">
       <data key="d10">E</data>
       <data key="d11">0.972827</data>
       <data key="d12">13</data>
@@ -248,186 +374,6 @@
       <data key="d14">82</data>
       <data key="d15">0</data>
       <data key="d16">1</data>
-    </edge>
-    <edge source="E::Luiz Antonio Martinelli" target="E::Marcelo Zacharias Moreira">
-      <data key="d10">E</data>
-      <data key="d11">0.968995</data>
-      <data key="d12">4</data>
-      <data key="d13">44</data>
-      <data key="d14">25</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="E::Luiz Antonio Martinelli" target="E::Maria Victoria Ramos Ballester">
-      <data key="d10">E</data>
-      <data key="d11">0.93141</data>
-      <data key="d12">0</data>
-      <data key="d13">48</data>
-      <data key="d14">8</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="E::Luiz Antonio Martinelli" target="E::Rafael Silva Santos">
-      <data key="d10">E</data>
-      <data key="d11">0.929303</data>
-      <data key="d12">0</data>
-      <data key="d13">48</data>
-      <data key="d14">17</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="E::Luiz Antonio Martinelli" target="E::Mauricio Cruz Mantoani">
-      <data key="d10">E</data>
-      <data key="d11">0.927972</data>
-      <data key="d12">0</data>
-      <data key="d13">48</data>
-      <data key="d14">22</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="E::Luiz Antonio Martinelli" target="E::Giuliano Maselli Locosselli">
-      <data key="d10">E</data>
-      <data key="d11">0.921985</data>
-      <data key="d12">0</data>
-      <data key="d13">48</data>
-      <data key="d14">33</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="E::Luiz Antonio Martinelli" target="E::Alex Vladimir Krusche">
-      <data key="d10">E</data>
-      <data key="d11">0.917732</data>
-      <data key="d12">0</data>
-      <data key="d13">9</data>
-      <data key="d14">48</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="E::Luiz Antonio Martinelli" target="E::Valdemar Luiz Tornisielo">
-      <data key="d10">E</data>
-      <data key="d11">0.889773</data>
-      <data key="d12">0</data>
-      <data key="d13">48</data>
-      <data key="d14">35</data>
-      <data key="d15">1</data>
-      <data key="d16">0</data>
-    </edge>
-    <edge source="E::Luiz Antonio Martinelli" target="E::Kassio Ferreira Mendes">
-      <data key="d10">E</data>
-      <data key="d11">0.880393</data>
-      <data key="d12">0</data>
-      <data key="d13">75</data>
-      <data key="d14">48</data>
-      <data key="d15">1</data>
-      <data key="d16">0</data>
-    </edge>
-    <edge source="E::Luiz Antonio Martinelli" target="E::Ernani Pinto Junior">
-      <data key="d10">E</data>
-      <data key="d11">0.876226</data>
-      <data key="d12">0</data>
-      <data key="d13">51</data>
-      <data key="d14">48</data>
-      <data key="d15">1</data>
-      <data key="d16">0</data>
-    </edge>
-    <edge source="E::Alex Vladimir Krusche" target="E::Plínio Barbosa de Camargo">
-      <data key="d10">E</data>
-      <data key="d11">0.926367</data>
-      <data key="d12">0</data>
-      <data key="d13">9</data>
-      <data key="d14">95</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="E::Alex Vladimir Krusche" target="E::Marcelo Zacharias Moreira">
-      <data key="d10">E</data>
-      <data key="d11">0.882297</data>
-      <data key="d12">1</data>
-      <data key="d13">8</data>
-      <data key="d14">28</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="E::Ernani Pinto Junior" target="E::Valdemar Luiz Tornisielo">
-      <data key="d10">E</data>
-      <data key="d11">0.903371</data>
-      <data key="d12">0</data>
-      <data key="d13">51</data>
-      <data key="d14">35</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="E::Ernani Pinto Junior" target="E::Kassio Ferreira Mendes">
-      <data key="d10">E</data>
-      <data key="d11">0.882116</data>
-      <data key="d12">0</data>
-      <data key="d13">51</data>
-      <data key="d14">75</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="E::Ernani Pinto Junior" target="E::Mauricio Cruz Mantoani">
-      <data key="d10">E</data>
-      <data key="d11">0.864788</data>
-      <data key="d12">0</data>
-      <data key="d13">51</data>
-      <data key="d14">22</data>
-      <data key="d15">1</data>
-      <data key="d16">0</data>
-    </edge>
-    <edge source="E::Kassio Ferreira Mendes" target="E::Valdemar Luiz Tornisielo">
-      <data key="d10">E</data>
-      <data key="d11">0.968908</data>
-      <data key="d12">14</data>
-      <data key="d13">61</data>
-      <data key="d14">21</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="E::Kassio Ferreira Mendes" target="E::Mauricio Cruz Mantoani">
-      <data key="d10">E</data>
-      <data key="d11">0.885357</data>
-      <data key="d12">0</data>
-      <data key="d13">75</data>
-      <data key="d14">22</data>
-      <data key="d15">1</data>
-      <data key="d16">0</data>
-    </edge>
-    <edge source="E::Mauricio Cruz Mantoani" target="E::Plínio Barbosa de Camargo">
-      <data key="d10">E</data>
-      <data key="d11">0.944567</data>
-      <data key="d12">0</data>
-      <data key="d13">22</data>
-      <data key="d14">95</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="E::Mauricio Cruz Mantoani" target="E::Giuliano Maselli Locosselli">
-      <data key="d10">E</data>
-      <data key="d11">0.911132</data>
-      <data key="d12">1</data>
-      <data key="d13">32</data>
-      <data key="d14">21</data>
-      <data key="d15">1</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="E::Mauricio Cruz Mantoani" target="E::Marcelo Zacharias Moreira">
-      <data key="d10">E</data>
-      <data key="d11">0.900661</data>
-      <data key="d12">0</data>
-      <data key="d13">29</data>
-      <data key="d14">22</data>
-      <data key="d15">0</data>
-      <data key="d16">1</data>
-    </edge>
-    <edge source="E::Mauricio Cruz Mantoani" target="E::Valdemar Luiz Tornisielo">
-      <data key="d10">E</data>
-      <data key="d11">0.885483</data>
-      <data key="d12">0</data>
-      <data key="d13">22</data>
-      <data key="d14">35</data>
-      <data key="d15">1</data>
-      <data key="d16">0</data>
     </edge>
     <edge source="E::Plínio Barbosa de Camargo" target="E::Marcelo Zacharias Moreira">
       <data key="d10">E</data>
@@ -465,13 +411,13 @@
       <data key="d15">1</data>
       <data key="d16">1</data>
     </edge>
-    <edge source="E::Plínio Barbosa de Camargo" target="E::Quirijn de Jong van Lier">
+    <edge source="E::Plínio Barbosa de Camargo" target="E::Alex Vladimir Krusche">
       <data key="d10">E</data>
-      <data key="d11">0.890521</data>
+      <data key="d11">0.926367</data>
       <data key="d12">0</data>
-      <data key="d13">46</data>
+      <data key="d13">9</data>
       <data key="d14">95</data>
-      <data key="d15">1</data>
+      <data key="d15">0</data>
       <data key="d16">1</data>
     </edge>
     <edge source="E::Plínio Barbosa de Camargo" target="E::Thaís Nascimento Pessoa">
@@ -483,16 +429,25 @@
       <data key="d15">1</data>
       <data key="d16">1</data>
     </edge>
-    <edge source="E::Thaís Nascimento Pessoa" target="E::Quirijn de Jong van Lier">
+    <edge source="E::Rafael Silva Santos" target="E::Maria Victoria Ramos Ballester">
       <data key="d10">E</data>
-      <data key="d11">0.923262</data>
+      <data key="d11">0.94336</data>
       <data key="d12">0</data>
-      <data key="d13">46</data>
-      <data key="d14">13</data>
+      <data key="d13">8</data>
+      <data key="d14">17</data>
       <data key="d15">1</data>
       <data key="d16">1</data>
     </edge>
-    <edge source="E::Thaís Nascimento Pessoa" target="E::Rafael Silva Santos">
+    <edge source="E::Rafael Silva Santos" target="E::Luiz Antonio Martinelli">
+      <data key="d10">E</data>
+      <data key="d11">0.929303</data>
+      <data key="d12">0</data>
+      <data key="d13">48</data>
+      <data key="d14">17</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="E::Rafael Silva Santos" target="E::Thaís Nascimento Pessoa">
       <data key="d10">E</data>
       <data key="d11">0.882585</data>
       <data key="d12">1</data>
@@ -510,32 +465,59 @@
       <data key="d15">1</data>
       <data key="d16">1</data>
     </edge>
-    <edge source="E::Quirijn de Jong van Lier" target="E::Rafael Silva Santos">
+    <edge source="E::Luiz Antonio Martinelli" target="E::Marcelo Zacharias Moreira">
       <data key="d10">E</data>
-      <data key="d11">0.901538</data>
-      <data key="d12">0</data>
-      <data key="d13">46</data>
-      <data key="d14">17</data>
-      <data key="d15">1</data>
+      <data key="d11">0.968995</data>
+      <data key="d12">4</data>
+      <data key="d13">44</data>
+      <data key="d14">25</data>
+      <data key="d15">0</data>
       <data key="d16">1</data>
     </edge>
-    <edge source="E::Quirijn de Jong van Lier" target="E::Maria Victoria Ramos Ballester">
+    <edge source="E::Luiz Antonio Martinelli" target="E::Maria Victoria Ramos Ballester">
       <data key="d10">E</data>
-      <data key="d11">0.889475</data>
+      <data key="d11">0.93141</data>
       <data key="d12">0</data>
-      <data key="d13">46</data>
+      <data key="d13">48</data>
       <data key="d14">8</data>
+      <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="E::Luiz Antonio Martinelli" target="E::Giuliano Maselli Locosselli">
+      <data key="d10">E</data>
+      <data key="d11">0.921985</data>
+      <data key="d12">0</data>
+      <data key="d13">48</data>
+      <data key="d14">33</data>
       <data key="d15">1</data>
       <data key="d16">1</data>
     </edge>
-    <edge source="E::Rafael Silva Santos" target="E::Maria Victoria Ramos Ballester">
+    <edge source="E::Luiz Antonio Martinelli" target="E::Alex Vladimir Krusche">
       <data key="d10">E</data>
-      <data key="d11">0.94336</data>
+      <data key="d11">0.917732</data>
       <data key="d12">0</data>
-      <data key="d13">8</data>
-      <data key="d14">17</data>
-      <data key="d15">1</data>
+      <data key="d13">9</data>
+      <data key="d14">48</data>
+      <data key="d15">0</data>
       <data key="d16">1</data>
+    </edge>
+    <edge source="E::Luiz Antonio Martinelli" target="E::Kassio Ferreira Mendes">
+      <data key="d10">E</data>
+      <data key="d11">0.881361</data>
+      <data key="d12">0</data>
+      <data key="d13">76</data>
+      <data key="d14">48</data>
+      <data key="d15">1</data>
+      <data key="d16">0</data>
+    </edge>
+    <edge source="E::Luiz Antonio Martinelli" target="E::Ernani Pinto Junior">
+      <data key="d10">E</data>
+      <data key="d11">0.880789</data>
+      <data key="d12">0</data>
+      <data key="d13">59</data>
+      <data key="d14">48</data>
+      <data key="d15">1</data>
+      <data key="d16">0</data>
     </edge>
     <edge source="E::Maria Victoria Ramos Ballester" target="E::Giuliano Maselli Locosselli">
       <data key="d10">E</data>
@@ -544,6 +526,24 @@
       <data key="d13">33</data>
       <data key="d14">8</data>
       <data key="d15">0</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="E::Marcelo Zacharias Moreira" target="E::Alex Vladimir Krusche">
+      <data key="d10">E</data>
+      <data key="d11">0.882297</data>
+      <data key="d12">1</data>
+      <data key="d13">8</data>
+      <data key="d14">28</data>
+      <data key="d15">1</data>
+      <data key="d16">1</data>
+    </edge>
+    <edge source="E::Ernani Pinto Junior" target="E::Kassio Ferreira Mendes">
+      <data key="d10">E</data>
+      <data key="d11">0.884206</data>
+      <data key="d12">0</data>
+      <data key="d13">59</data>
+      <data key="d14">76</data>
+      <data key="d15">1</data>
       <data key="d16">1</data>
     </edge>
   </graph>

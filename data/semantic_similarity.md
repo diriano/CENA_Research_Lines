@@ -10,6 +10,8 @@ Células vazias da matriz indicam ausência de artigos com texto para comparar a
 
 | Orientador | Áreas | Artigos | Com texto | Com abstract | Com keywords |
 | --- | --- | ---: | ---: | ---: | ---: |
+| José Hernandes Lopes Filho | P | 5 | 5 | 4 | 5 |
+| Lílian Angélica Moreira | P | 10 | 10 | 8 | 10 |
 | Adibe Luiz Abdalla | P | 82 | 82 | 58 | 82 |
 | Adriana Pinheiro Martinelli | P | 29 | 29 | 21 | 28 |
 | Antonio Vargas de Oliveira Figueira | P | 27 | 27 | 22 | 27 |
@@ -70,10 +72,10 @@ Células vazias da matriz indicam ausência de artigos com texto para comparar a
 | Cassio Hamilton Abreu Junior | Eduardo Mariano | 0.954282 | 1 |
 | Marcelo Zacharias Moreira | Plínio Barbosa de Camargo | 0.952268 | 4 |
 | Plínio Barbosa de Camargo | Rafael Silva Santos | 0.950232 | 0 |
+| Lílian Angélica Moreira | Paulo César Ocheuze Trivelin | 0.949202 | 0 |
 | Paulo César Ocheuze Trivelin | José Lavres Junior | 0.947837 | 0 |
 | Marcelo Zacharias Moreira | Maria Gabriella da Silva Araújo | 0.946419 | 2 |
 | Plínio Barbosa de Camargo | Luiz Carlos Ruiz Pessenda | 0.946386 | 0 |
+| Lílian Angélica Moreira | José Lavres Junior | 0.945746 | 3 |
 | Plínio Barbosa de Camargo | Deoclecio Jardim Amorim | 0.945170 | 0 |
 | Giuliano Maselli Locosselli | Plínio Barbosa de Camargo | 0.944615 | 0 |
-| Mauricio Cruz Mantoani | Plínio Barbosa de Camargo | 0.944567 | 0 |
-| Maria Victoria Ramos Ballester | Rafael Silva Santos | 0.943360 | 0 |

@@ -1,22 +1,37 @@
 area,supervisor,articles_in_period,articles_assigned_to_area,articles_with_embedding,eligible
-P,Adibe Luiz Abdalla,82,80,80,1
+P,José Hernandes Lopes Filho,5,5,5,1
+P,Lílian Angélica Moreira,10,10,10,1
+P,Adibe Luiz Abdalla,82,82,82,1
 P,Adriana Pinheiro Martinelli,29,29,29,1
 P,Antonio Vargas de Oliveira Figueira,27,27,27,1
 P,Augusto Tulmann Neto,3,3,3,1
-P,Cassio Hamilton Abreu Junior,35,34,34,1
+P,Cassio Hamilton Abreu Junior,35,35,35,1
 P,Diego Mauricio Riaño Pachón,28,28,28,1
 P,Flavia Vischi Winck,17,17,17,1
 P,Francisco Scaglia Linhares,13,13,13,1
 P,Helder Louvandini,61,61,61,1
-P,Lucas William Mendes,155,147,147,1
-P,Thiago de Araújo Mastrangelo,14,13,13,1
+P,Lucas William Mendes,155,155,155,1
+P,Thiago de Araújo Mastrangelo,14,14,14,1
 P,Marli de Fatima Fiore,32,32,32,1
-P,Valter Arthur,42,41,41,1
-P,Tsai Siu Mui,73,63,63,1
+P,Valter Arthur,42,42,42,1
+P,Tsai Siu Mui,73,73,73,1
 P,Victor Alexandre Vitorello,2,2,2,1
+T,Marília Campos,23,23,23,1
+T,Paulo César Ocheuze Trivelin,14,14,14,1
+T,Samara Soares,17,17,17,1
+T,Fabio Rodrigo Piovezani Rocha,45,45,45,1
+T,Deoclecio Jardim Amorim,15,15,15,1
+T,Eduardo Mariano,27,27,27,1
+T,Elias Ayres Guidetti Zagatto,8,8,8,1
+T,Boaventura Freire dos Reis,4,4,4,1
+T,Luiz Carlos Ruiz Pessenda,37,37,37,1
+T,Elisabete Aparecida De Nadai Fernandes,20,20,20,1
+T,Alex Virgilio,14,14,14,1
+T,Hudson Wallace Pereira de Carvalho,80,80,80,1
+T,José Lavres Junior,91,91,91,1
 E,Alex Vladimir Krusche,9,9,9,1
-E,Ernani Pinto Junior,59,51,51,1
-E,Kassio Ferreira Mendes,76,75,75,1
+E,Ernani Pinto Junior,59,59,59,1
+E,Kassio Ferreira Mendes,76,76,76,1
 E,Luiz Antonio Martinelli,48,48,48,1
 E,Quirijn de Jong van Lier,46,46,46,1
 E,Giuliano Maselli Locosselli,33,33,33,1
@@ -28,16 +43,3 @@ E,Plínio Barbosa de Camargo,95,95,95,1
 E,Rafael Silva Santos,17,17,17,1
 E,Thaís Nascimento Pessoa,13,13,13,1
 E,Valdemar Luiz Tornisielo,35,35,35,1
-T,Marília Campos,23,20,20,1
-T,Paulo César Ocheuze Trivelin,14,14,14,1
-T,Samara Soares,17,17,17,1
-T,Fabio Rodrigo Piovezani Rocha,45,45,45,1
-T,Deoclecio Jardim Amorim,15,14,14,1
-T,Eduardo Mariano,27,26,26,1
-T,Elias Ayres Guidetti Zagatto,8,8,8,1
-T,Boaventura Freire dos Reis,4,4,4,1
-T,Luiz Carlos Ruiz Pessenda,37,31,31,1
-T,Elisabete Aparecida De Nadai Fernandes,20,20,20,1
-T,Alex Virgilio,14,14,14,1
-T,Hudson Wallace Pereira de Carvalho,80,80,80,1
-T,José Lavres Junior,91,91,91,1

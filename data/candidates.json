@@ -1,5 +1,45 @@
 [
   {
+    "name": "José Hernandes Lopes Filho",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5050776388",
+        "name": "José Hernandes Lopes",
+        "orcid": "https://orcid.org/0000-0002-8169-5179",
+        "works_count": 23,
+        "institutions": [
+          "Universidade Estadual de Campinas (UNICAMP)"
+        ],
+        "topics": [
+          "Plant Diversity and Evolution",
+          "Plant Molecular Biology Research",
+          "Plant Reproductive Biology",
+          "Plant and animal studies"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lílian Angélica Moreira",
+    "candidates": [
+      {
+        "id": "https://openalex.org/A5054650703",
+        "name": "Lílian Angélica Moreira",
+        "orcid": "https://orcid.org/0000-0001-5566-8989",
+        "works_count": 27,
+        "institutions": [
+          "Universidade de São Paulo"
+        ],
+        "topics": [
+          "Soil Carbon and Nitrogen Dynamics",
+          "Plant nutrient uptake and metabolism",
+          "Soil Management and Crop Yield",
+          "Sugarcane Cultivation and Processing"
+        ]
+      }
+    ]
+  },
+  {
     "name": "Adibe Luiz Abdalla",
     "candidates": [
       {

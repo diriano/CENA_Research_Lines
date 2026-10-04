@@ -12,9 +12,11 @@ Eduardo Mariano,José Lavres Junior,0.955692,0.955692,5,22,86
 Cassio Hamilton Abreu Junior,Eduardo Mariano,0.954282,0.954282,1,34,26
 Marcelo Zacharias Moreira,Plínio Barbosa de Camargo,0.952268,0.952268,4,25,91
 Plínio Barbosa de Camargo,Rafael Silva Santos,0.950232,0.950232,0,95,17
+Lílian Angélica Moreira,Paulo César Ocheuze Trivelin,0.949202,0.949202,0,10,14
 Paulo César Ocheuze Trivelin,José Lavres Junior,0.947837,0.947837,0,14,91
 Marcelo Zacharias Moreira,Maria Gabriella da Silva Araújo,0.946419,0.946419,2,27,13
 Plínio Barbosa de Camargo,Luiz Carlos Ruiz Pessenda,0.946386,0.946386,0,95,37
+Lílian Angélica Moreira,José Lavres Junior,0.945746,0.945746,3,7,88
 Plínio Barbosa de Camargo,Deoclecio Jardim Amorim,0.945170,0.945170,0,95,15
 Giuliano Maselli Locosselli,Plínio Barbosa de Camargo,0.944615,0.944615,0,33,95
 Mauricio Cruz Mantoani,Plínio Barbosa de Camargo,0.944567,0.944567,0,22,95
@@ -26,6 +28,7 @@ Luiz Antonio Martinelli,Deoclecio Jardim Amorim,0.939838,0.939838,2,46,13
 Plínio Barbosa de Camargo,Tsai Siu Mui,0.939744,0.939744,11,84,62
 Elisabete Aparecida De Nadai Fernandes,Alex Virgilio,0.938362,0.938362,0,20,14
 Marli de Fatima Fiore,Ernani Pinto Junior,0.935914,0.935914,7,25,52
+Lílian Angélica Moreira,Eduardo Mariano,0.934965,0.934965,6,4,21
 Diego Mauricio Riaño Pachón,Flavia Vischi Winck,0.934816,0.934816,4,24,13
 Luiz Antonio Martinelli,Tsai Siu Mui,0.934460,0.934460,0,48,73
 Maria Victoria Ramos Ballester,Plínio Barbosa de Camargo,0.934100,0.934100,2,6,93
@@ -33,6 +36,7 @@ Lucas William Mendes,Eduardo Mariano,0.931761,0.931761,0,155,27
 Luiz Antonio Martinelli,Maria Victoria Ramos Ballester,0.931410,0.931410,0,48,8
 Adibe Luiz Abdalla,Helder Louvandini,0.931205,0.931205,31,51,30
 Deoclecio Jardim Amorim,Hudson Wallace Pereira de Carvalho,0.930267,0.930267,1,14,79
+Lílian Angélica Moreira,Cassio Hamilton Abreu Junior,0.929579,0.929579,0,10,35
 Luiz Antonio Martinelli,Rafael Silva Santos,0.929303,0.929303,0,48,17
 Cassio Hamilton Abreu Junior,Deoclecio Jardim Amorim,0.928191,0.928191,0,35,15
 Tsai Siu Mui,Eduardo Mariano,0.928095,0.928095,2,71,25
@@ -77,7 +81,6 @@ Valter Arthur,Elisabete Aparecida De Nadai Fernandes,0.912764,0.912764,0,42,20
 Valdemar Luiz Tornisielo,Deoclecio Jardim Amorim,0.911962,0.911962,0,35,15
 Valdemar Luiz Tornisielo,Hudson Wallace Pereira de Carvalho,0.911733,0.911733,0,35,80
 Giuliano Maselli Locosselli,Mauricio Cruz Mantoani,0.911132,0.911132,1,32,21
-Paulo César Ocheuze Trivelin,Hudson Wallace Pereira de Carvalho,0.910063,0.910063,0,14,80
 Diego Mauricio Riaño Pachón,Deoclecio Jardim Amorim,0.910054,0.910054,0,28,15
 Diego Mauricio Riaño Pachón,Tsai Siu Mui,0.910010,0.910010,0,28,73
 Francisco Scaglia Linhares,Victor Alexandre Vitorello,0.910002,0.910002,0,13,2
@@ -85,6 +88,7 @@ Augusto Tulmann Neto,Valter Arthur,0.909188,0.909188,0,3,42
 Valter Arthur,Hudson Wallace Pereira de Carvalho,0.908140,0.908140,1,41,79
 Fabio Rodrigo Piovezani Rocha,Hudson Wallace Pereira de Carvalho,0.907038,0.907038,0,45,80
 Cassio Hamilton Abreu Junior,Thaís Nascimento Pessoa,0.906488,0.906488,0,35,13
+José Hernandes Lopes Filho,Antonio Vargas de Oliveira Figueira,0.906033,0.906033,0,5,27
 Samara Soares,Elias Ayres Guidetti Zagatto,0.905512,0.905512,0,17,8
 Samara Soares,Elisabete Aparecida De Nadai Fernandes,0.904368,0.904368,0,17,20
 Diego Mauricio Riaño Pachón,Marli de Fatima Fiore,0.904207,0.904207,1,27,31
@@ -105,11 +109,13 @@ Alex Vladimir Krusche,Maria Gabriella da Silva Araújo,0.896030,0.896030,4,5,11
 Adriana Pinheiro Martinelli,Deoclecio Jardim Amorim,0.894190,0.894190,0,29,15
 Diego Mauricio Riaño Pachón,Ernani Pinto Junior,0.893580,0.893580,0,28,59
 Adriana Pinheiro Martinelli,Francisco Scaglia Linhares,0.892740,0.892740,0,29,13
+José Hernandes Lopes Filho,Adriana Pinheiro Martinelli,0.890866,0.890866,0,5,29
 Elias Ayres Guidetti Zagatto,Alex Virgilio,0.890716,0.890716,0,8,14
 Quirijn de Jong van Lier,Plínio Barbosa de Camargo,0.890521,0.890521,0,46,95
 Cassio Hamilton Abreu Junior,Quirijn de Jong van Lier,0.890265,0.890265,0,35,46
 Thiago de Araújo Mastrangelo,Elisabete Aparecida De Nadai Fernandes,0.889840,0.889840,0,14,20
 Alex Vladimir Krusche,Tsai Siu Mui,0.889804,0.889804,0,9,73
+José Hernandes Lopes Filho,Diego Mauricio Riaño Pachón,0.889084,0.889084,0,5,28
 Lucas William Mendes,Marli de Fatima Fiore,0.887678,0.887678,1,154,31
 Antonio Vargas de Oliveira Figueira,Victor Alexandre Vitorello,0.887419,0.887419,0,27,2
 Luiz Antonio Martinelli,Marília Campos,0.887235,0.887235,0,48,23
@@ -121,6 +127,7 @@ Cassio Hamilton Abreu Junior,Victor Alexandre Vitorello,0.876766,0.876766,0,35,2
 Elias Ayres Guidetti Zagatto,Boaventura Freire dos Reis,0.867852,0.867852,1,7,3
 Fabio Rodrigo Piovezani Rocha,Boaventura Freire dos Reis,0.867677,0.867677,1,44,3
 Paulo César Ocheuze Trivelin,Victor Alexandre Vitorello,0.866738,0.866738,0,14,2
+José Hernandes Lopes Filho,Francisco Scaglia Linhares,0.857384,0.857384,0,5,13
 Boaventura Freire dos Reis,Alex Virgilio,0.856770,0.856770,0,4,14
 Augusto Tulmann Neto,Thiago de Araújo Mastrangelo,0.847466,0.847466,0,3,14
 Augusto Tulmann Neto,Hudson Wallace Pereira de Carvalho,0.828291,0.828291,0,3,80
